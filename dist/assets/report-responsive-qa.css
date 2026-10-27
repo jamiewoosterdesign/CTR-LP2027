@@ -59,3 +59,16 @@ html:not([lang=en]) .ib-chart .sb-bubbles b{max-width:90%;min-width:0;overflow-w
 html:not([lang=en]) .report-footer-brand{min-width:0;max-width:100%}
 html:not([lang=en]) .report-footer-title{white-space:normal;min-width:0}
 html:not([lang=en]) .au-journey :is(span,b){overflow-wrap:anywhere;hyphens:auto;min-width:0}
+
+@media(min-width:901px){
+ html:not([lang=en]) .report-globe-light .profile-layout:has(.au-profile) .profile-country-nav nav a{
+  height:auto;min-height:36px;padding:7px 12px;line-height:1.4;white-space:normal;
+ }
+}
+@media(max-width:900px){
+ html:not([lang=en]) .gen-portrait h3{font-size:clamp(30px,8vw,52px)!important;line-height:1.15;hyphens:none;overflow-wrap:normal}
+ html:not([lang=en]) #global-headlines .sb-nav-section,html:not([lang=en]) #global-headlines .sb-nav-current{
+  min-width:0;font-size:13px;line-height:1.4;letter-spacing:normal;white-space:normal;
+ }
+ html:not([lang=en]) #global-headlines .sb-nav-toggle{grid-template-columns:minmax(0,1fr) auto 17px;gap:10px}
+}
