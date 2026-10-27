@@ -84,3 +84,7 @@ html:not([lang=en]) .ib-chart .ib-influence-mobile b{max-width:100%;white-space:
  }
 }
 html:not([lang=en]) .au-recommend button>span{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media(max-width:380px){
+ html[lang=th] .ib-chart .ib-influence-mobile{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;align-items:center}
+ html[lang=th] .ib-chart .ib-influence-mobile>div{width:100%;height:auto;aspect-ratio:1;min-width:0}
+}
