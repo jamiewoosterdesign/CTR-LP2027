@@ -83,3 +83,4 @@ html:not([lang=en]) .ib-influence-mobile b{max-width:100%;white-space:normal;ove
   hyphens:auto;letter-spacing:normal;line-height:1.4;
  }
 }
+html:not([lang=en]) .au-recommend button>span{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;hyphens:auto}
