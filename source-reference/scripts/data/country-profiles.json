@@ -1,0 +1,2410 @@
+[
+  {
+    "key": "australia",
+    "country": "Australia",
+    "adjective": "Australian",
+    "flag": "au",
+    "intro": "In 2027, search engines will be the first stop for the Australian traveller who will let value decide from there. Mostly, this traveller will ride solo, stay close to home, and choose hostels or motels. For hotels looking to win their booking, go with an offer that cuts through and make sure real human interaction is available at the end of the line.",
+    "tags": [
+      "Google-faithful",
+      "Value hunter",
+      "Local explorer"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        22.5,
+        16.1,
+        "will travel solo"
+      ],
+      [
+        "Travel intention",
+        41.2,
+        29.7,
+        "will ‘only’ travel domestically"
+      ],
+      [
+        "Accommodation type",
+        13.9,
+        10.9,
+        "will book a hostel/motel"
+      ]
+    ],
+    "code": "AUS",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Search backed by word of mouth",
+        "copy": "Even with search leading the way, personal recommendations still carry real weight.",
+        "max": 30,
+        "rows": [
+          [
+            "Search engine",
+            24.1,
+            20.1
+          ],
+          [
+            "OTA/booking site",
+            22.7,
+            27.1
+          ],
+          [
+            "Friends/family",
+            17.0,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            9.0,
+            7.5
+          ],
+          [
+            "Social media",
+            6.4,
+            9.4
+          ],
+          [
+            "AI assistant",
+            4.6,
+            7.3
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "The call still closes it",
+        "copy": "A meaningful share still prefers to speak with someone to book their accommodation.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            32.4,
+            39.7
+          ],
+          [
+            "A property’s website",
+            17.2,
+            16.6
+          ],
+          [
+            "Travel agent",
+            14.1,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            13.6,
+            9.1
+          ],
+          [
+            "Search/metasearch engine",
+            11.9,
+            14.1
+          ],
+          [
+            "AI assistant or agent",
+            3.6,
+            5.9
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Location has a strong pull",
+        "copy": "It's one of the clearest reasons for a repeat stay.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            70.6,
+            65.7
+          ],
+          [
+            "Location",
+            63.6,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            45.0,
+            44.3
+          ],
+          [
+            "The freebies",
+            34.9,
+            30.4
+          ],
+          [
+            "A memorable experience",
+            29.3,
+            39.1
+          ],
+          [
+            "Uniqueness/style of property",
+            20.1,
+            24.1
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Lead with the deal",
+        "value": 62.3,
+        "signal": "62.3% choose a property because of a good deal or package.",
+        "tip": "Put your best offer front and centre, not buried below room details."
+      },
+      {
+        "title": "Show off the screen",
+        "value": 25.2,
+        "signal": "25.2% say a large TV with free streaming would most elevate their stay.",
+        "tip": "Feature the entertainment setup clearly in room photos and descriptions."
+      },
+      {
+        "title": "Give time back",
+        "value": 32.7,
+        "signal": "32.7% will pay extra for an early check-in or late check-out.",
+        "tip": "Make flexible arrival and departure an easy, visible add-on at booking."
+      }
+    ]
+  },
+  {
+    "key": "canada",
+    "country": "Canada",
+    "adjective": "Canadian",
+    "flag": "ca",
+    "intro": "In 2027, expect the Canadian traveller to do their own research, book directly and enjoy the simpler things in life. For hotels looking to win their booking, go with genuine value-adds, like complimentary breakfast.",
+    "tags": [
+      "Deal chaser",
+      "Direct booker",
+      "Standard Room lover"
+    ],
+    "figures": [
+      [
+        "Travel intentions",
+        33.3,
+        29.7,
+        "will ‘only’ travel domestically"
+      ],
+      [
+        "Accommodation type",
+        22.9,
+        21.6,
+        "will book a chain hotel"
+      ],
+      [
+        "Room preference",
+        54.2,
+        43.3,
+        "will choose a Standard Room"
+      ]
+    ],
+    "code": "CAN",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Friends and family lead the way",
+        "copy": "Personal recommendations matter more to this guest than to any other traveller.",
+        "max": 30,
+        "rows": [
+          [
+            "Search engine",
+            25.3,
+            20.1
+          ],
+          [
+            "OTA/booking site",
+            22.9,
+            27.1
+          ],
+          [
+            "Friends/family",
+            18.1,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            10.1,
+            7.5
+          ],
+          [
+            "Social media",
+            5.5,
+            9.4
+          ],
+          [
+            "Online travel blog",
+            3.9,
+            5.5
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "More likely to book directly",
+        "copy": "That property website better be up to scratch for this direct booker.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            31.8,
+            39.7
+          ],
+          [
+            "A property’s website",
+            20.9,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            12.4,
+            14.1
+          ],
+          [
+            "Direct contact (call/email)",
+            11.6,
+            9.1
+          ],
+          [
+            "Travel agent",
+            11.5,
+            10.4
+          ],
+          [
+            "I don't book ahead",
+            8.1,
+            4.2
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Freebies carry real weight",
+        "copy": "When compared with others, small extras do more to bring this guest back.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            69.8,
+            65.7
+          ],
+          [
+            "Location",
+            55.3,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            42.5,
+            44.3
+          ],
+          [
+            "Freebies",
+            36.8,
+            30.4
+          ],
+          [
+            "A memorable experience",
+            33.6,
+            39.1
+          ],
+          [
+            "Loyalty program",
+            27.0,
+            22.6
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Make the offer impossible to miss",
+        "value": 63.9,
+        "signal": "Clear value through a deal or package influences the choice of property for 63.9% of Canadian travellers.",
+        "tip": "Use prominent, easy-to-scan messaging to show exactly what’s included."
+      },
+      {
+        "title": "Make breakfast the headline",
+        "value": 33.5,
+        "signal": "33.5% name complimentary breakfast as the most appealing deal type.",
+        "tip": "Lead with breakfast in your offer rather than treat it as a standard inclusion."
+      },
+      {
+        "title": "Don't skimp on the coffee",
+        "value": 22.2,
+        "signal": "22.2% say a premium coffee or tea station would most elevate their stay.",
+        "tip": "Make sure it comes through clearly in your room photos and descriptions."
+      }
+    ]
+  },
+  {
+    "key": "china",
+    "country": "China",
+    "adjective": "Chinese",
+    "flag": "cn",
+    "intro": "Pause the deal. In 2027, recognition and quality will matter more for this particular guest. As in years past, the Chinese traveller will be led by brand trust and pay to elevate their experience with a better room, a better view and a better meal. Hello, revenue.",
+    "tags": [
+      "Social media-led",
+      "Premium seeker",
+      "Experience spender"
+    ],
+    "figures": [
+      [
+        "Room preference",
+        46.1,
+        34.8,
+        "will choose a Superior Room"
+      ],
+      [
+        "Travel intentions",
+        59.5,
+        40.5,
+        "will travel ‘both’ domestically and internationally"
+      ],
+      [
+        "Accommodation type",
+        35.4,
+        21.6,
+        "will book a chain hotel"
+      ]
+    ],
+    "code": "CHN",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Pioneers of AI and social discovery",
+        "copy": "Discovery runs through AI assistants and social content more than a traditional search bar.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            33.8,
+            27.1
+          ],
+          [
+            "Social media",
+            16.2,
+            9.4
+          ],
+          [
+            "AI assistant",
+            14.2,
+            7.3
+          ],
+          [
+            "Search engine",
+            8.0,
+            20.1
+          ],
+          [
+            "With hotel brands I know",
+            7.3,
+            7.5
+          ],
+          [
+            "Online travel blog",
+            6.3,
+            5.5
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "OTAs and AI are going strong",
+        "copy": "Both OTA and AI-assisted bookings are well-established habits for this guest.",
+        "max": 60,
+        "rows": [
+          [
+            "OTA/booking site",
+            52.9,
+            39.7
+          ],
+          [
+            "Search/metasearch engine",
+            14.1,
+            14.1
+          ],
+          [
+            "AI assistant or agent",
+            10.7,
+            5.9
+          ],
+          [
+            "A property’s website",
+            9.9,
+            16.6
+          ],
+          [
+            "Travel agent",
+            6.5,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            4.4,
+            9.1
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Character and memory both drive loyalty",
+        "copy": "A property's uniqueness and a standout experience matter most.",
+        "max": 70,
+        "rows": [
+          [
+            "A memorable experience",
+            50.2,
+            39.1
+          ],
+          [
+            "Uniqueness/style of property",
+            45.6,
+            24.1
+          ],
+          [
+            "Value for money",
+            42.7,
+            65.7
+          ],
+          [
+            "The freebies",
+            37.7,
+            30.4
+          ],
+          [
+            "Staff, customer service, communication",
+            34.9,
+            44.3
+          ],
+          [
+            "The location",
+            32.3,
+            51.5
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Lead with the brand",
+        "value": 60.8,
+        "signal": "60.8% choose a property because it's a trusted hotel brand.",
+        "tip": "Make brand recognition and consistency the centrepiece of your positioning."
+      },
+      {
+        "title": "Sell the dining experience",
+        "value": 57.4,
+        "signal": "57.4% would pay extra for gourmet dining or wine tasting, the standout on-site experience.",
+        "tip": "Put food and drink ahead of other paid extras."
+      },
+      {
+        "title": "Upgrade with a view",
+        "value": 43.9,
+        "signal": "43.9% would pay extra for a room with a view.",
+        "tip": "Feature the view prominently in your room photos and descriptions, and price it as a distinct upgrade."
+      }
+    ]
+  },
+  {
+    "key": "france",
+    "country": "France",
+    "adjective": "French",
+    "flag": "fr",
+    "intro": "Romance is in the air for the French traveller. In 2027, they will likely travel as a couple and treat themself to a room above the standard. Complimentary breakfast is the biggest drawcard for this guest, while value for money is what will bring them back. So, for hotels looking to win their booking, lead with that delicious breakfast included.",
+    "tags": [
+      "Visuals-driven",
+      "Search-first",
+      "Parking hunter"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        51.2,
+        34.4,
+        "will travel with their partner/spouse"
+      ],
+      [
+        "Accommodation type",
+        24.2,
+        12.9,
+        "will book a vacation rental"
+      ],
+      [
+        "Room preference",
+        45.9,
+        34.8,
+        "will choose a Superior Room"
+      ]
+    ],
+    "code": "FRA",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Search engines over AI",
+        "copy": "Search engines are the dominant starting point for this guest when planning their stay.",
+        "max": 30,
+        "rows": [
+          [
+            "Search engine",
+            29.6,
+            20.1
+          ],
+          [
+            "OTA/booking site",
+            24.2,
+            27.1
+          ],
+          [
+            "Friends/family",
+            16.3,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            7.5,
+            7.5
+          ],
+          [
+            "AI assistant",
+            5.4,
+            7.3
+          ],
+          [
+            "Social media",
+            4.4,
+            9.4
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "A strong lean toward booking direct",
+        "copy": "That property website better be up to scratch for this direct booker.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            35.0,
+            39.7
+          ],
+          [
+            "A property’s website",
+            20.7,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            12.2,
+            14.1
+          ],
+          [
+            "Travel agent",
+            10.4,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            9.2,
+            9.1
+          ],
+          [
+            "I don't book ahead",
+            8.8,
+            4.2
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Loyalty is bound to value",
+        "copy": "Above all else, getting real value for money is what brings this guest back.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            78.9,
+            65.7
+          ],
+          [
+            "The location",
+            56.7,
+            51.5
+          ],
+          [
+            "A memorable experience",
+            37.4,
+            39.1
+          ],
+          [
+            "Staff, customer service, communication",
+            37.0,
+            44.3
+          ],
+          [
+            "Uniqueness/style of property",
+            25.4,
+            24.1
+          ],
+          [
+            "The freebies",
+            23.4,
+            30.4
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Seal the deal with a croissant",
+        "value": 37.6,
+        "signal": "37.6% name complimentary breakfast as the most appealing deal type.",
+        "tip": "Lead with breakfast in your offer rather than treat it as a standard inclusion."
+      },
+      {
+        "title": "Let the photos do the selling",
+        "value": 38.0,
+        "signal": "38.0% choose a property based on how appealing it looks in photos.",
+        "tip": "Invest in high-quality photography and make it the centrepiece of your listing."
+      },
+      {
+        "title": "Make parking an easy yes",
+        "value": 26.9,
+        "signal": "26.9% would pay extra for onsite parking.",
+        "tip": "Offer parking as a clear, simple add-on at booking."
+      }
+    ]
+  },
+  {
+    "key": "germany",
+    "country": "Germany",
+    "adjective": "German",
+    "flag": "de",
+    "intro": "In 2027, the German traveller will do their own homework before then speaking with a human. While online channels dominate, this guest values the ongoing role of the travel agent and may also call or email ahead to book their accommodation directly. They'll step up to a Superior Room, so long as the value holds.",
+    "tags": [
+      "Call-ahead booker",
+      "Balcony seeker",
+      "Independent-minded"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        44.5,
+        34.4,
+        "will travel with their partner/spouse"
+      ],
+      [
+        "Accommodation type",
+        24.5,
+        16.8,
+        "will book an independent local hotel"
+      ],
+      [
+        "Room preference",
+        41.3,
+        34.8,
+        "will choose a Superior Room"
+      ]
+    ],
+    "code": "GER",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "More than half will start via an OTA or search",
+        "copy": "Compared to the average traveller, search engines play a slightly bigger role for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            28.2,
+            27.1
+          ],
+          [
+            "Search engine",
+            23.9,
+            20.1
+          ],
+          [
+            "Friends/family",
+            13.9,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            7.3,
+            7.5
+          ],
+          [
+            "AI assistant",
+            4.3,
+            7.3
+          ],
+          [
+            "Social media",
+            3.9,
+            9.4
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "Craving human contact",
+        "copy": "A notable share still prefer booking through a travel agent or speaking to someone directly.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            35.2,
+            39.7
+          ],
+          [
+            "A property’s website",
+            17.5,
+            16.6
+          ],
+          [
+            "Travel agent",
+            15.4,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            12.8,
+            9.1
+          ],
+          [
+            "Search/metasearch engine",
+            10.1,
+            14.1
+          ],
+          [
+            "I don't book ahead",
+            5.4,
+            4.2
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Practicality wins",
+        "copy": "Value for money and location both do heavy lifting in bringing this guest back.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            77.6,
+            65.7
+          ],
+          [
+            "The location",
+            64.7,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            43.6,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            36.1,
+            39.1
+          ],
+          [
+            "Close connection with local culture",
+            24.6,
+            22.3
+          ],
+          [
+            "Uniqueness/style of property",
+            20.9,
+            24.1
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Don't bury the offer",
+        "value": 58.4,
+        "signal": "58.4% choose a property because of a good deal or package.",
+        "tip": "Put your best offer front and centre, not buried below room details."
+      },
+      {
+        "title": "Close with breakfast",
+        "value": 37.9,
+        "signal": "37.9% name complimentary breakfast as the most appealing deal type.",
+        "tip": "Lead with breakfast in your offer rather than treat it as a standard inclusion."
+      },
+      {
+        "title": "Sell the balcony",
+        "value": 28.2,
+        "signal": "28.2% would pay extra for a room with a balcony.",
+        "tip": "Highlight private outdoor space in room photos and price it as a distinct upgrade."
+      }
+    ]
+  },
+  {
+    "key": "india",
+    "country": "India",
+    "adjective": "Indian",
+    "flag": "in",
+    "intro": "Meet: the bleisure traveller. In 2027, the Indian traveller will book as a family, step up to a Deluxe Room and may work during their stay. As for AI and social media? They’ll play a big role in this guest’s choice of accommodation. For hotels looking to win their booking, build a trusted brand and have a proper workspace ready.",
+    "tags": [
+      "Family-first",
+      "AI enthusiast",
+      "Memory maker"
+    ],
+    "figures": [
+      [
+        "Travel intentions",
+        46.7,
+        40.5,
+        "will travel ‘both’ domestically and internationally"
+      ],
+      [
+        "Travel companion",
+        43.5,
+        33.7,
+        "will travel with family"
+      ],
+      [
+        "Room preference",
+        25.6,
+        14.9,
+        "will choose a Deluxe Room"
+      ]
+    ],
+    "code": "IND",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Social remains key to discovery",
+        "copy": "Social media plays a slightly bigger role in discovery for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            29.2,
+            27.1
+          ],
+          [
+            "Friends/family",
+            14.8,
+            12.9
+          ],
+          [
+            "Search engine",
+            13.7,
+            20.1
+          ],
+          [
+            "Social media",
+            11.7,
+            9.4
+          ],
+          [
+            "AI assistant",
+            8.6,
+            7.3
+          ],
+          [
+            "Online travel blog",
+            8.0,
+            5.5
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "OTAs and AI will drive more bookings",
+        "copy": "Booking platforms remain dominant, with AI finding a growing foothold alongside them.",
+        "max": 50,
+        "rows": [
+          [
+            "OTA/booking site",
+            42.3,
+            39.7
+          ],
+          [
+            "Search/metasearch engine",
+            16.4,
+            14.1
+          ],
+          [
+            "A property’s website",
+            14.4,
+            16.6
+          ],
+          [
+            "Travel agent",
+            9.6,
+            10.4
+          ],
+          [
+            "AI assistant or agent",
+            7.8,
+            5.9
+          ],
+          [
+            "Direct contact (call/email)",
+            7.5,
+            9.1
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Experience closes the gap",
+        "copy": "Value for money still leads, but a memorable experience isn't far behind.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            54.7,
+            65.7
+          ],
+          [
+            "A memorable experience",
+            46.7,
+            39.1
+          ],
+          [
+            "Staff, customer service, communication",
+            42.9,
+            44.3
+          ],
+          [
+            "The location",
+            37.0,
+            51.5
+          ],
+          [
+            "The freebies",
+            31.4,
+            30.4
+          ],
+          [
+            "Uniqueness/style of property",
+            30.0,
+            24.1
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Promote the brand to close",
+        "value": 49.9,
+        "signal": "49.9% choose a property because it's a trusted hotel brand.",
+        "tip": "Make brand recognition and consistency the centrepiece of your positioning."
+      },
+      {
+        "title": "Showcase the workspace",
+        "value": 40.9,
+        "signal": "40.9% would pay extra for premium workspace and technology.",
+        "tip": "Package a dedicated work-ready setup as a paid upgrade."
+      },
+      {
+        "title": "Price the balcony in",
+        "value": 42.3,
+        "signal": "42.3% would pay extra for a room with a balcony.",
+        "tip": "Highlight private outdoor space in your room photos and price it as a distinct upgrade."
+      }
+    ]
+  },
+  {
+    "key": "indonesia",
+    "country": "Indonesia",
+    "adjective": "Indonesian",
+    "flag": "id",
+    "intro": "In 2027, the Indonesian traveller will book as a family and step up to a boutique hotel stay, found through social media or AI rather than a search bar. A nice view and the right on-site activities will seal the deal for this guest.",
+    "tags": [
+      "Adventure seeker",
+      "OTA booker",
+      "View enthusiast"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        48.4,
+        33.7,
+        "will travel with family"
+      ],
+      [
+        "Accommodation type",
+        21.9,
+        11.6,
+        "will book a boutique/luxury hotel"
+      ],
+      [
+        "Room preference",
+        21.1,
+        14.9,
+        "will choose a Deluxe Room"
+      ]
+    ],
+    "code": "IDN",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Social and AI both score high",
+        "copy": "Discovery for this guest runs through the feed and AI assistance way more than for any other traveller.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            33.7,
+            27.1
+          ],
+          [
+            "Social media",
+            19.0,
+            9.4
+          ],
+          [
+            "Search engine",
+            12.5,
+            20.1
+          ],
+          [
+            "AI assistant",
+            12.2,
+            7.3
+          ],
+          [
+            "Online travel blog",
+            6.1,
+            5.5
+          ],
+          [
+            "Friends/family",
+            6.0,
+            12.9
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "OTAs dominate as AI grows",
+        "copy": "This guest constitutes the biggest share when it comes to travellers booking through OTAs, but they’re also warming to AI capabilities.",
+        "max": 60,
+        "rows": [
+          [
+            "OTA/booking site",
+            50.9,
+            39.7
+          ],
+          [
+            "Search/metasearch engine",
+            15.2,
+            14.1
+          ],
+          [
+            "A property’s website",
+            12.3,
+            16.6
+          ],
+          [
+            "AI assistant or agent",
+            9.6,
+            5.9
+          ],
+          [
+            "Travel agent",
+            6.7,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            3.9,
+            9.1
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "A strong pull toward memory-making",
+        "copy": "An unforgettable experience is certain to bring this guest back.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            54.1,
+            65.7
+          ],
+          [
+            "A memorable experience",
+            53.1,
+            39.1
+          ],
+          [
+            "Staff, customer service, communication",
+            45.1,
+            44.3
+          ],
+          [
+            "The location",
+            41.8,
+            51.5
+          ],
+          [
+            "The freebies",
+            31.1,
+            30.4
+          ],
+          [
+            "Close connection with local culture",
+            25.6,
+            22.3
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Feature the experience",
+        "value": 33.6,
+        "signal": "33.6% choose a property because of its on-site extras and activities.",
+        "tip": "Make on-site extras and activities highly visible in your listing."
+      },
+      {
+        "title": "Sell the view",
+        "value": 49.3,
+        "signal": "49.3% would pay extra for a room with a view.",
+        "tip": "Feature the view prominently in your room photos and descriptions, and price it as a distinct upgrade."
+      },
+      {
+        "title": "Package the adventure",
+        "value": 39.5,
+        "signal": "39.5% would pay extra for adventure activities and equipment.",
+        "tip": "Offer adventure experiences as a clear, bookable add-on rather than leave guests to arrange it themselves elsewhere."
+      }
+    ]
+  },
+  {
+    "key": "italy",
+    "country": "Italy",
+    "adjective": "Italian",
+    "flag": "it",
+    "intro": "In 2027, the Italian traveller will travel with friends and book a B&B, which they’ll likely find through a search engine. For hotels looking to win their booking, offer flexible booking options, easy parking and a genuine connection to the local culture.",
+    "tags": [
+      "Bath lover",
+      "Standard Room selector",
+      "Flexibility seeker"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        23.7,
+        14.5,
+        "will travel with friends"
+      ],
+      [
+        "Accommodation type",
+        23.3,
+        8.1,
+        "will book a B&B"
+      ],
+      [
+        "Room preference",
+        51.5,
+        43.3,
+        "will choose a Standard Room"
+      ]
+    ],
+    "code": "ITA",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Starting out with search",
+        "copy": "When it comes to planning, search engines are the clear starting point for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "Search engine",
+            26.6,
+            20.1
+          ],
+          [
+            "OTA/booking site",
+            26.2,
+            27.1
+          ],
+          [
+            "Friends/family",
+            10.0,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            6.6,
+            7.5
+          ],
+          [
+            "AI assistant",
+            6.1,
+            7.3
+          ],
+          [
+            "Social media",
+            5.8,
+            9.4
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "A preference for a human voice",
+        "copy": "Picking up the phone is a genuinely common way for this guest to book.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            34.0,
+            39.7
+          ],
+          [
+            "A property’s website",
+            16.7,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            15.9,
+            14.1
+          ],
+          [
+            "Direct contact (call/email)",
+            14.6,
+            9.1
+          ],
+          [
+            "Travel agent",
+            10.0,
+            10.4
+          ],
+          [
+            "AI assistant or agent",
+            7.1,
+            5.9
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Local culture matters",
+        "copy": "A real connection to the culture is important to bring this guest back.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            70.2,
+            65.7
+          ],
+          [
+            "The location",
+            53.9,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            38.0,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            33.7,
+            39.1
+          ],
+          [
+            "The freebies",
+            31.8,
+            30.4
+          ],
+          [
+            "Close connection with local culture",
+            29.5,
+            22.3
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Make the booking flexible",
+        "value": 46.6,
+        "signal": "46.6% choose a property because of flexible booking and stay options.",
+        "tip": "Make free cancellation and flexible dates a visible selling point."
+      },
+      {
+        "title": "Don't make guests hunt for parking",
+        "value": 27.2,
+        "signal": "27.2% would pay extra for onsite parking.",
+        "tip": "Offer parking as a clear, simple add-on at booking."
+      },
+      {
+        "title": "Feature the tub",
+        "value": 13.4,
+        "signal": "13.4% say a deep soaking tub would most elevate their stay.",
+        "tip": "Make sure it comes through clearly in your room photos and descriptions."
+      }
+    ]
+  },
+  {
+    "key": "mexico",
+    "country": "Mexico",
+    "adjective": "Mexican",
+    "flag": "mx",
+    "intro": "In 2027, the Mexican traveller will likely travel domestically and keep it simple with a Standard Room at a familiar chain hotel. They will be influenced by social media or their close circle, and come back for service that lives up to the recommendation.",
+    "tags": [
+      "Homeland adventurer",
+      "Peer-led",
+      "Service-driven"
+    ],
+    "figures": [
+      [
+        "Travel intentions",
+        41.7,
+        29.7,
+        "will travel ‘only’ domestically"
+      ],
+      [
+        "Room preference",
+        50.8,
+        43.3,
+        "will choose a Standard Room"
+      ],
+      [
+        "Accommodation type",
+        26.4,
+        21.6,
+        "will book a chain hotel"
+      ]
+    ],
+    "code": "MEX",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Deferring to their friends and feed",
+        "copy": "Personal recommendations and social media each edge above other usual starting points for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            21.6,
+            27.1
+          ],
+          [
+            "Search engine",
+            18.0,
+            20.1
+          ],
+          [
+            "Friends/family",
+            15.9,
+            12.9
+          ],
+          [
+            "Social media",
+            12.9,
+            9.4
+          ],
+          [
+            "With hotel brands I know",
+            9.4,
+            7.5
+          ],
+          [
+            "AI assistant",
+            8.9,
+            7.3
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "Leveraging comparison tools",
+        "copy": "Before committing, this guest compares options through search and metasearch.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            30.5,
+            39.7
+          ],
+          [
+            "A property’s website",
+            19.1,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            18.2,
+            14.1
+          ],
+          [
+            "Travel agent",
+            11.8,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            9.2,
+            9.1
+          ],
+          [
+            "AI assistant or agent",
+            6.3,
+            5.9
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Service and memory bring guests back",
+        "copy": "Both the people and the experience play a real part in earning this guest’s return visit.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            64.1,
+            65.7
+          ],
+          [
+            "Staff, customer service, communication",
+            49.9,
+            44.3
+          ],
+          [
+            "The location",
+            49.5,
+            51.5
+          ],
+          [
+            "A memorable experience",
+            43.7,
+            39.1
+          ],
+          [
+            "The freebies",
+            27.0,
+            30.4
+          ],
+          [
+            "Loyalty/rewards program",
+            26.2,
+            22.6
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Bundle in the local tour",
+        "value": 17.2,
+        "signal": "17.2% name a combined package with a local tour or activity as the most appealing deal.",
+        "tip": "Pair your offer with a local experience rather than leave it to a separate booking elsewhere."
+      },
+      {
+        "title": "Lead with the deal",
+        "value": 59.8,
+        "signal": "59.8% choose a property because of a good deal or package.",
+        "tip": "Put your best offer front and centre, not buried below room details."
+      },
+      {
+        "title": "Take them on an adventure",
+        "value": 39.2,
+        "signal": "39.2% would pay extra for adventure activities and equipment.",
+        "tip": "Package adventure as a bookable extra at checkout, not something guests have to hunt down themselves."
+      }
+    ]
+  },
+  {
+    "key": "singapore",
+    "country": "Singapore",
+    "adjective": "Singaporean",
+    "flag": "sg",
+    "intro": "In 2027, the Singaporean traveller will head abroad as a family, discovering options through social media before booking on a platform. Strong reviews will win their booking, while a great location will earn their return.",
+    "tags": [
+      "Family-bound",
+      "OTA-native",
+      "Review-driven"
+    ],
+    "figures": [
+      [
+        "Travel intentions",
+        70.0,
+        29.8,
+        "will travel ‘only’ internationally"
+      ],
+      [
+        "Travel companion",
+        48.3,
+        33.7,
+        "will travel with family"
+      ],
+      [
+        "Accommodation type",
+        21.7,
+        16.8,
+        "will book an independent local hotel"
+      ]
+    ],
+    "code": "SGP",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "It starts with a scroll",
+        "copy": "Social discovery is playing an increasingly bigger role for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            29.1,
+            27.1
+          ],
+          [
+            "Search engine",
+            15.5,
+            20.1
+          ],
+          [
+            "Social media",
+            13.2,
+            9.4
+          ],
+          [
+            "Friends/family",
+            12.9,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            7.0,
+            7.5
+          ],
+          [
+            "AI assistant",
+            6.6,
+            7.3
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "Among the strongest for OTA usage",
+        "copy": "One-in-two look no further than established booking platforms.",
+        "max": 60,
+        "rows": [
+          [
+            "OTA/booking site",
+            50.9,
+            39.7
+          ],
+          [
+            "A property’s website",
+            18.4,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            12.4,
+            14.1
+          ],
+          [
+            "Travel agent",
+            7.6,
+            10.4
+          ],
+          [
+            "AI assistant or agent",
+            5.0,
+            5.9
+          ],
+          [
+            "Direct contact (call/email)",
+            3.7,
+            9.1
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Location plays a real role",
+        "copy": "It's a meaningful part of why this guest chooses to come back.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            69.2,
+            65.7
+          ],
+          [
+            "The location",
+            58.9,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            40.9,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            35.7,
+            39.1
+          ],
+          [
+            "The freebies",
+            33.1,
+            30.4
+          ],
+          [
+            "Loyalty/rewards program",
+            22.2,
+            22.6
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Earn the review",
+        "value": 53.1,
+        "signal": "53.1% choose a property because of guest reviews and ratings, above the global average.",
+        "tip": "Actively manage your review presence: respond to comments, address concerns quickly, and keep ratings current."
+      },
+      {
+        "title": "Give time back",
+        "value": 36.4,
+        "signal": "36.4% would pay extra for early check-in or late check-out.",
+        "tip": "Make flexible arrival and departure an easy, visible add-on at booking."
+      },
+      {
+        "title": "Seal the deal with an upgrade",
+        "value": 23.1,
+        "signal": "23.1% name a room upgrade at no extra cost as the most appealing deal.",
+        "tip": "Offer complimentary upgrades as a clear, simple perk to advertise."
+      }
+    ]
+  },
+  {
+    "key": "spain",
+    "country": "Spain",
+    "adjective": "Spanish",
+    "flag": "es",
+    "intro": "In 2027, the Spanish traveller will keep it simple with a Standard Room, while still expecting real value for money in return. For hotels looking to win their booking, offer easy parking, a standout spa, and some flex when it comes to check-in/check-out times.",
+    "tags": [
+      "Spa spender",
+      "Vacation rental booker",
+      "Flexibility seeker"
+    ],
+    "figures": [
+      [
+        "Room preference",
+        56.9,
+        43.3,
+        "will choose a Standard Room"
+      ],
+      [
+        "Travel companion",
+        43.7,
+        34.4,
+        "will travel with their partner/spouse"
+      ],
+      [
+        "Accommodation type",
+        19.8,
+        12.9,
+        "will book a vacation rental"
+      ]
+    ],
+    "code": "ESP",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Almost 1-in-3 will start on an OTA",
+        "copy": "Booking sites edge out other channels as a starting point for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            29.4,
+            27.1
+          ],
+          [
+            "Search engine",
+            21.8,
+            20.1
+          ],
+          [
+            "Friends/family",
+            13.2,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            8.8,
+            7.5
+          ],
+          [
+            "AI assistant",
+            6.9,
+            7.3
+          ],
+          [
+            "Social media",
+            5.8,
+            9.4
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "Travel agents are still in",
+        "copy": "A notable share still prefer to book through an agent.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            39.0,
+            39.7
+          ],
+          [
+            "A property’s website",
+            17.1,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            15.3,
+            14.1
+          ],
+          [
+            "Travel agent",
+            13.2,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            8.3,
+            9.1
+          ],
+          [
+            "AI assistant or agent",
+            3.8,
+            5.9
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Value keeps them coming back",
+        "copy": "Getting real value for money is a major reason this guest will book a repeat stay.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            76.9,
+            65.7
+          ],
+          [
+            "The location",
+            61.2,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            56.7,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            31.8,
+            39.1
+          ],
+          [
+            "The freebies",
+            23.9,
+            30.4
+          ],
+          [
+            "Loyalty/rewards program",
+            19.8,
+            22.6
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Make timing flexible",
+        "value": 21.4,
+        "signal": "21.4% name flexible check-in/check-out times as the most appealing deal.",
+        "tip": "Offer flexible arrival and departure as a clear, advertised perk rather than a special request."
+      },
+      {
+        "title": "Offer parking upfront",
+        "value": 28.6,
+        "signal": "28.6% would pay extra for onsite parking.",
+        "tip": "Showcase parking as a simple add-on at booking."
+      },
+      {
+        "title": "Put the spa on the menu",
+        "value": 40.8,
+        "signal": "40.8% would pay extra for spa services.",
+        "tip": "Feature your spa amenities early in your listing and marketing, rather than leaving guests to discover it upon arrival."
+      }
+    ]
+  },
+  {
+    "key": "thailand",
+    "country": "Thailand",
+    "adjective": "Thai",
+    "flag": "th",
+    "intro": "In 2027, the Thai traveller will likely discover their next B&B stay through social media or travel blogs, then book it on an OTA. Reviews will win their booking, while fine dining and great toiletries will make their stay memorable.",
+    "tags": [
+      "B&B fan",
+      "Feed-influenced",
+      "Rating-reliant"
+    ],
+    "figures": [
+      [
+        "Room preference",
+        61.8,
+        43.3,
+        "will choose a Standard Room"
+      ],
+      [
+        "Accommodation type",
+        20.6,
+        8.1,
+        "will book a B&B"
+      ],
+      [
+        "Travel companion",
+        17.6,
+        14.5,
+        "will travel with friends"
+      ]
+    ],
+    "code": "THA",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Blogs and social remain vital to discovery",
+        "copy": "Travel blogs and social content are both playing a bigger role in discovery for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            25.7,
+            27.1
+          ],
+          [
+            "Search engine",
+            16.9,
+            20.1
+          ],
+          [
+            "Social media",
+            16.2,
+            9.4
+          ],
+          [
+            "Online travel blog",
+            13.0,
+            5.5
+          ],
+          [
+            "Friends/family",
+            9.4,
+            12.9
+          ],
+          [
+            "AI assistant",
+            8.8,
+            7.3
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "Almost half will book via an OTA",
+        "copy": "When it comes to channels, this guest often looks no further than online booking platforms.",
+        "max": 50,
+        "rows": [
+          [
+            "OTA/booking site",
+            47.5,
+            39.7
+          ],
+          [
+            "Search/metasearch engine",
+            19.7,
+            14.1
+          ],
+          [
+            "A property’s website",
+            9.7,
+            16.6
+          ],
+          [
+            "Direct contact (call/email)",
+            7.8,
+            9.1
+          ],
+          [
+            "Travel agent",
+            6.6,
+            10.4
+          ],
+          [
+            "AI assistant or agent",
+            6.2,
+            5.9
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Service and memories are deeply valued",
+        "copy": "Both the people and the experience play a real part in earning this guest’s return visit.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            61.3,
+            65.7
+          ],
+          [
+            "Staff, customer service, communication",
+            52.2,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            47.8,
+            39.1
+          ],
+          [
+            "The freebies",
+            36.2,
+            30.4
+          ],
+          [
+            "The location",
+            31.8,
+            51.5
+          ],
+          [
+            "Uniqueness/style of property",
+            27.0,
+            24.1
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Protect the rating",
+        "value": 55.1,
+        "signal": "55.1% choose a property because of guest reviews and ratings.",
+        "tip": "Actively manage your review presence: respond to comments, address concerns quickly, and keep ratings current."
+      },
+      {
+        "title": "Cross sell with fine dining",
+        "value": 55.8,
+        "signal": "55.8% would pay extra for gourmet dining or wine tasting.",
+        "tip": "Put food and drink front and centre in your on-site offer, ahead of other paid extras."
+      },
+      {
+        "title": "Upgrade the toiletries",
+        "value": 19.6,
+        "signal": "19.6% say a large range of high-end toiletries or wellness products would most elevate their stay.",
+        "tip": "Make sure premium toiletries and wellness touches come through clearly in your room photos and descriptions."
+      }
+    ]
+  },
+  {
+    "key": "uk",
+    "country": "United Kingdom",
+    "adjective": "UK",
+    "flag": "gb",
+    "intro": "In 2027, this guest will book directly on the property's website and step up to a Superior Room. But ultimately what they're after is a place in a great location with a balcony worth the extra expense. And, of course, let’s not forget that proper cup of tea.",
+    "tags": [
+      "Local-leaning",
+      "Tea lover",
+      "Balcony seeker"
+    ],
+    "figures": [
+      [
+        "Travel companion",
+        40.5,
+        34.4,
+        "will travel with their partner/spouse"
+      ],
+      [
+        "Accommodation type",
+        19.7,
+        16.8,
+        "will book an independent local hotel"
+      ],
+      [
+        "Room preference",
+        40.0,
+        34.8,
+        "will choose a Superior Room"
+      ]
+    ],
+    "code": "UK",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "More than a quarter will start in a search engine",
+        "copy": "When compared with most travellers, search engines play a bigger role for this guest.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            29.4,
+            27.1
+          ],
+          [
+            "Search engine",
+            25.4,
+            20.1
+          ],
+          [
+            "Friends/family",
+            15.1,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            10.3,
+            7.5
+          ],
+          [
+            "Social media",
+            3.0,
+            9.4
+          ],
+          [
+            "Online travel blog",
+            3.0,
+            5.5
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "A clear preference for direct-to-site",
+        "copy": "This guest favours booking straight through the property than other travellers.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            39.0,
+            39.7
+          ],
+          [
+            "A property’s website",
+            21.2,
+            16.6
+          ],
+          [
+            "Travel agent",
+            13.1,
+            10.4
+          ],
+          [
+            "Direct contact (call/email)",
+            9.9,
+            9.1
+          ],
+          [
+            "Search/metasearch engine",
+            9.8,
+            14.1
+          ],
+          [
+            "I don't book ahead",
+            5.3,
+            4.2
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Location runs a close second to value",
+        "copy": "Value for money leads, but location isn't far behind as a return-driver.",
+        "max": 80,
+        "rows": [
+          [
+            "Value for money",
+            71.9,
+            65.7
+          ],
+          [
+            "The location",
+            68.7,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            49.9,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            30.3,
+            39.1
+          ],
+          [
+            "The freebies",
+            26.6,
+            30.4
+          ],
+          [
+            "Uniqueness/style of property",
+            20.1,
+            24.1
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Give the deal top billing",
+        "value": 62.3,
+        "signal": "62.3% choose a property because of a good deal or package.",
+        "tip": "Put your best offer front and centre, not buried below room details."
+      },
+      {
+        "title": "Make the balcony a line item",
+        "value": 30.3,
+        "signal": "30.3% would pay extra for a balcony.",
+        "tip": "Highlight private outdoor space in your room photos and price it as a distinct upgrade."
+      },
+      {
+        "title": "Get tea time right",
+        "value": 22.5,
+        "signal": "22.5% say a premium coffee or tea station would most elevate their stay.",
+        "tip": "Make sure it comes through clearly in your room photos and descriptions."
+      }
+    ]
+  },
+  {
+    "key": "usa",
+    "country": "United States",
+    "adjective": "American",
+    "flag": "us",
+    "intro": "It may come as no surprise that this guest, from the land where hotel chains reign supreme, will likely choose an accommodation attached to a name they trust. In this same vein, rewards matter. So, too, does being visible on AI platforms. In 2027, the American traveller may let AI help research and book their stay.",
+    "tags": [
+      "Soloist",
+      "Loyalist",
+      "Deluxe-minded"
+    ],
+    "figures": [
+      [
+        "Travel intentions",
+        44.0,
+        29.7,
+        "will travel only domestically"
+      ],
+      [
+        "Room preference",
+        25.1,
+        14.9,
+        "will choose a Deluxe Room"
+      ],
+      [
+        "Travel companion",
+        23.6,
+        16.1,
+        "will travel solo"
+      ]
+    ],
+    "code": "USA",
+    "journeys": [
+      {
+        "key": "research",
+        "name": "Research",
+        "title": "Brand familiarity shapes the start",
+        "copy": "More than any other traveller, this guest begins their trip with names they know and trust.",
+        "max": 30,
+        "rows": [
+          [
+            "OTA/booking site",
+            22.9,
+            27.1
+          ],
+          [
+            "Search engine",
+            20.3,
+            20.1
+          ],
+          [
+            "Friends/family",
+            12.1,
+            12.9
+          ],
+          [
+            "With hotel brands I know",
+            10.2,
+            7.5
+          ],
+          [
+            "AI assistant",
+            9.3,
+            7.3
+          ],
+          [
+            "Social media",
+            8.3,
+            9.4
+          ]
+        ]
+      },
+      {
+        "key": "booking",
+        "name": "Booking",
+        "title": "AI's growing foothold",
+        "copy": "One-in-ten is now comfortable letting AI handle part of their booking process.",
+        "max": 40,
+        "rows": [
+          [
+            "OTA/booking site",
+            34.3,
+            39.7
+          ],
+          [
+            "A property’s website",
+            16.9,
+            16.6
+          ],
+          [
+            "Search/metasearch engine",
+            14.3,
+            14.1
+          ],
+          [
+            "Direct contact (call/email)",
+            11.2,
+            9.1
+          ],
+          [
+            "AI assistant or agent",
+            9.7,
+            5.9
+          ],
+          [
+            "Travel agent",
+            8.8,
+            10.4
+          ]
+        ]
+      },
+      {
+        "key": "return",
+        "name": "Return",
+        "title": "Loyalty remains in vogue",
+        "copy": "Rewards programs do more to bring this guest back than almost any other traveller.",
+        "max": 70,
+        "rows": [
+          [
+            "Value for money",
+            56.6,
+            65.7
+          ],
+          [
+            "The location",
+            45.7,
+            51.5
+          ],
+          [
+            "Staff, customer service, communication",
+            40.9,
+            44.3
+          ],
+          [
+            "A memorable experience",
+            38.2,
+            39.1
+          ],
+          [
+            "The freebies",
+            37.6,
+            30.4
+          ],
+          [
+            "Loyalty/rewards program",
+            33.1,
+            22.6
+          ]
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "title": "Bank on brand recognition",
+        "value": 47.8,
+        "signal": "47.8% choose a property because it's a trusted hotel brand.",
+        "tip": "Make brand recognition and consistency the centrepiece of your positioning."
+      },
+      {
+        "title": "Sell the bigger bed",
+        "value": 29.6,
+        "signal": "29.6% would pay extra for a larger bed.",
+        "tip": "Offer bed-size upgrades as a clear, bookable option rather than a fixed room spec."
+      },
+      {
+        "title": "Bring in the live music",
+        "value": 30.7,
+        "signal": "30.7% would pay extra for live music performances.",
+        "tip": "Feature live music as part of your on-site experience offer, not just background ambience."
+      }
+    ]
+  }
+]

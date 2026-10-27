@@ -1,0 +1,404 @@
+/* Lead story: the change badge belongs with the statistic in every state. */
+.ib-lead .ib-heading{padding:0}
+.ib-lead .ib-stat-badge{position:static;display:inline-flex;width:max-content;margin:0;white-space:nowrap;font-size:12px;line-height:1.2}
+.ib-lead .ib-current{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.ib-lead .sb-lead-current{display:grid;grid-template-columns:max-content max-content;gap:6px 14px;align-items:center}
+.ib-lead .sb-lead-current>span:first-child{grid-column:1/-1;margin:0}
+.ib-lead .sb-lead-current .ib-stat-badge{align-self:center}
+.ib-lead .sb-lead-values>div:first-child span,.ib-lead .sb-lead-values>div:first-child strong{color:#334155}
+@media(max-width:600px){.ib-lead .sb-lead-current{gap:6px 8px}.ib-lead .sb-lead-values>div{padding-inline:10px}.ib-lead .ib-stat-badge{font-size:12px;padding:5px 7px}}
+/* Shared benchmark markers and corresponding labels. */
+.sb-track em,.sb-benchmark-key i,.au-track em,.au-chart-note i{background:#334155}
+.sb-bullet small,.sb-benchmark-key,.ib-card-3 .ib-chart .sb-gauge .ib-gauge-benchmark,.sr-influence-benchmark,.au-benchmark-label>small:nth-last-child(2),.au-chart-key>span{color:#334155}
+.sb-gauge svg line{stroke:#334155}
+.sb-gauge svg text{fill:#334155}
+/* Secondary chart captions and notes. */
+.sb-source,.sb-chart-note,.au-chart-note,.au-comparison>p,.au-benchmark-label>small:first-child,.sb-mini-bars span,.gen-stat-label{color:#64748b}
+.sb-gauge svg path[stroke="#263547"],.sr-pay-marker{stroke:#334155}
+.au-panel-head>p,.sb-city-years svg{color:#64748b}
+.sr-pay-key>span:first-child{color:#334155}.sr-pay-key>span:first-child i{background:#334155}.sr-pay-key>span+span{color:#64748b}
+.ib-lead .sb-lead-current .ib-stat-badge{font-size:12px;line-height:1.2;color:#176b3b;font-weight:600}
+@media(max-width:600px){
+ .ib-lead .sb-lead-current{grid-template-columns:minmax(0,1fr)}
+ .ib-lead .sb-lead-current .ib-stat-badge{grid-column:1;margin-top:3px}
+ .ib-lead .sb-lead-values strong{font-size:clamp(30px,9vw,40px)}
+ .ib-lead .sb-lead-values>div{min-width:0;flex:1}
+}
+/* Deliberate card hierarchy: prose 16, supporting labels 14, notes 12. */
+#global-headlines .ib-card .sb-insight,#generations .gen-grid .gen-copy,.au-profile .au-journey-copy p,.au-profile .au-recommend-body>p{font-size:16px;line-height:1.45;color:#31425b}
+#generations .gen-grid .gen-lead .gen-copy{color:#fff}
+#global-headlines .ib-card .sb-chart-note,#global-headlines .ib-card .sb-source,.au-profile .au-chart-note,.au-profile .au-comparison>p,#generations .gen-stat-label{font-size:12px;line-height:1.4;color:#64748b}
+#global-headlines .ib-card .sb-bullet small,#global-headlines .ib-card .ib-gauge-benchmark,#global-headlines .ib-card .sr-pay-key,#global-headlines .ib-card .sb-mini-bars span,#global-headlines .ib-card .sb-mini-bars b,#global-headlines .ib-card .sb-city-years span,#global-headlines .ib-card .ib-matrix-preview>small,#global-headlines .ib-card .ib-neighbour-preview>small{font-size:12px;line-height:1.4}
+#global-headlines .ib-card .sb-lollipop-rank,#global-headlines .ib-card .sb-lollipop>b,#global-headlines .ib-card .sr-influence-market>b,#global-headlines .ib-card .sr-influence-circle>b,#global-headlines .ib-card .sr-influence-benchmark,#global-headlines .ib-card .ib-change-cell>span,#global-headlines .ib-card .sb-lead-values>div>span:not(.sb-badge),.au-profile .au-benchmark-label,.au-profile .au-comparison>div{font-size:14px;line-height:1.35}
+#global-headlines .ib-card .sb-badge,#global-headlines .ib-card .ib-stat-badge{font-size:clamp(11px,3cqi,14px);line-height:1.2}
+.au-profile .au-tip{font-size:14px;line-height:1.45;color:#31425b}
+@media(min-width:901px){
+ .ib-lead.is-expanded .sb-lead-body{width:min(100%,640px);margin-inline:auto;align-self:center;gap:24px}
+ .ib-lead.is-expanded .sb-lead-copy .sb-insight{max-width:none;min-height:0;text-align:left}
+ .ib-lead.is-expanded .sb-lead-values{max-width:none;width:100%}
+ .ib-lead.is-expanded .sb-lead-values>div{flex:1;min-width:0}
+}
+
+/* Benchmark strokes remain centred regardless of chart scale. */
+#global-headlines .ib-card .sb-track em{top:50%;height:calc(100% + 8px);width:2px;transform:translate(-50%,-50%)}
+#global-headlines .ib-row:not(.has-open) .ib-preview .sb-track em{display:block}
+#global-headlines .ib-row:not(.has-open) .ib-preview .chart-benchmark-marker{visibility:visible}
+#global-headlines .ib-row.has-open .ib-card:not(.is-expanded) .ib-preview .sr-pay-marker,
+#global-headlines .ib-row.has-open .ib-card:not(.is-expanded) .ib-preview .chart-benchmark-marker{visibility:hidden}
+/* Negative change badges: supplied warm gradient, border and burgundy ink. */
+.sb-badge.is-negative-badge,
+#global-headlines .ib-card .sb-badge.is-negative-badge{background:linear-gradient(132deg,#FDC0BA 0%,#FEF3B4 50%,#FFFD76 100%);border-color:#F7E0BB;color:#6D0608}
+
+/* Comparison layouts: bounded, centred groups with the pill beside its value. */
+.ib-nostalgia .ib-heading{padding-right:0}
+.ib-nostalgia .ib-metric-value{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ib-nostalgia .ib-metric-value>strong{font:400 clamp(34px,10cqi,60px)/1.1 'Spline Sans',sans-serif;letter-spacing:-.05em;color:#006dff}
+.ib-nostalgia .ib-stat-badge{position:static;margin:0;white-space:nowrap}
+.ib-nostalgia .sb-lead-current{display:grid;grid-template-columns:max-content max-content;gap:6px 16px;align-items:center}
+.ib-nostalgia .sb-lead-current>span:first-child{grid-column:1/-1}
+.ib-nostalgia .sb-lead-current>.ib-stat-badge{margin:0}
+.ib-nostalgia .sb-lead-values{max-width:520px;grid-template-columns:1fr 1.4fr}
+.ib-nostalgia .ib-full>.sb-insight,.ib-pay .ib-full>.sb-insight{max-width:60ch;width:100%;margin:0 auto;text-align:center}
+.ib-pay .ib-pay-preview-label{text-align:center}
+.ib-pay .sr-half-gauge>.ib-pay-badge{position:absolute;z-index:2;right:0;top:0;margin:0;white-space:nowrap}
+.ib-pay .ib-full .sr-donut-value>span{top:auto;bottom:44%}
+.ib-lead .sb-lead-body{width:min(100%,640px);margin-inline:auto;align-items:center}
+.ib-lead .sb-lead-copy{order:2;width:100%}
+#global-headlines .ib-lead .sb-lead-copy .sb-insight{max-width:60ch;margin:0 auto;text-align:center}
+.ib-lead .sb-lead-values{order:1;max-width:520px;margin-inline:auto}
+@media(min-width:901px){
+ .ib-lead.is-expanded .sb-lead-values{max-width:520px}
+ .ib-nostalgia .ib-full,.ib-pay .ib-full{gap:24px;justify-content:center}
+ .ib-pay .sr-pay-chart{width:100%;max-width:580px;margin-inline:auto;grid-template-columns:minmax(0,190px) minmax(0,1fr)}
+ .ib-nostalgia .ib-preview.ib-story-summary{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+}
+@media(max-width:600px){
+ .ib-nostalgia .sb-lead-values>div{min-width:0;padding-inline:12px}
+ .ib-nostalgia .sb-lead-current{grid-template-columns:minmax(0,1fr)}
+ .ib-nostalgia .sb-lead-current>.ib-stat-badge{justify-self:start}
+ .ib-nostalgia .sb-lead-values strong{font-size:clamp(30px,9vw,40px)}
+}
+.ib-nostalgia .ib-metric-value{flex-wrap:nowrap;gap:12px}
+.ib-nostalgia .ib-metric-value>strong{font-size:clamp(28px,7cqi,44px)}
+#global-headlines .ib-nostalgia .sb-lead-current>.ib-stat-badge{color:#176b3b}
+@media(max-width:900px){.ib-nostalgia .ib-full,.ib-pay .ib-full{gap:20px}}
+
+/* Dataset titles stay with the data in every visible card state. */
+#global-headlines .ib-card .ib-dataset-title{font:500 14px/1.35 'Source Sans 3',sans-serif;color:#31425b;margin:0 0 14px;max-width:100%;text-wrap:pretty;flex:none}
+#global-headlines .ib-preview>.ib-dataset-title{width:100%;margin-bottom:16px}
+#global-headlines .ib-lead .sb-lead-body>.ib-dataset-title{order:0;text-align:center;margin:0}
+#global-headlines .ib-lead .ib-current>.ib-dataset-title{margin:0}
+#global-headlines .ib-nostalgia .ib-chart>.ib-dataset-title{text-align:center}
+@media(min-width:901px){
+ #global-headlines .ib-row.has-open .ib-card:not(.is-expanded) .ib-dataset-title{font-size:12px;margin-bottom:10px}
+}
+#global-headlines .ib-preview>.ib-dataset-title+div{margin-block:0}
+@media(min-width:901px){@container bento-card (max-width:500px){
+ .ib-cities .sb-city-years>div{display:block;min-width:0}
+ .ib-cities .sb-city-years{grid-template-columns:minmax(0,1fr) 10px minmax(0,1fr);min-width:0}
+}}
+/* Expanded editorial copy uses one centred, readable measure across stories. */
+#global-headlines .ib-card .ib-full>.sb-insight{width:100%;max-width:60ch;margin-inline:auto;text-align:center}
+#global-headlines .ib-card .ib-full .sb-chart-note{text-align:center}
+/* A single joined spending panel, with separators instead of card gutters. */
+#global-headlines .ib-card-3 .ib-chart .sb-spend{gap:0;background:#f6f9ff;border:1px solid #dce6f4;border-radius:20px;overflow:hidden}
+#global-headlines .ib-card-3 .ib-chart .sb-spend>div{background:transparent;border:0;border-radius:0}
+#global-headlines .ib-card-3 .ib-chart .sb-spend>div+div{border-left:1px solid #dce6f4}
+@media(max-width:560px){
+ #global-headlines .ib-card-3 .ib-chart .sb-spend>.sb-gauge{border-bottom:1px solid #dce6f4}
+ #global-headlines .ib-card-3 .ib-chart .sb-spend>.sb-gauge+div{border-left:0}
+}
+#global-headlines .ib-card-3 .ib-chart .sb-spend p{min-height:2.7em}
+#global-headlines .ib-card-3 .ib-chart .sb-spend p{font-size:clamp(12px,2.2cqi,14px);line-height:1.35}
+#global-headlines .ib-discovery .ib-chart>.ib-dataset-title{text-align:center}
+@media(min-width:901px){#global-headlines .ib-growth .ib-full>.sb-insight{max-width:74ch}}
+/* Keep comparison totals aligned to the final dot, with a left-aligned key. */
+#global-headlines .ib-card-1 .ib-full .sb-dot-chart{max-width:620px;margin-inline:auto}
+#global-headlines .ib-card-1 .ib-full .sb-dot-series{min-width:0}
+#global-headlines .ib-card-1 .ib-full .sb-dots{width:100%;max-width:none}
+#global-headlines .ib-card-1 .ib-full .sb-dot-series>div:first-child{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+#global-headlines .ib-card-1 .ib-full .sb-dot-series>div:first-child>span{font:400 clamp(24px,4cqi,30px)/1.1 'Spline Sans',sans-serif;letter-spacing:-.035em;text-align:right}
+#global-headlines .ib-card-1 .ib-full .sb-chart-note{text-align:left}
+@media(min-width:901px){#global-headlines .ib-card-1 .ib-full .sb-dot-chart{column-gap:40px}}
+/* Nostalgia's three states share a reason label and blue memorable-moment emphasis. */
+#global-headlines .ib-nostalgia .ib-memory-emphasis,
+#global-headlines .ib-nostalgia .ib-memory-caption{color:#006dff;font-weight:400}
+#global-headlines .ib-nostalgia .ib-chart>.ib-dataset-title{width:100%;max-width:520px;margin:0 auto 18px;text-align:left;font-weight:600}
+.ib-nostalgia .ib-metric-value>strong{font-size:clamp(28px,8cqi,48px)}
+@media(min-width:901px){
+ .ib-row:not(.has-open) .ib-nostalgia .ib-memory-caption{display:none}
+ .ib-row.has-open .ib-nostalgia:not(.is-expanded) .ib-memory-caption{display:block}
+}
+/* Consistent dataset-heading hierarchy in default, contracted and expanded views. */
+#global-headlines .ib-card .ib-dataset-title,
+#global-headlines .ib-nostalgia .ib-overview-metric>span,
+#global-headlines .ib-pay .ib-pay-preview-label,
+#global-headlines .ib-pay .sr-pay-caption{color:#52657e;font-weight:600}
+#global-headlines .ib-card .ib-full .sb-bullet b,
+#global-headlines .ib-card .ib-full .sb-lollipop>b,
+#global-headlines .ib-card .ib-full .sr-influence-market>b{font-weight:500}
+#global-headlines .ib-memories .ib-full .sb-bullet b{font-weight:400}
+/* Sentence-case pay label; compact preview keeps its year inside the arch. */
+#global-headlines .ib-pay .ib-pay-preview-label{text-transform:none;font-size:14px}
+@media(min-width:901px){
+ .ib-row.has-open .ib-pay:not(.is-expanded) .ib-preview .sr-donut-value>span{top:auto;bottom:44%;font-size:12px}
+}
+/* Expanded explanations are supporting copy, with enough width for natural lines. */
+#global-headlines .ib-card .ib-full .sb-insight{font-size:14px;line-height:1.45}
+#global-headlines .ib-room .ib-full>.sb-insight{max-width:78ch}
+.sr-pay-label-tail{white-space:nowrap}
+
+/* Social-story reference: labels frame the leading stat without crowding narrow tiles. */
+#global-headlines .ib-discovery .ib-overview-metric>span{color:#52657e;font-weight:600}
+#global-headlines .ib-influence .ib-dataset-title{text-align:center}
+@media(min-width:901px){
+ #global-headlines .ib-row.has-open .ib-growth:not(.is-expanded) .ib-preview>.ib-dataset-title,
+ #global-headlines .ib-row.has-open .ib-influence:not(.is-expanded) .ib-preview>.ib-dataset-title{display:none}
+}
+/* Keep each growth pill beside and vertically centred on its percentage in every state. */
+ #global-headlines .ib-growth .sb-bullet>div:first-child{display:grid;grid-template-columns:max-content max-content;align-items:center;justify-content:start;gap:8px 12px}
+ #global-headlines .ib-growth .sb-bullet>div:first-child>b{grid-column:1/-1}
+ #global-headlines .ib-growth .sb-bullet strong{grid-column:1;grid-row:2;margin:0}
+ #global-headlines .ib-growth .sb-bullet .sb-badge{grid-column:2;grid-row:2;margin:0}
+@media(min-width:901px){
+ @container bento-card (max-width:190px){
+  #global-headlines .ib-growth .ib-preview .sb-bullet>div:first-child{column-gap:5px}
+  #global-headlines .ib-growth .ib-preview .sb-bullet strong{font-size:clamp(22px,20cqi,28px);letter-spacing:-.04em}
+  #global-headlines .ib-growth .ib-preview .sb-badge{font-size:11px;padding:2px 5px}
+ }
+}
+@media(min-width:901px){
+ @container bento-card (max-width:130px){
+  #global-headlines .ib-growth .ib-preview{margin-inline:-10px;width:calc(100% + 20px)}
+ }
+}
+
+/* Spending dataset headings match the shared sentence-case label hierarchy. */
+#global-headlines .ib-card-3 .sb-spend p{color:#52657e;font-size:clamp(12px,2.2cqi,14px);font-weight:600;text-transform:none;text-align:center;letter-spacing:normal}
+
+/* Final story: expanded chart keys sit alongside headings; current city rank leads. */
+.ib-expanded-key{display:none}
+#global-headlines .ib-card.is-expanded .ib-heading:has(.ib-expanded-key){display:grid;grid-template-columns:minmax(0,1fr) 170px;column-gap:22px;align-items:start}
+#global-headlines .ib-card.is-expanded .ib-heading:has(.ib-expanded-key) .ib-topline{grid-column:1/-1}
+#global-headlines .ib-card.is-expanded .ib-expanded-key{display:block;font:400 12px/1.4 'Source Sans 3',sans-serif;color:#64748b;text-align:left;letter-spacing:0}
+#global-headlines .ib-city-ranks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+#global-headlines .ib-city-rank-card{min-width:0;background:#f7faff;border:1px solid #dce6f4;border-radius:12px;padding:13px 10px;display:flex;flex-direction:column;align-items:flex-start}
+#global-headlines .ib-city-rank-card h4{font:500 12px/1.3 'Source Sans 3',sans-serif;display:flex;align-items:flex-start;justify-content:space-between;gap:6px;margin:0 0 14px;min-height:32px;width:100%;color:#31425b}
+.ib-city-rank-card h4 img{flex:none;width:18px;height:14px;object-fit:contain}
+.ib-city-rank-year{font-size:12px;color:#52657e}
+#global-headlines .ib-city-current-rank{font:400 clamp(28px,5cqi,38px)/1.1 'Spline Sans',sans-serif;letter-spacing:-.04em;color:#006dff;margin:5px 0 12px}
+.ib-city-climb{display:flex;align-items:center;gap:4px;flex-wrap:wrap;color:#31425b;font-size:12px;line-height:1.35}
+.ib-city-climb img{width:14px;height:14px}.ib-city-climb b{font-weight:600}.ib-city-climb span{flex-basis:100%;color:#64748b}
+#global-headlines .ib-city-previous{width:100%;border-top:1px solid #dce6f4;padding-top:9px;margin:12px 0 0;font:400 12px/1.4 'Source Sans 3',sans-serif;color:#64748b}
+.ib-city-previous b{font-weight:500;color:#334155;white-space:nowrap}
+@media(min-width:901px){@container bento-card (max-width:550px){
+ #global-headlines .ib-card.is-expanded .ib-heading:has(.ib-expanded-key){grid-template-columns:minmax(0,1fr) 135px;column-gap:14px}
+ #global-headlines .ib-city-ranks{gap:6px}
+ #global-headlines .ib-city-rank-card{padding:10px 7px}
+ #global-headlines .ib-city-rank-card h4{flex-wrap:wrap;min-height:54px;margin-bottom:8px}
+}}
+@media(max-width:900px){
+ #global-headlines .ib-heading:has(.ib-expanded-key){display:block}
+ #global-headlines .ib-expanded-key{display:block;margin-top:12px;font:400 12px/1.4 'Source Sans 3',sans-serif;color:#64748b;text-align:left}
+ #global-headlines .ib-city-ranks{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ #global-headlines .ib-city-rank-card{padding:14px}
+ #global-headlines .ib-city-rank-card h4{font-size:14px}
+}
+#global-headlines .ib-destinations .ib-full>.sb-insight,
+#global-headlines .ib-neighbours .ib-full>.sb-insight,
+#global-headlines .ib-cities .ib-full>.sb-insight{max-width:78ch}
+@media(max-width:900px){
+ #global-headlines .ib-card.is-expanded .ib-heading:has(.ib-expanded-key){display:block}
+ #global-headlines .ib-city-rank-card:last-child:nth-child(odd){grid-column:1/-1}
+}
+/* Solo lead: one clear hierarchy for contracted, default and expanded views. */
+.ib-lead .ib-solo-emphasis{color:#006dff}
+.ib-lead .ib-solo-caption{display:none;color:#006dff;font-size:16px;font-weight:400;line-height:1.25}
+#global-headlines .ib-lead .sb-lead-body{width:min(100%,820px)}
+#global-headlines .ib-lead .sb-lead-copy .sb-insight{max-width:88ch;min-height:0;text-align:center}
+#global-headlines .ib-lead .sb-lead-values{width:max-content;max-width:100%;justify-content:center;gap:0}
+#global-headlines .ib-lead .sb-lead-values>div{flex:0 1 auto;padding:0 26px}
+#global-headlines .ib-lead .sb-lead-values>div:first-child{padding-left:0;min-width:145px}
+#global-headlines .ib-lead .sb-lead-values>div:last-child{padding-right:0}
+@media(min-width:901px){
+ .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-lead-preview{justify-content:flex-start;align-items:center}
+ .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-solo-caption{display:block}
+ .ib-lead .ib-lead-preview{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:24px}
+ #global-headlines .ib-lead .sb-lead-body{gap:30px}
+ #global-headlines .ib-lead .sb-lead-current{grid-template-columns:max-content max-content}
+}
+@media(max-width:600px){
+ #global-headlines .ib-lead .sb-lead-values>div{padding-inline:14px}
+ #global-headlines .ib-lead .sb-lead-values>div:first-child{min-width:0;padding-left:0}
+}
+#global-headlines .ib-lead .ib-lead-preview>.sb-insight{font-size:14px;line-height:1.5}
+/* Discreet expansion cues, only on the interactive desktop story cards. */
+@media(min-width:901px){
+ #global-headlines .ib-card:after{content:'';position:absolute;top:0;right:0;width:52px;height:52px;pointer-events:none;z-index:4;background:center/52px 52px no-repeat url("/assets/bento-chevron.svg");transform:rotate(0deg);transition:transform 260ms cubic-bezier(.2,.75,.25,1)}
+ #global-headlines .ib-card.is-expanded:after{transform:rotate(180deg)}
+}
+@media(prefers-reduced-motion:reduce){#global-headlines .ib-card:after{transition:none}}
+
+/* Consolidated feedback: preserve compact states, refine expanded comparisons. */
+#global-headlines .ib-room .sb-market-list{width:100%;max-width:760px;margin:0 auto;border-top:0}
+#global-headlines .ib-room .sb-market-list>div{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;border-bottom:1px solid #dce6f4;padding:9px 0;text-align:left}
+#global-headlines .ib-room .sb-market-list dt{color:#006dff;font:600 14px/1.4 'Source Sans 3',sans-serif}
+#global-headlines .ib-room .sb-market-list dd{color:#31425b;font:400 14px/1.4 'Source Sans 3',sans-serif;margin:0}
+#global-headlines .ib-room .ib-chart>.ib-dataset-title{text-align:center}
+#global-headlines .ib-influence .sr-influence-chart{flex-direction:row;align-items:center;gap:24px;max-width:620px;width:100%;margin:auto}
+#global-headlines .ib-influence .sr-influence-bubbles{flex:1;min-width:0;margin:0;max-width:420px}
+#global-headlines .ib-influence .sr-influence-benchmark{flex-direction:column;flex:none;gap:10px;border-top:0;border-left:1px solid #dce6f4;padding:26px 0 26px 24px;text-align:center;font-size:14px;line-height:1.4}
+#global-headlines .ib-influence .sr-influence-benchmark>span{max-width:9ch}
+#global-headlines .ib-influence .sr-influence-benchmark strong{color:#006dff;font-size:30px;font-weight:400}
+#global-headlines .ib-influence .sr-influence-benchmark small{font-size:.6em}
+#global-headlines .ib-influence .sr-influence-market:first-child .sr-influence-circle strong{font-size:20px}
+#global-headlines .ib-city-ranks{gap:0;border:1px solid #dce6f4;border-radius:12px;overflow:hidden;background:#f7faff}
+#global-headlines .ib-city-rank-card{border:0;border-radius:0;background:none}
+#global-headlines .ib-city-rank-card+.ib-city-rank-card{border-left:1px solid #dce6f4}
+@media(max-width:900px){
+ #global-headlines .ib-city-rank-card:nth-child(odd){border-left:0}
+ #global-headlines .ib-city-rank-card:nth-child(n+3){border-top:1px solid #dce6f4}
+ #global-headlines .ib-influence .sr-influence-chart{gap:12px}
+ #global-headlines .ib-influence .sr-influence-benchmark{padding:15px 0 15px 12px;font-size:12px}
+ #global-headlines .ib-influence .sr-influence-benchmark strong{font-size:25px}
+ #global-headlines .ib-room .sb-market-list>div{gap:16px}
+}
+@media(max-width:500px){
+ #global-headlines .ib-influence .sr-influence-chart{flex-direction:column}
+ #global-headlines .ib-influence .sr-influence-benchmark{flex-direction:row;border-left:0;border-top:1px solid #dce6f4;padding:14px 0 0;width:100%;gap:16px}
+ #global-headlines .ib-influence .sr-influence-benchmark>span{max-width:none}
+}
+.gen-grid .gen-stat-label{font-size:14px;font-weight:600}
+/* Mobile comparison cards: corner badges and readable single-column city list. */
+@media(max-width:900px){
+ #global-headlines :is(.ib-lead,.ib-nostalgia){position:relative;padding-top:60px}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .ib-full,
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .ib-chart,
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-body,
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values,
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-current{position:static}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .ib-full .ib-stat-badge{position:absolute;top:20px;right:24px;left:auto;bottom:auto;margin:0;transform:none;z-index:2;font-size:12px;padding:5px 9px}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:none;text-align:left;gap:0}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values>div{display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-width:0;padding:0 12px}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values>div:first-child{padding-left:0}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values strong{font-size:clamp(32px,9vw,44px);line-height:1.1}
+ #global-headlines .ib-lead .sb-lead-copy{order:0}
+ #global-headlines .ib-lead .sb-lead-values{order:1}
+ #global-headlines .ib-lead .sb-lead-copy .sb-insight,
+ #global-headlines .ib-nostalgia .ib-full>.sb-insight{text-align:left;max-width:none;width:100%;margin:0}
+ #global-headlines .ib-nostalgia .ib-chart>.ib-dataset-title{display:none}
+ #global-headlines .ib-nostalgia .ib-full>.sb-insight{margin-top:24px}
+ #global-headlines .ib-city-ranks{grid-template-columns:minmax(0,1fr)}
+ #global-headlines .ib-city-rank-card+.ib-city-rank-card{border-left:0;border-top:1px solid #dce6f4}
+ #global-headlines .ib-city-rank-card:last-child:nth-child(odd){grid-column:auto}
+}
+@media(max-width:900px){
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values>div>span:not(.ib-stat-badge){margin:0;line-height:1.35}
+ #global-headlines :is(.ib-lead,.ib-nostalgia) .sb-lead-values>div>strong{font-size:clamp(32px,9vw,44px);line-height:1.1;margin:0}
+}
+/* Right-edge change pills, retaining the existing contracted summaries. */
+#global-headlines :is(.ib-growth .ib-full,.ib-memories .ib-full,.ib-row:not(.has-open) .ib-memories .ib-preview) .sb-bullet>div:first-child{
+ display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:center;justify-content:stretch;gap:8px 12px;width:100%
+}
+#global-headlines :is(.ib-growth .ib-full,.ib-memories .ib-full,.ib-row:not(.has-open) .ib-memories .ib-preview) .sb-bullet>div:first-child>b{grid-column:1/-1;grid-row:1}
+#global-headlines :is(.ib-growth .ib-full,.ib-memories .ib-full,.ib-row:not(.has-open) .ib-memories .ib-preview) .sb-bullet>div:first-child>strong{grid-column:1;grid-row:2;margin:0;justify-self:start}
+#global-headlines :is(.ib-growth .ib-full,.ib-memories .ib-full,.ib-row:not(.has-open) .ib-memories .ib-preview) .sb-bullet>div:first-child>.sb-badge{grid-column:2;grid-row:2;justify-self:end;position:static;margin:0}
+#global-headlines .ib-room .ib-full .ib-chart>.ib-dataset-title{width:100%;max-width:760px;margin-inline:auto;text-align:left}
+/* Approved badge alignment: expanded comparisons and the default Asia summary only. */
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row :is(.ib-memories,.ib-growth).ib-card .ib-full .sb-bullet>div:first-child>b{grid-column:1;grid-row:1;min-width:0}
+ body:not(.static-export) #global-headlines .ib-row :is(.ib-memories,.ib-growth).ib-card .ib-full .sb-bullet>div:first-child>.sb-badge{grid-column:2;grid-row:1;align-self:center;justify-self:end}
+ body:not(.static-export) #global-headlines .ib-row :is(.ib-memories,.ib-growth).ib-card .ib-full .sb-bullet>div:first-child>strong{grid-column:1/-1;grid-row:2}
+ body:not(.static-export) #global-headlines .ib-memories .ib-full .sb-market-bars{column-gap:40px}
+ body:not(.static-export) #global-headlines .ib-growth .ib-full .sb-market-bars{column-gap:30px}
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-destinations .ib-preview .ib-rank-summary{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:start;gap:12px 8px;width:100%}
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-destinations .ib-preview .ib-rank-summary>strong{grid-column:1;grid-row:1}
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-destinations .ib-preview .ib-rank-summary>b{grid-column:1/-1;grid-row:2}
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-destinations .ib-preview .ib-rank-summary>.sb-badge{grid-column:2;grid-row:1;justify-self:end;align-self:start;margin:0}
+}
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row.has-open .ib-destinations:not(.is-expanded) .ib-rank-summary>.sb-badge{order:-1;margin:0 0 8px;align-self:flex-start}
+}
+/* Restore the solo audience labels and balanced expanded comparison spacing. */
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-spend>div{height:196px;padding:16px 12px;box-sizing:border-box}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-spend>.sb-gauge{padding:16px 12px!important}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-gauge svg{top:56px;height:105px}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-gauge .ib-gauge-benchmark{top:54px;left:16px;right:auto;line-height:16px}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-gauge>strong{bottom:34px;line-height:1.1}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-gauge>span:last-child{bottom:12px;line-height:16px}
+ body:not(.static-export) #global-headlines .ib-card-3 .ib-full .sb-mini-bars>div+div{margin-top:14px}
+}
+#global-headlines .ib-card-3 .ib-full .sb-mini-bars b{color:#31425b;font-size:12px;font-weight:600;line-height:16px}
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-card-3 .ib-preview .sb-gauge p{font-size:14px;font-weight:600;line-height:1.35;color:#52657e}
+}
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-influence.is-expanded .ib-full>.sb-insight{max-width:78ch}
+}
+/* Nostalgia: separate blue metric subtitle from the grey explanatory copy. */
+body:not(.static-export) #global-headlines .ib-nostalgia .sb-insight .ib-memory-emphasis{color:inherit;font-weight:inherit}
+body:not(.static-export) #global-headlines .ib-nostalgia .ib-memory-caption{display:block;color:#006dff;font-size:14px;font-weight:400;line-height:1.35}
+body:not(.static-export) #global-headlines .ib-nostalgia .ib-dataset-title>.ib-memory-caption{margin-top:6px}
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row.has-open .ib-nostalgia:not(.is-expanded) .ib-overview-metric{width:100%}
+ body:not(.static-export) #global-headlines .ib-row.has-open .ib-nostalgia:not(.is-expanded) .ib-metric-value{width:100%;justify-content:space-between;align-items:center;gap:8px}
+ body:not(.static-export) #global-headlines .ib-row.has-open .ib-nostalgia:not(.is-expanded) .ib-stat-badge{position:static;margin:0;flex:none}
+}
+/* Centre the default memories chart as one block; keep its internal labels left aligned. */
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-memories .ib-preview{align-items:center}
+ body:not(.static-export) #global-headlines .ib-row:not(.has-open) .ib-memories .ib-preview>:is(.ib-dataset-title,.sb-market-bars){width:100%;max-width:320px;margin-inline:auto;text-align:left}
+}
+/* The destination keys are visible only while these cards are expanded. */
+body:not(.static-export) #global-headlines .ib-card:not(.is-expanded) .ib-expanded-key{display:none}
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-card.is-expanded .ib-heading:has(.ib-expanded-key){grid-template-columns:minmax(0,1fr) minmax(170px,31%);column-gap:22px;padding-right:26px}
+ body:not(.static-export) #global-headlines .ib-card.is-expanded .ib-expanded-key{margin:0;font-size:12px;line-height:1.4;font-weight:400;color:#64748b;text-wrap:pretty}
+}
+/* Mobile comparison badges align at the top of the percentage row. */
+@media(max-width:900px){
+ body:not(.static-export) #global-headlines :is(.ib-card-2,.ib-memories,.ib-growth) .ib-full .sb-bullet>div:first-child{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:start;gap:8px 12px;width:100%;margin-bottom:6px}
+ body:not(.static-export) #global-headlines :is(.ib-card-2,.ib-memories,.ib-growth) .ib-full .sb-bullet>div:first-child>b{grid-column:1/-1;grid-row:1;justify-self:start;min-width:0}
+ body:not(.static-export) #global-headlines :is(.ib-card-2,.ib-memories,.ib-growth) .ib-full .sb-bullet>div:first-child>.sb-badge{grid-column:2;grid-row:2;align-self:start;justify-self:end;position:static;margin:0}
+ body:not(.static-export) #global-headlines :is(.ib-card-2,.ib-memories,.ib-growth) .ib-full .sb-bullet>div:first-child>strong{grid-column:1;grid-row:2;justify-self:start;margin:0}
+}
+/* Scale only the typography; preserve the circles' existing intrinsic layout. */
+body:not(.static-export) #global-headlines .ib-influence .sr-influence-market .sr-influence-circle strong{font-size:clamp(22px,6.6cqi,32px);line-height:1;white-space:nowrap}
+body:not(.static-export) #global-headlines .ib-influence .sr-influence-market:first-child .sr-influence-circle strong{font-size:clamp(16px,4.5cqi,20px)}
+body:not(.static-export) #global-headlines .ib-influence .sr-influence-market:nth-child(2) .sr-influence-circle strong{font-size:clamp(20px,6cqi,29px)}
+body:not(.static-export) #global-headlines .ib-influence .sr-influence-market .sr-influence-circle strong small{font-size:max(12px,.6em);line-height:1}
+/* Mobile Influencers uses the same bubble component and entrance as Not a youth trend. */
+#global-headlines .ib-influence-mobile{display:none}
+@media(max-width:900px){
+ body:not(.static-export) #global-headlines .ib-influence .sr-influence-chart{flex-direction:column;align-items:stretch;gap:20px;max-width:none;width:100%}
+ body:not(.static-export) #global-headlines .ib-influence .sr-influence-bubbles{display:none}
+ body:not(.static-export) #global-headlines .ib-influence .ib-influence-mobile{display:flex;flex:none;align-items:center;width:100%;max-width:350px;min-height:0;margin:0 auto;gap:1%}
+ body:not(.static-export) #global-headlines .ib-influence .ib-influence-mobile b{font-size:clamp(12px,3.5cqi,14px);line-height:1.2;margin-top:8px}
+ body:not(.static-export) #global-headlines .ib-influence .sr-influence-benchmark{flex-direction:row;border-left:0;border-top:1px solid #dce6f4;padding:14px 0 0;width:100%;gap:16px}
+ body:not(.static-export) #global-headlines .ib-influence .sr-influence-benchmark>span{max-width:none}
+}
+/* Contracted solo lead: one left-aligned stack with a prominent percentage. */
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-heading h3{font-size:clamp(20px,11cqi,28px);max-width:11ch;text-wrap:initial;line-height:1.16}
+ body:not(.static-export) #global-headlines .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-lead-preview{align-items:flex-start;justify-content:center}
+ body:not(.static-export) #global-headlines .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-current{width:100%;align-items:flex-start;text-align:left;gap:16px}
+ body:not(.static-export) #global-headlines .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-current>strong{font-size:clamp(40px,30cqi,68px);line-height:1;letter-spacing:-.05em}
+ body:not(.static-export) #global-headlines .ib-row-top.has-open .ib-lead:not(.is-expanded) .ib-current>.ib-stat-badge{margin:0;align-self:flex-start}
+}
+
+/* Southeast Asia expanded chart: the dataset title already provides the context. */
+body:not(.static-export) #global-headlines .ib-growth .ib-full .sb-chart-note{display:block;width:100%;text-align:right;grid-column:1/-1}
+/* Social discovery: supporting previous-year comparisons match the small chart copy. */
+body:not(.static-export) #regional-discovery .ib-full .sb-channel-pair small{font-size:13px;line-height:1.4}
+
+/* Keep restored destination legends at the top-right of expanded cards. */
+@media(min-width:901px){
+ body:not(.static-export) #global-headlines :is(#challengers-destinations,#challengers-neighbours).is-expanded .ib-expanded-key{justify-self:end;width:170px}
+}
+
+/* Mobile solo-travel insight: separate circles from continuous prose. */
+@media(max-width:900px){
+ #global-headlines #solo-detail-0 .ib-full>.sb-insight{margin-top:28px;width:100%;max-width:none;text-wrap:pretty}
+ #global-headlines #solo-detail-0 .sb-insight br{display:none}
+}

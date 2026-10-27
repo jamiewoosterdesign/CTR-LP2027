@@ -1,0 +1,12 @@
+/* Preserve readable content and stable hover geometry instead of nested scrolling. */
+@media(min-width:901px){
+ .sb-story .ib-grid,.sb-story .ib-grid.ib-single-row{height:auto}
+ .sb-story .ib-grid .ib-row{height:var(--bento-row-height,calc((var(--ib-h) - 16px)/2));flex-shrink:0}
+ .sb-story .ib-card.is-expanded .ib-full{overflow:visible;scrollbar-width:none}
+ .bento-measure,.bento-measure *{transition:none!important;animation:none!important}
+ .bento-measure .ib-card>.ib-full{height:max-content;min-height:max-content;align-self:start;overflow:visible}
+}
+/* Measurement must outrank the live card's !important width transition. */
+@media(min-width:901px){
+ .sb-story .bento-measure .ib-card,.sb-story .bento-measure .ib-card *{transition:none!important;animation:none!important}
+}

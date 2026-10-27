@@ -1,0 +1,941 @@
+button, select, a{font-size:inherit}
+.page-switch select{font-size:16px}
+.kicker{font-size:16px}
+h1{font-size:max(16px, clamp(48px, 5.1vw, 78px))}
+.lead{font-size:max(16px, clamp(17px, 1.4vw, 21px))}
+.edition{font-size:16px}
+.country h2{font-size:29px}
+.country-detail{font-size:15px}
+.country-links a{font-size:16px}
+.next h2{font-size:max(16px, clamp(38px, 4.4vw, 62px))}
+.next p{font-size:19px}
+.country-list span{font-size:16px}
+@media (max-width: 560px){
+h1{font-size:47px}
+.lead{font-size:17px}
+.country h2{font-size:27px}
+.country-links a{font-size:16px}
+}
+@media (min-width: 781px) and (max-height: 860px){
+.intro h1{font-size:max(16px, clamp(48px, 7.5vh, 62px))}
+.lead{font-size:18px}
+}
+.geo-marker span{font-size:16px}
+.popover-close{font-size:26px}
+.popover-kicker{font-size:16px}
+.popover-heading h2{font-size:24px}
+#country-description{font-size:16px}
+.country-popover .future-link{font-size:15px}
+.country-popover .global-link{font-size:16px}
+@media (min-width: 1121px) and (max-height: 860px){
+h1{font-size:max(16px, clamp(54px, 7.8vh, 68px))}
+.lead{font-size:18px}
+}
+.report-brand{font-size:25px}
+.report-brand > span{font-size:16px}
+.report-nav > nav a{font-size:15px}
+.report-cta{font-size:15px}
+.page-switch select, .topbar select{font-size:16px}
+.gh-eyebrow{font-size:16px}
+.gh-section h2, .report-coming h2, .report-playbook h2{font-size:max(16px, clamp(40px, 4.4vw, 66px))}
+.gh-section-intro p:not(.gh-eyebrow){font-size:20px}
+.gh-concept-label{font-size:16px}
+.gh-story-nav a{font-size:16px}
+.gh-story-nav a > span:first-child{font-size:16px}
+.gh-story h3{font-size:max(16px, clamp(32px, 3vw, 46px))}
+.gh-deck{font-size:18px}
+.gh-metric{font-size:20px}
+.gh-comparison > div > span{font-size:16px}
+.gh-comparison strong{font-size:max(16px, clamp(46px, 4.5vw, 68px))}
+.gh-comparison strong small{font-size:max(16px, 0.5em)}
+.gh-arrow{font-size:25px}
+.gh-delta{font-size:16px}
+.gh-source{font-size:16px}
+.gh-story h4{font-size:19px}
+.gh-chart-sub{font-size:16px}
+.gh-bar-row{font-size:16px}
+.gh-support strong{font-size:42px}
+.gh-support p{font-size:16px}
+.gh-takeaway-icon{font-size:29px}
+.gh-takeaway .gh-eyebrow{font-size:16px}
+.gh-takeaway p:last-child{font-size:16px}
+.report-coming h2{font-size:38px}
+.report-coming-grid span{font-size:16px}
+.report-coming-grid h3{font-size:23px}
+.report-coming-grid p{font-size:16px}
+.report-playbook > div > p:not(.gh-eyebrow){font-size:18px}
+.report-pdf{font-size:16px}
+.report-download h3{font-size:26px}
+.report-download button{font-size:inherit}
+.report-footer{font-size:16px}
+@media (max-width: 1150px){
+.report-signals .gh-story-nav a{font-size:15px}
+}
+@media (max-width: 900px){
+.report-nav > nav a{font-size:16px}
+.gh-story-nav a{font-size:15px}
+}
+@media (max-width: 600px){
+.report-brand{font-size:23px}
+.report-cta{font-size:16px}
+.gh-section h2{font-size:44px}
+.gh-section-intro p:not(.gh-eyebrow){font-size:18px}
+.gh-story h3{font-size:35px}
+.gh-deck{font-size:17px}
+.gh-eyebrow{font-size:16px}
+.gh-comparison strong{font-size:66px}
+.gh-story-nav a{font-size:16px}
+.report-playbook h2{font-size:43px}
+.report-signals .micro{font-size:16px}
+}
+.globe-help-button{font-size:17px}
+.globe-help-text{font-size:16px}
+.report-signals .globe-interaction-hint{font-size:16px}
+.globe-interaction-hint{font-size:16px}
+.globe-scroll-hint{font-size:16px}
+@media (max-width: 700px){
+.globe-interaction-hint{font-size:16px}
+}
+.report-signals .signals-opening .gh-nav-frame .gh-story-nav a{font-size:16px}
+@media (max-width: 600px){
+.report-signals .signals-opening .gh-nav-frame .gh-story-nav a{font-size:16px}
+}
+.report-signals .gh-sticky-title{font-size:18px}
+.report-signals .gh-nav-frame.is-sticky .gh-story-nav a{font-size:16px}
+@media (max-width: 1100px){
+.report-signals .gh-sticky-title{font-size:16px}
+}
+@media (max-width: 900px){
+.report-nav > nav a{font-size:16px}
+}
+@media (max-width: 600px){
+.report-nav .report-brand{font-size:21px}
+.report-nav .report-cta{font-size:16px}
+.report-signals .gh-sticky-title{font-size:16px}
+.report-signals .gh-nav-frame.is-sticky .gh-story-nav a{font-size:16px}
+}
+.gh-comparison strong small, .gh-support strong small{font-size:max(16px, 0.5em)}
+.gh-delta .delta-plus{font-size:19px}
+.gh-delta strong{font-size:17px}
+.gh-delta .delta-percent{font-size:15px}
+.report-signals .gh-story-nav a{font-size:16px}
+.report-regions .gh-story h3{font-size:max(16px, clamp(28px, 2.5vw, 36px))}
+.report-regions .gh-deck{font-size:16px}
+.report-regions .gh-metric{font-size:18px}
+.report-regions .gh-comparison strong{font-size:max(16px, clamp(40px, 3.5vw, 54px))}
+.report-regions .gh-takeaway h4{font-size:18px}
+.gh-more summary{font-size:15px}
+@media (min-width: 781px){
+.report-regions .intro h1{font-size:max(16px, clamp(36px, 6.5vh, 72px))}
+.report-regions .intro .lead{font-size:max(16px, clamp(16px, 2vh, 20px))}
+.report-regions .country h2{font-size:26px}
+}
+@media (min-width: 1121px){
+.report-signals .hero h1{font-size:max(16px, clamp(38px, min(5vw, 7.7vh), 78px))}
+.report-signals .lead{font-size:max(16px, clamp(16px, 2.1vh, 20px))}
+}
+@media (min-width: 781px) and (max-height: 650px){
+.report-regions .intro h1{font-size:36px}
+.report-signals .hero h1{font-size:40px}
+.report-signals .hero .kicker{font-size:16px}
+.report-signals .hero .lead{font-size:16px}
+}
+@media (max-width: 900px){
+.report-signals .gh-story-nav a{font-size:16px}
+}
+@media (max-width: 600px){
+.report-regions .gh-comparison strong{font-size:52px}
+.report-signals .gh-story-nav a{font-size:16px}
+.report-signals .hero h1{font-size:43px}
+.report-regions .hero h1{font-size:40px}
+.gh-comparison strong{font-size:54px}
+.gh-support strong{font-size:36px}
+}
+@media (max-width: 700px){
+.report-signals .hero h1{font-size:max(16px, clamp(34px, 9.2vw, 38px))}
+.report-signals .hero .lead{font-size:max(16px, clamp(15px, 4vw, 17px))}
+.report-signals .hero .kicker{font-size:max(16px, clamp(11px, 3vw, 13px))}
+.report-signals .copy > .actions a{font-size:max(16px, clamp(12px, 3.4vw, 14px))}
+.report-signals .copy > .actions .primary::after{font-size:16px}
+.report-signals .hero-inner > .micro-mobile{font-size:16px}
+}
+.report-nav .report-brand > .report-brand-title{font-size:15px}
+.report-nav .report-brand-title b{font-size:16px}
+.report-nav .report-cta{font-size:16px}
+.report-nav.is-compact .report-brand > .report-brand-title{font-size:16px}
+.report-nav.is-compact .report-brand-title b{font-size:inherit}
+@media (max-width: 1250px){
+.report-nav .report-brand > .report-brand-title{font-size:16px}
+.report-nav > nav a{font-size:16px}
+}
+@media (max-width: 900px){
+.report-nav .report-brand > .report-brand-title, .report-nav.is-compact .report-brand > .report-brand-title{font-size:16px}
+.report-nav .report-brand-title b, .report-nav.is-compact .report-brand-title b{font-size:inherit}
+.report-nav .report-cta{font-size:16px}
+}
+@media (max-width: 440px){
+.report-nav .report-brand > .report-brand-title, .report-nav.is-compact .report-brand > .report-brand-title{font-size:16px}
+.report-nav .report-cta{font-size:16px}
+}
+.report-side-nav nav p{font-size:16px}
+.report-side-nav nav a{font-size:16px}
+.profile-country-nav nav a, .profile-country-nav nav button{font-size:16px}
+.story-details summary{font-size:16px}
+.profile-portrait span{font-size:18px}
+.profile-intro h2{font-size:max(16px, clamp(43px, 5vw, 72px))}
+.profile-lead{font-size:19px}
+.profile-tags span{font-size:16px}
+.profile-note{font-size:16px}
+.profile-signal .signal-icon{font-size:22px}
+.profile-signal > p{font-size:16px}
+.profile-signal > strong{font-size:max(16px, clamp(34px, 3.8vw, 54px))}
+.profile-signal h3{font-size:20px}
+.profile-signal small{font-size:16px}
+.profile-panel-heading h3, .profile-opportunity h3{font-size:max(16px, clamp(32px, 3.4vw, 50px))}
+.profile-panel-heading > p{font-size:16px}
+.journey-panel h4{font-size:max(16px, clamp(27px, 3vw, 40px))}
+.journey-panel > div:last-child > p:not(.gh-eyebrow){font-size:16px}
+.journey-panel li{font-size:16px}
+.journey-orbit span{font-size:17px}
+.gauge-centre small{font-size:16px}
+.gauge-centre strong{font-size:30px}
+.gauge-centre em{font-size:16px}
+.priority-item > span{font-size:16px}
+.priority-item h4{font-size:18px}
+.priority-item p{font-size:16px}
+.priority-item p strong{font-size:15px}
+.profile-more > div{font-size:16px}
+.profile-more p::before{font-size:16px}
+.profile-more p strong{font-size:15px}
+.profile-opportunity > div > p:last-child{font-size:17px}
+.profile-opportunity li span{font-size:16px}
+.profile-opportunity li strong{font-size:17px}
+.profile-opportunity li p{font-size:16px}
+@media (max-width: 900px){
+.side-nav-toggle span{font-size:16px}
+.side-nav-toggle strong{font-size:16px}
+}
+@media (max-width: 600px){
+.profile-intro h2{font-size:40px}
+.profile-lead{font-size:17px}
+.profile-panel-heading h3, .profile-opportunity h3{font-size:32px}
+.journey-tabs button span{font-size:16px}
+}
+@media (max-width: 1180px) and (min-width: 901px){
+.profile-signal > strong{font-size:36px}
+}
+@media (max-width: 420px){
+.profile-signal > strong{font-size:36px}
+.profile-signal h3{font-size:18px}
+}
+.country-popover .profile-insight-link{font-size:15px}
+.country-links .future-country-link{font-size:16px}
+.report-globe-light .globe-light-hero .kicker{font-size:16px}
+.report-globe-light .globe-light-hero h1{font-size:max(16px, clamp(44px, min(4.6vw, 7.2vh), 68px))}
+.report-globe-light .globe-light-hero .lead{font-size:20px}
+.report-globe-light .globe-light-hero .micro{font-size:16px}
+@media (max-width: 700px){
+.report-globe-light .globe-light-hero h1{font-size:max(16px, clamp(36px, 9vw, 46px))}
+.report-globe-light .globe-light-hero .lead{font-size:17px}
+.report-globe-light .globe-light-hero .primary, .report-globe-light .globe-light-hero .ghost{font-size:16px}
+.report-globe-light .globe-light-hero .micro-mobile{font-size:16px}
+}
+.hx-label{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .headline-explorer h4{font-size:max(16px, clamp(22px, 2.2vw, 30px))}
+.hx-options button{font-size:16px}
+.hx-caption{font-size:15px}
+.hx-stat .gh-eyebrow{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-metric{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-comparison strong{font-size:46px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-source{font-size:16px}
+@media (max-width: 1100px){
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-comparison strong{font-size:38px}
+}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta{font-size:20px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta small{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-comparison > div > span{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-comparison strong{font-size:42px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-source{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-eyebrow{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-metric{font-size:18px}
+:is(.report-globe-light, .report-headline-explorers) .headline-explorer h4{font-size:26px}
+:is(.report-globe-light, .report-headline-explorers) .hx-label{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-options button{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-caption{font-size:16px}
+.hx-chart-note{font-size:16px}
+.hx-reading{font-size:16px}
+@media (max-width: 1100px){
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta{font-size:16px}
+}
+@media (max-width: 760px){
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-metric{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat .gh-comparison strong{font-size:36px}
+}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta{font-size:17px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta .delta-plus{font-size:18px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta strong{font-size:20px}
+:is(.report-globe-light, .report-headline-explorers) .hx-stat > .gh-delta .delta-percent{font-size:17px}
+:is(.report-globe-light, .report-headline-explorers) .gh-more .support-source{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .journey-tabs button{font-size:16px}
+:is(.report-globe-light, .report-headline-explorers) .journey-tabs button span{font-size:inherit}
+.sb-nav a{font-size:16px}
+.sb-section-title > p:first-child{font-size:16px}
+.sb-section-title h2{font-size:48px}
+.sb-section-title > p:last-child{font-size:20px}
+.sb-story-hero h2{font-size:max(16px, clamp(62px, 6vw, 96px))}
+.sb-story-hero > div > p{font-size:26px}
+.sb-editorial-hero h2{font-size:70px}
+.sb-index{font-size:16px}
+.sb-card h3{font-size:38px}
+.sb-insight{font-size:17px}
+.sb-years span{font-size:15px}
+.sb-years strong{font-size:max(16px, clamp(64px, 6.5vw, 100px))}
+.sb-badge{font-size:16px}
+.sb-source{font-size:16px}
+.sb-bubbles strong{font-size:43px}
+.bubble-z strong{font-size:30px}
+.sb-bubbles small{font-size:18px}
+.sb-bubbles b{font-size:15px}
+.sb-dot-series > div:first-child{font-size:16px}
+.sb-dot-series span{font-size:24px}
+.sb-chart-note{font-size:16px}
+.sb-bullet b{font-size:17px}
+.sb-bullet strong{font-size:34px}
+.sb-bullet .sb-badge{font-size:16px}
+.sb-bullet small{font-size:16px}
+.sb-spend p{font-size:16px}
+.sb-gauge strong{font-size:62px}
+.sb-gauge span{font-size:16px}
+.sb-mini-stat strong{font-size:48px}
+.sb-mini-bars > div{font-size:16px}
+.sb-big-stat > span{font-size:15px}
+.sb-big-stat strong{font-size:90px}
+.sb-big-stat p{font-size:18px}
+.sb-market-list > div{font-size:18px}
+.sb-channel-pair strong{font-size:90px}
+.sb-ranking{font-size:18px}
+.sb-ranking caption{font-size:15px}
+.sb-ranking thead{font-size:16px}
+.sb-footer{font-size:16px}
+@media (max-width: 1100px){
+.sb-card h3{font-size:29px}
+.sb-years strong{font-size:75px}
+.sb-bubbles strong{font-size:30px}
+.bubble-z strong{font-size:23px}
+.sb-bubbles small{font-size:16px}
+.sb-bubbles b{font-size:16px}
+.sb-gauge strong{font-size:48px}
+.sb-mini-stat strong{font-size:35px}
+.sb-mini-bars > div{font-size:16px}
+}
+@media (max-width: 900px){
+.sb-nav-toggle{font-size:16px}
+.sb-section-title h2{font-size:40px}
+.sb-story-hero h2{font-size:68px}
+.sb-editorial-hero h2{font-size:48px}
+.sb-story-hero > div > p{font-size:20px}
+.sb-card h3{font-size:32px}
+.sb-years strong{font-size:70px}
+.sb-bubbles strong{font-size:39px}
+.bubble-z strong{font-size:27px}
+.sb-bubbles small{font-size:15px}
+.sb-bubbles b{font-size:16px}
+.sb-gauge strong{font-size:62px}
+.sb-ranking{font-size:16px}
+.sb-channel-pair strong{font-size:65px}
+.sb-mini-stat strong{font-size:43px}
+.sb-mini-bars > div{font-size:16px}
+}
+@media (max-width: 420px){
+.sb-years strong{font-size:55px}
+.sb-gauge strong{font-size:54px}
+.sb-mini-stat strong{font-size:35px}
+}
+.sb-share-key{font-size:16px}
+.sb-benchmark-key{font-size:16px}
+.sb-destination-lead > span{font-size:105px}
+.sb-destination-lead h4{font-size:28px}
+.sb-destination-lead strong{font-size:48px}
+.sb-destination-pairs span{font-size:16px}
+.sb-destination-pairs h4{font-size:20px}
+.sb-destination-pairs strong{font-size:36px}
+.sb-destination-pairs p{font-size:16px}
+.rank-year{font-size:15px}
+.rank-label{font-size:16px}
+.sb-story .sb-market-list dt{font-size:16px}
+.sb-story .sb-market-list dd{font-size:23px}
+.sb-story .sb-challenger-list dt b{font-size:30px}
+.sb-story .sb-challenger-list dd{font-size:20px}
+.sb-mini-bars b, .sb-mini-bars span{font-size:16px}
+@media (max-width: 900px){
+.sb-card h3{font-size:31px}
+.sb-insight{font-size:17px}
+.sb-photo-hero > .sb-index{font-size:16px}
+.sb-photo-hero h2{font-size:62px}
+.sb-photo-hero > div > p{font-size:21px}
+.sb-editorial-hero > .sb-index{font-size:16px}
+.sb-editorial-hero h2{font-size:max(16px, clamp(35px, 8vw, 52px))}
+.sb-years strong{font-size:max(16px, clamp(38px, 10vw, 65px))}
+.sb-bullet > div:first-child > b{font-size:16px}
+.sb-bullet > div:first-child > strong{font-size:30px}
+.sb-bubbles strong{font-size:max(16px, clamp(25px, 7vw, 39px))}
+.sb-bubbles small{font-size:16px}
+.bubble-z strong{font-size:max(16px, clamp(20px, 5vw, 27px))}
+.sb-bubbles b{font-size:16px}
+.sb-gauge strong{font-size:54px}
+.sb-mini-stat strong{font-size:max(16px, clamp(32px, 9vw, 43px))}
+.sb-mini-stat p{font-size:16px}
+.sb-channel-pair strong{font-size:max(16px, clamp(44px, 12vw, 68px))}
+.sb-channel-pair small{font-size:16px}
+.sb-channel-pair span{font-size:15px}
+.sb-destination-lead > span{font-size:82px}
+.sb-destination-lead strong{font-size:45px}
+.sb-rank-mobile b{font-size:16px}
+.sb-rank-mobile span{font-size:16px}
+.sb-rank-mobile em{font-size:28px}
+}
+@media (max-width: 380px){
+.sb-photo-hero h2{font-size:57px}
+.sb-years strong{font-size:36px}
+.sb-card h3{font-size:28px}
+.sb-gauge strong{font-size:49px}
+.sb-bubbles b{font-size:16px}
+}
+.sb-years strong{font-size:max(16px, clamp(36px, 7cqi, 92px))}
+.sb-bubbles strong{font-size:max(16px, clamp(22px, 8cqi, 43px))}
+.bubble-z strong{font-size:max(16px, clamp(18px, 6cqi, 30px))}
+.sb-bubbles b{font-size:max(16px, clamp(10px, 3cqi, 15px))}
+.sb-mini-stat strong{font-size:max(16px, clamp(28px, 9cqi, 48px))}
+.sb-bullet strong{font-size:max(16px, clamp(26px, 7cqi, 34px))}
+.sb-gauge strong{font-size:max(16px, clamp(38px, 11cqi, 62px))}
+.sb-channel-pair strong{font-size:max(16px, clamp(40px, 7cqi, 80px))}
+.sb-influencer-gauges b{font-size:15px}
+.sb-influencer-gauges text{font-size:29px}
+.sb-dream-rank{font-size:25px}
+.sb-dream-ranks b{font-size:18px}
+.sb-dream-ranks strong{font-size:30px}
+.sb-neighbour-grid h4{font-size:24px}
+.sb-neighbour-grid h4 span{font-size:16px}
+.sb-diverging-row{font-size:15px}
+.sb-city-label b{font-size:18px}
+.sb-city-label span{font-size:16px}
+.sb-city-gains strong{font-size:32px}
+@media (min-width: 901px) and (max-width: 1250px){
+.sb-years strong{font-size:max(16px, clamp(40px, 11cqi, 75px))}
+.sb-channel-pair strong{font-size:max(16px, clamp(40px, 10cqi, 80px))}
+.sb-card h3{font-size:max(16px, clamp(26px, 7cqi, 38px))}
+.sb-story-hero h2{font-size:max(16px, clamp(56px, 6vw, 80px))}
+}
+@media (max-width: 900px){
+.sb-photo-hero h2{font-size:58px}
+.sb-photo-hero > div > p{font-size:20px}
+.sb-years strong{font-size:max(16px, clamp(32px, 14cqi, 80px))}
+.sb-channel-pair strong{font-size:max(16px, clamp(38px, 17cqi, 70px))}
+.sb-dream-ranks strong{font-size:26px}
+.sb-city-gains strong{font-size:28px}
+.sb-diverging-row{font-size:16px}
+.sb-mini-stat strong{font-size:max(16px, clamp(28px, 10cqi, 43px))}
+}
+.sb-influence-metrics span{font-size:16px}
+.sb-influence-metrics strong{font-size:max(16px, clamp(42px, 16cqi, 88px))}
+.sb-influence-metrics strong small{font-size:max(16px, 0.55em)}
+.sb-influence-global strong{font-size:max(16px, clamp(32px, 10cqi, 58px))}
+.sb-influence-global span{font-size:16px}
+.sb-influence-support strong{font-size:max(16px, clamp(36px, 12cqi, 66px))}
+.sb-influence-metrics > p{font-size:16px}
+.sb-lollipop-stem strong{font-size:max(16px, clamp(23px, 3cqi, 36px))}
+.sb-lollipop-rank{font-size:16px}
+.sb-lollipop > b{font-size:18px}
+.sb-city-card h4{font-size:18px}
+.sb-city-rise strong{font-size:max(16px, clamp(38px, 5.5cqi, 65px))}
+.sb-places{font-size:16px}
+.sb-city-years span{font-size:16px}
+.sb-city-years b{font-size:22px}
+@media (min-width: 901px) and (max-width: 1250px){
+.sb-city-rise strong{font-size:44px}
+.sb-lollipop > b{font-size:16px}
+}
+@media (max-width: 900px){
+.sb-city-rise strong{font-size:48px}
+.sb-city-years b{font-size:24px}
+.sb-lollipop > b{font-size:16px}
+.sb-lollipop-stem strong{font-size:24px}
+}
+@media (max-width: 560px){
+.sb-lollipop-stem strong{font-size:34px}
+.sb-lollipop > b{font-size:18px}
+.sb-influence-metrics span{font-size:16px}
+.sb-influence-global span{font-size:16px}
+}
+.sb-story .sb-lead-card h3{font-size:38px}
+.sb-lead-values span{font-size:15px}
+.sb-lead-values strong{font-size:68px}
+.sb-social-split .sb-channel-pair strong{font-size:64px}
+.sb-lead-card .sb-lollipop-stem strong{font-size:30px}
+@media (min-width: 901px) and (max-width: 1400px){
+.sb-story .sb-lead-card h3{font-size:32px}
+.sb-lead-values strong{font-size:56px}
+.sb-social-split .sb-channel-pair strong{font-size:54px}
+}
+@media (min-width: 901px) and (max-width: 1250px){
+.sb-lead-values strong{font-size:68px}
+}
+@media (max-width: 900px){
+.sb-story .sb-lead-card h3{font-size:32px}
+.sb-lead-values strong{font-size:64px}
+.sb-social-split .sb-channel-pair strong{font-size:60px}
+}
+@media (max-width: 560px){
+.sb-lead-values strong{font-size:44px}
+.sb-social-split .sb-channel-pair strong{font-size:42px}
+.sb-story .sb-lead-card h3{font-size:30px}
+.sb-lead-card .sb-lollipop-stem strong{font-size:34px}
+}
+@media (max-width: 380px){
+.sb-lead-values strong{font-size:36px}
+.sb-social-split .sb-channel-pair strong{font-size:36px}
+.sb-story .sb-lead-card h3{font-size:28px}
+}
+.ib-heading{font-size:inherit}
+.sb-story .ib-card h3{font-size:max(16px, clamp(21px, 6cqi, 28px))}
+.sb-story .ib-card.is-expanded h3{font-size:28px}
+.ib-full > .sb-insight{font-size:16px}
+.ib-full .sb-chart-note{font-size:16px}
+.ib-preview-bubble strong{font-size:29px}
+.ib-preview-bubble small{font-size:16px}
+.ib-preview-bubble b{font-size:16px}
+.ib-preview .sb-dot-series > div:first-child{font-size:16px}
+.ib-preview .sb-dot-series span{font-size:22px}
+.ib-preview .sb-bullet b{font-size:16px}
+.ib-preview .sb-bullet strong{font-size:28px}
+.ib-preview .sb-badge{font-size:16px}
+.ib-preview .sb-gauge p{font-size:16px}
+.ib-preview .sb-gauge strong{font-size:38px}
+.ib-preview .sb-gauge span{font-size:16px}
+.ib-lead-preview .sb-insight{font-size:16px}
+.ib-current span{font-size:16px}
+.ib-current strong{font-size:max(16px, clamp(38px, 10cqi, 60px))}
+.ib-chart .sb-bubbles strong{font-size:24px}
+.ib-chart .bubble-z strong{font-size:18px}
+.ib-chart .sb-bubbles small{font-size:16px}
+.ib-chart .sb-bubbles b{font-size:16px}
+.ib-chart .sb-dot-series > div:first-child{font-size:16px}
+.ib-chart .sb-dot-series span{font-size:20px}
+.ib-chart .sb-bullet b{font-size:16px}
+.ib-chart .sb-bullet strong{font-size:22px}
+.ib-chart .sb-bullet .sb-badge{font-size:16px}
+.ib-chart .sb-bullet small{font-size:16px}
+.ib-chart .sb-spend p{font-size:16px}
+.ib-card-3 .ib-chart .sb-gauge strong{font-size:29px}
+.ib-card-3 .ib-chart .sb-gauge span{font-size:16px}
+.ib-chart .sb-mini-stat strong{font-size:27px}
+.ib-chart .sb-mini-bars b, .ib-chart .sb-mini-bars span{font-size:16px}
+@media (min-width: 901px){
+.ib-lead .sb-lead-copy .sb-insight{font-size:16px}
+.ib-lead .sb-lead-values span{font-size:16px}
+.ib-lead .sb-lead-values strong{font-size:48px}
+.ib-lead .sb-source{font-size:16px}
+.ib-card-2 .ib-chart .sb-bullet strong{font-size:26px}
+}
+@media (min-width: 901px) and (max-width: 1250px){
+.sb-story .ib-card h3{font-size:22px}
+.sb-story .ib-card.is-expanded h3{font-size:25px}
+.ib-lead-preview .sb-insight{font-size:16px}
+.ib-current strong{font-size:49px}
+.ib-preview-bubble strong{font-size:25px}
+.ib-preview .sb-bullet strong{font-size:24px}
+.ib-chart .sb-spend p{font-size:16px}
+.ib-chart .sb-mini-stat strong{font-size:24px}
+.ib-card-3 .ib-chart .sb-gauge strong{font-size:26px}
+.ib-lead .sb-lead-values strong{font-size:40px}
+.ib-full > .sb-insight{font-size:16px}
+}
+@media (max-width: 900px){
+.ib-full > .sb-insight{font-size:16px}
+.ib-lead .sb-lead-values strong{font-size:55px}
+}
+@media (max-width: 560px){
+.sb-story .ib-card h3, .sb-story .ib-card.is-expanded h3{font-size:27px}
+.ib-current strong{font-size:58px}
+.ib-lead .sb-lead-values strong{font-size:44px}
+.ib-card-3 .ib-chart .sb-gauge strong{font-size:38px}
+.ib-card-3 .ib-chart .sb-gauge span{font-size:16px}
+}
+@media (max-width: 380px){
+.ib-lead .sb-lead-values strong{font-size:36px}
+}
+.ib-grid .sb-mini-bars > div{font-size:16px}
+.ib-chart .sb-bubbles small, .ib-chart .sb-bubbles b, .ib-full .sb-chart-note{font-size:16px}
+.ib-card-3 .ib-chart .sb-spend p{font-size:16px}
+.ib-card-3 .ib-chart .sb-gauge .ib-gauge-benchmark{font-size:16px}
+.ib-card-3 .ib-chart .sb-gauge > span:last-child{font-size:16px}
+.ib-card-3 .ib-chart .sb-mini-bars b, .ib-card-3 .ib-chart .sb-mini-bars span{font-size:16px}
+.sr-donut-value strong{font-size:max(16px, clamp(38px, 11cqi, 64px))}
+.sr-donut-value strong span{font-size:max(16px, 0.55em)}
+.sr-donut-value > span{font-size:16px}
+.sr-pay-caption{font-size:18px}
+.sr-pay-key{font-size:16px}
+.sr-influence-market > b{font-size:16px}
+.sr-influence-circle strong{font-size:max(16px, clamp(24px, 6.7cqi, 38px))}
+.sr-influence-circle small{font-size:max(16px, 0.5em)}
+.sr-influence-benchmark{font-size:15px}
+.sr-influence-benchmark strong{font-size:34px}
+.sr-influence-benchmark small{font-size:20px}
+.sr-influence-chart > .sb-chart-note{font-size:16px}
+@media (min-width: 901px){
+@media bento-card (max-width: 230px){
+.sb-story .ib-card .ib-heading h3, .sb-story .ib-card.is-expanded .ib-heading h3{font-size:max(16px, clamp(14px, 10cqi, 22px))}
+.ib-preview .sb-gauge p{font-size:16px}
+.ib-preview .sb-gauge strong{font-size:max(16px, clamp(26px, 24cqi, 38px))}
+.ib-preview .sb-bullet strong{font-size:24px}
+}
+}
+@media (max-width: 560px){
+.sr-influence-market > b{font-size:16px}
+.sr-influence-circle strong{font-size:max(16px, clamp(22px, 7cqi, 32px))}
+.sr-pay-caption{font-size:16px}
+}
+.ib-overview-metric > span, .ib-room-preview > span, .ib-city-preview > span{font-size:16px}
+.ib-overview-metric > strong, .ib-city-preview > strong{font-size:max(16px, clamp(30px, 15cqi, 60px))}
+.ib-overview-metric > strong small{font-size:max(16px, 0.5em)}
+.ib-overview-metric > small, .ib-city-preview > small{font-size:16px}
+.ib-room-preview strong{font-size:max(16px, clamp(21px, 8cqi, 32px))}
+.ib-more-card .ib-preview .sb-bullet strong{font-size:max(16px, clamp(28px, 13cqi, 46px))}
+.ib-influence-preview strong{font-size:max(16px, clamp(24px, 12cqi, 36px))}
+.ib-influence-preview small{font-size:max(16px, 0.5em)}
+.ib-influence-preview b{font-size:16px}
+.ib-pay .ib-preview .sr-donut-value strong{font-size:36px}
+.ib-pay .ib-preview .sr-donut-value > span{font-size:16px}
+.sr-influence-circle > b{font-size:16px}
+.ib-more-card .ib-full > .sb-insight{font-size:16px}
+@media (min-width: 901px){
+.ib-more-card .ib-chart .sb-chart-note{font-size:16px}
+.ib-more-card .sb-lead-values span{font-size:16px}
+.ib-more-card .sb-lead-values strong{font-size:48px}
+.ib-more-card .sb-bullet > div:first-child > b{font-size:16px}
+.ib-more-card .sb-bullet strong{font-size:28px}
+.ib-more-card .sb-bullet small{font-size:16px}
+.ib-pay .sr-donut-value strong{font-size:35px}
+.ib-pay .sr-donut-value > span{font-size:16px}
+.ib-pay .sr-pay-caption{font-size:16px}
+.ib-pay .sr-pay-key{font-size:16px}
+.ib-room .sb-market-list > div{font-size:16px}
+.ib-room .sb-market-list dt{font-size:16px}
+.ib-room .sb-market-list dd{font-size:16px}
+.ib-discovery .sb-channel-pair span{font-size:16px}
+.ib-discovery .sb-channel-pair strong{font-size:46px}
+.ib-discovery .sb-channel-pair small{font-size:16px}
+.ib-influence .sr-influence-circle strong{font-size:27px}
+.ib-influence .sr-influence-circle b{font-size:16px}
+.ib-influence .sr-influence-benchmark{font-size:16px}
+.ib-influence .sr-influence-benchmark strong{font-size:25px}
+.ib-influence .sr-influence-benchmark small{font-size:16px}
+.ib-destinations .sb-lollipop-stem strong{font-size:20px}
+.ib-destinations .sb-lollipop-rank{font-size:16px}
+.ib-destinations .sb-lollipop > b{font-size:16px}
+.ib-destinations .sb-badge{font-size:16px}
+.ib-neighbours .sb-neighbour-grid h4{font-size:15px}
+.ib-neighbours .sb-neighbour-grid h4 span{font-size:16px}
+.ib-neighbours .sb-diverging-row{font-size:16px}
+.ib-cities .sb-city-card h4{font-size:16px}
+.ib-cities .sb-city-rise strong{font-size:32px}
+.ib-cities .sb-places{font-size:16px}
+.ib-cities .sb-city-years span{font-size:16px}
+.ib-cities .sb-city-years b{font-size:16px}
+@media bento-card (max-width: 230px){
+.ib-overview-metric > strong, .ib-city-preview > strong{font-size:max(16px, clamp(25px, 22cqi, 40px))}
+.ib-overview-metric > span, .ib-room-preview > span, .ib-city-preview > span{font-size:16px}
+.ib-room-preview strong{font-size:max(16px, clamp(16px, 13cqi, 24px))}
+.ib-more-card .ib-preview .sb-bullet strong{font-size:max(16px, clamp(25px, 22cqi, 40px))}
+.ib-more-card .ib-preview .sb-bullet b{font-size:16px}
+.ib-pay .ib-preview .sr-donut-value strong{font-size:max(16px, clamp(22px, 23cqi, 36px))}
+.ib-influence-preview strong{font-size:max(16px, clamp(22px, 22cqi, 36px))}
+}
+@media bento-card (max-width: 500px){
+.ib-cities .sb-city-rise strong{font-size:22px}
+.ib-cities .sb-city-years span{font-size:16px}
+.ib-cities .sb-city-years b{font-size:16px}
+}
+}
+@media (max-width: 900px){
+.ib-more-card .ib-full > .sb-insight{font-size:16px}
+.ib-more-card .ib-chart .sb-chart-note{font-size:16px}
+.ib-more-card .sb-lead-values strong{font-size:max(16px, clamp(38px, 12cqi, 64px))}
+.ib-more-card .sb-channel-pair strong{font-size:max(16px, clamp(36px, 13cqi, 64px))}
+.ib-more-card .sb-bullet strong{font-size:30px}
+.ib-more-card .sb-bullet b{font-size:16px}
+.ib-more-card .sb-bullet small{font-size:16px}
+.sr-influence-circle > b{font-size:16px}
+.ib-more-card .sr-influence-benchmark{font-size:16px}
+}
+@media (min-width: 901px){
+.ib-more-card .ib-full > .sb-insight{font-size:max(16px, clamp(12px, 4px + 1svh, 14px))}
+}
+.sr-influence-market:first-child .sr-influence-circle strong{font-size:20px}
+.sr-influence-market:first-child .sr-influence-circle b{font-size:16px}
+.ib-destinations .ib-preview .sb-lollipop-stem strong{font-size:max(16px, clamp(23px, 10cqi, 32px))}
+.ib-destinations .ib-preview .sb-lollipop-rank{font-size:16px}
+.ib-destinations .ib-preview .sb-lollipop > b{font-size:16px}
+.ib-destinations .ib-preview .sb-badge{font-size:16px}
+.ib-matrix-heading{font-size:16px}
+.ib-change-cell > span{font-size:16px}
+.ib-change-cell > strong{font-size:22px}
+.ib-change-cell small{font-size:16px}
+.ib-matrix-preview .ib-change-cell > strong{font-size:max(16px, clamp(25px, 15cqi, 44px))}
+.ib-matrix-preview > small{font-size:16px}
+@media (min-width: 901px){
+.ib-neighbours .ib-change-cell > strong{font-size:max(16px, clamp(18px, 2.2svh, 22px))}
+.ib-neighbours .ib-change-cell > span{font-size:16px}
+@media bento-card (max-width: 230px){
+.ib-matrix-preview .ib-change-cell > strong{font-size:max(16px, clamp(22px, 22cqi, 36px))}
+.ib-destinations .ib-preview .sb-lollipop-stem strong{font-size:26px}
+}
+}
+@media (max-width: 560px){
+.sr-influence-market:first-child .sr-influence-circle strong{font-size:18px}
+.sr-influence-market:first-child .sr-influence-circle b{font-size:16px}
+.ib-matrix-heading{font-size:16px}
+.ib-change-cell > strong{font-size:25px}
+.ib-change-cell > span{font-size:16px}
+}
+.ib-rank-summary > strong{font-size:max(16px, clamp(48px, 22cqi, 84px))}
+.ib-rank-summary > b{font-size:17px}
+.ib-neighbour-preview span{font-size:16px}
+.ib-neighbour-preview strong{font-size:max(16px, clamp(23px, 11cqi, 36px))}
+.ib-neighbour-preview strong small{font-size:16px}
+.ib-neighbour-preview > small{font-size:16px}
+@media (min-width: 901px){
+@media bento-card (max-width: 250px){
+.ib-rank-summary > strong{font-size:max(16px, clamp(34px, 27cqi, 54px))}
+.ib-rank-summary > b{font-size:16px}
+.ib-destinations .ib-preview .sb-lollipop-stem strong{font-size:max(16px, clamp(19px, 15cqi, 27px))}
+}
+}
+@media (min-width: 901px){
+.ib-story-summary > .sb-insight{font-size:16px}
+.ib-story-summary .ib-overview-metric > strong{font-size:max(16px, clamp(34px, 10cqi, 60px))}
+@media bento-card (max-width: 440px){
+.ib-story-summary > .sb-insight{font-size:16px}
+.ib-story-summary .ib-overview-metric > span{font-size:16px}
+.ib-story-summary .ib-overview-metric > small{font-size:16px}
+}
+}
+.ib-pay .ib-preview .sr-donut-value strong{font-size:max(16px, clamp(26px, 24cqi, 38px))}
+.ib-pay .ib-preview .sr-donut-value > span{font-size:16px}
+@media (min-width: 901px){
+.ib-pay .sr-pay-chart .sr-donut-value strong{font-size:29px}
+}
+@media (max-width: 900px){
+.ib-pay .sr-donut-value strong{font-size:38px}
+}
+.ib-pay-preview-label{font-size:16px}
+.ib-pay .sr-half-gauge .sr-donut-value strong{font-size:max(16px, clamp(20px, 16cqi, 29px))}
+.ib-pay .sr-half-gauge .sr-donut-value > span{font-size:16px}
+.ib-pay .ib-preview .sr-donut-value strong{font-size:max(16px, clamp(20px, 17cqi, 38px))}
+@media (max-width: 900px){
+.ib-pay .sr-half-gauge .sr-donut-value strong{font-size:max(16px, clamp(24px, 17cqi, 38px))}
+}
+.report-globe-light .suitcase-hero h1{font-size:max(16px, clamp(44px, 4.8vw, 76px))}
+.profile-globe h2{font-size:max(16px, clamp(32px, 3.3vw, 48px))}
+.report-globe-light .profile-globe .lead{font-size:18px}
+.profile-globe-instruction{font-size:16px}
+.profile-globe-start{font-size:15px}
+@media (max-width: 900px){
+.report-globe-light .suitcase-hero h1{font-size:max(16px, clamp(40px, 7vw, 58px))}
+.report-globe-light .suitcase-hero .lead{font-size:17px}
+.profile-globe h2{font-size:36px}
+}
+@media (max-width: 560px){
+.report-globe-light .suitcase-hero h1{font-size:42px}
+.report-globe-light .suitcase-hero .kicker{font-size:16px}
+.report-globe-light .suitcase-hero .micro{font-size:16px}
+}
+@media (max-width: 560px){
+.report-globe-light .suitcase-hero h1{font-size:38px}
+}
+.report-globe-light .suitcase-hero .primary, .report-globe-light .suitcase-hero .ghost{font-size:18px}
+@media (max-width: 560px){
+.report-globe-light .suitcase-hero .primary, .report-globe-light .suitcase-hero .ghost{font-size:16px}
+}
+.ai-eyebrow{font-size:16px}
+.ai-section-header h2{font-size:max(16px, clamp(40px, 5.2vw, 70px))}
+.ai-section-header > p:last-child{font-size:22px}
+.ai-story-number{font-size:16px}
+.ai-story-copy h3{font-size:max(16px, clamp(28px, 2.7vw, 37px))}
+.ai-body{font-size:16px}
+.ai-stat strong{font-size:max(16px, clamp(46px, 4.8vw, 65px))}
+.ai-stat .ai-stat-unit{font-size:max(16px, 0.45em)}
+.ai-stat p{font-size:15px}
+@media (max-width: 1050px){
+.ai-story-copy h3{font-size:30px}
+}
+@media (max-width: 700px){
+.ai-section-header h2{font-size:39px}
+.ai-section-header > p:last-child{font-size:18px}
+.ai-story-copy h3{font-size:29px}
+.ai-body{font-size:16px}
+.ai-stat strong{font-size:54px}
+.ai-stat p{font-size:15px}
+}
+@media (max-width: 700px){
+.ai-image-number{font-size:16px}
+}
+.gh-photo-hero.sb-story-hero h2{font-size:max(16px, clamp(40px, 6.6cqi, 78px))}
+.gh-photo-hero > div > p{font-size:max(16px, clamp(20px, 2.3cqi, 26px))}
+@media (max-width: 1100px) and (min-width: 901px){
+.gh-photo-hero.sb-story-hero h2{font-size:max(16px, clamp(39px, 6.7cqi, 64px))}
+}
+@media (max-width: 900px){
+.gh-photo-hero.sb-story-hero h2{font-size:max(16px, clamp(40px, 7cqi, 65px))}
+}
+@media (max-width: 600px){
+.gh-photo-hero > .sb-index, .gh-photo-reverse > .sb-index{font-size:16px}
+.gh-photo-hero.sb-story-hero h2{font-size:max(16px, clamp(38px, 12cqi, 56px))}
+.gh-photo-hero > div > p{font-size:20px}
+}
+.report-globe-light .profile-globe .kicker{font-size:16px}
+.report-globe-light .profile-globe h2{font-size:max(16px, clamp(38px, 4.6vw, 64px))}
+.report-globe-light .profile-globe .lead{font-size:21px}
+.report-globe-light .profile-globe .globe-help-text{font-size:16px}
+@media (max-width: 560px){
+.report-globe-light .profile-globe h2{font-size:38px}
+.report-globe-light .profile-globe .lead{font-size:18px}
+}
+.globe-explore-note{font-size:16px}
+.gen-grid .ib-heading h3{font-size:max(16px, clamp(20px, 2.1cqi, 28px))}
+.gen-grid .gen-copy{font-size:16px}
+.gen-stat{font-size:max(16px, clamp(38px, 7cqi, 62px))}
+.gen-stars{font-size:max(16px, clamp(20px, 6cqi, 34px))}
+.gen-visual.gen-gauge .gen-stat{font-size:42px}
+.gen-lead .ib-heading h3{font-size:max(16px, clamp(25px, 4.6cqi, 44px))}
+.gen-lead .gen-stat{font-size:64px}
+.gen-grid .gen-portrait .ib-heading h3{font-size:max(16px, clamp(32px, 7cqi, 55px))}
+.gen-eyebrow{font-size:16px}
+.gen-portrait-copy{font-size:16px}
+@media (max-width: 900px){
+.gen-grid .ib-heading h3{font-size:26px}
+.gen-grid .gen-lead .ib-heading h3{font-size:34px}
+.gen-grid .gen-portrait .ib-heading h3{font-size:44px}
+.gen-grid .gen-copy{font-size:16px}
+.gen-lead .gen-stat{font-size:60px}
+}
+.gen-grid .gen-portrait .ib-heading h3{font-size:max(16px, clamp(34px, 10cqi, 56px))}
+.gen-grid .gen-visual.gen-gauge .gen-stat{font-size:max(16px, clamp(28px, 15cqi, 42px))}
+.gen-stat-label{font-size:16px}
+.gen-section .gen-portrait .ib-heading h3{font-size:max(16px, clamp(44px, 14cqi, 72px))}
+.gen-visual.gen-bubble .gen-stat{font-size:max(16px, clamp(30px, 13cqi, 48px))}
+@media (max-width: 900px){
+.gen-section .gen-portrait .ib-heading h3{font-size:max(16px, clamp(44px, 14cqi, 60px))}
+}
+@media (max-width: 900px){
+.gen-section .gen-nav-label{font-size:16px}
+.gen-section .gen-nav-current{font-size:16px}
+}
+.au-profile{font-size:16px}
+.au-eyebrow{font-size:16px}
+.au-hero h2{font-size:max(16px, clamp(48px, 5.7vw, 86px))}
+.au-hero-copy > p:last-child{font-size:17px}
+.au-tags{font-size:20px}
+.au-profile h3{font-size:max(16px, clamp(26px, 2.6vw, 38px))}
+.au-figure .au-eyebrow{font-size:16px}
+.au-figure-value{font-size:max(16px, clamp(48px, 6.7vw, 100px))}
+.au-figure-value small{font-size:max(16px, 0.45em)}
+.au-figure h4{font-size:26px}
+.au-comparison > div{font-size:16px}
+.au-comparison p{font-size:16px}
+.au-tabs button{font-size:16px}
+.au-journey h4{font-size:38px}
+.au-journey-copy p{font-size:17px}
+.au-chart-key{font-size:16px}
+.au-benchmark-label{font-size:16px}
+.au-benchmark-label small{font-size:16px}
+.au-benchmark-label > b{font-size:16px}
+.au-chart-note{font-size:16px}
+.au-panel-head > p{font-size:16px}
+.au-ring-number strong{font-size:46px}
+.au-ring-number span{font-size:22px}
+.au-recommend button{font-size:24px}
+.au-recommend button small{font-size:16px}
+.au-recommend.is-active button{font-size:28px}
+.au-recommend-body p{font-size:17px}
+.au-recommend-body p strong{font-size:21px}
+.au-tip{font-size:16px}
+.au-download button{font-size:16px}
+@media (max-width: 1250px) and (min-width: 901px){
+.au-journey h4{font-size:30px}
+.au-figure h4{font-size:22px}
+.au-hero h2{font-size:62px}
+}
+@media (max-width: 900px){
+.au-hero h2{font-size:max(16px, clamp(44px, 8vw, 64px))}
+.au-hero-copy > p:last-child{font-size:16px}
+.au-tags{font-size:16px}
+.au-figure-value{font-size:76px}
+.au-figure h4{font-size:26px}
+.au-comparison > div{font-size:16px}
+.au-profile h3{font-size:28px}
+.au-tabs button{font-size:15px}
+.au-journey h4{font-size:30px}
+.au-journey-copy p{font-size:16px}
+.au-benchmark-label{font-size:16px}
+.au-benchmark-label > b{font-size:16px}
+.au-benchmark-label small{font-size:16px}
+.au-recommend button{font-size:20px}
+.au-recommend.is-active button{font-size:24px}
+.au-recommend-body p{font-size:16px}
+.au-tip{font-size:16px}
+}
+.report-globe-light .profile-layout:has(.au-profile) .profile-country-nav nav a, .report-globe-light .profile-layout:has(.au-profile) .profile-country-nav nav button{font-size:16px}
+.au-hero h2{font-size:max(16px, clamp(44px, 6.7cqi, 86px))}
+.au-figure h4{font-size:max(16px, clamp(21px, 2.45cqi, 26px))}
+@media (max-width: 900px){
+.au-hero h2{font-size:max(16px, clamp(40px, 10cqi, 64px))}
+.au-figure h4{font-size:26px}
+}
+@media (min-width: 901px) and (max-width: 1250px){
+.au-figure-value{font-size:48px}
+.au-figure h4{font-size:21px}
+}
+.au-hero-download{font-size:16px}
+@media (max-width: 900px){
+.au-hero-topline .au-eyebrow{font-size:16px}
+.au-hero-download{font-size:16px}
+}
+.report-methodology h2{font-size:32px}
+.methodology-summary p{font-size:18px}
+.methodology-summary span{font-size:16px}
+.report-methodology summary{font-size:16px}
+.methodology-details h3{font-size:18px}
+.methodology-details dl > div{font-size:16px}
+@media(max-width:700px){.ai-stat{margin-top:16px}}
+/* Space adjustments for the larger captions and controls. */
+.ib-chart .sb-bullet small{width:auto;min-width:0;white-space:normal}
+.ib-card-3 .ib-chart .sb-spend>div{height:220px}
+.ib-card-3 .ib-chart .sb-gauge .ib-gauge-benchmark{top:66px;white-space:normal;right:10px;line-height:20px}
+.ib-card-3 .ib-chart .sb-gauge svg{top:91px;height:85px}
+.ib-card-3 .ib-chart .sb-gauge>span:last-child{line-height:20px}
+.ib-preview .sb-gauge p{min-height:44px}.ib-preview .sb-gauge svg{top:52px}
+.sr-influence-circle{position:relative;margin-bottom:26px}.sr-influence-circle>b{position:absolute;top:calc(100% + 8px);color:#253246;white-space:nowrap}
+@media(max-width:900px){
+ .report-globe-light .suitcase-hero .actions{display:flex;flex-wrap:wrap}
+ .au-benchmark-label{column-gap:8px}
+}
+@media(max-width:560px){
+ .ib-card-3 .ib-chart .sb-spend>.sb-gauge{height:220px}
+ .ib-card-3 .ib-chart .sb-gauge svg{top:75px;height:110px}
+ .ib-card-3 .ib-chart .sb-gauge .ib-gauge-benchmark{top:46px}
+}
+
+/* Restore the compact, single-row mobile report header. */
+@media(max-width:900px){
+ .report-nav,.report-nav.is-compact{display:flex;height:60px;min-height:60px;padding:8px 14px;gap:10px}
+ .report-nav .report-brand>.report-brand-title,.report-nav.is-compact .report-brand>.report-brand-title{font-size:13px;max-width:170px;line-height:1.2}
+ .report-nav .report-brand-title b,.report-nav.is-compact .report-brand-title b{font-size:inherit}
+ .report-nav .report-cta{font-size:12px;margin-left:auto}
+}
+@media(max-width:440px){
+ .report-nav,.report-nav.is-compact{gap:8px;padding-inline:10px}
+ .report-nav .report-brand>.report-brand-title,.report-nav.is-compact .report-brand>.report-brand-title{font-size:12px;max-width:115px}
+ .report-nav .report-cta{font-size:12px;padding-inline:8px}
+}

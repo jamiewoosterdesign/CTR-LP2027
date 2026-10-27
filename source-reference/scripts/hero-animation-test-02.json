@@ -1,0 +1,10 @@
+{
+  "taskId": "e4cca21a-81c7-4072-9e3d-4f913ed08d37",
+  "prompt": "A single locked-off premium travel website hero shot, using the supplied image as exact visual anchor and final frame. The silver ribbed aluminium suitcase floats on the right against the same blue sky and sparse white clouds; left half remains empty sky for website copy. Keep original size and position, no camera zoom or movement. 10 second choreography: seconds 0-3 the silver suitcase holds its attractive three-quarter pose almost still, only tiny natural drift. Seconds 3-4 one quick elegant axial spin transforms it into an olive green hiking backpack with orange rolled sleeping mat strapped horizontally across its top, travel patches, fabric straps and a small metal camping cup. Seconds 4-7 hold the fully resolved detailed backpack nearly still in the same position and similar overall size. Seconds 7-8 a second quick spin in the SAME direction transforms it back into the original silver suitcase. Seconds 8-10 it settles into the exact starting pose for a seamless loop. Critical optical treatment: physically realistic photographic shutter motion blur during both spins, including the ENTIRE OUTER SILHOUETTE, wheels, handle and straps. Moving edges sweep into the surrounding sky as soft translucent directional trails. Blur strength follows rotational speed; still poses are tack sharp, finely textured and realistic. No hard cutout outline enclosing a smeared interior, no etched edge, no dark halo, no matte boundary, no paper cutout or melting texture. Stable rigid bag shapes, clean coherent details. Background remains stationary throughout, no pulsing, no bounce, no added objects or text. Full bag and blur trails stay comfortably in frame. Match the starting image lighting, sky hues and composition.",
+  "export": {
+    "desktop": "Original 1920x1080 framing, no zoom",
+    "mobile": "1080x1080 right crop x840",
+    "codec": "H264 CRF17",
+    "loop": "Generated full forward cycle; no reversed footage"
+  }
+}

@@ -1,0 +1,140 @@
+/* Header and generation selector follow the approved report navigation layout. */
+.report-nav>nav a{text-transform:none}
+.report-globe-light .suitcase-hero .actions a:before,.report-globe-light .suitcase-hero .actions a:after{display:none;content:none}
+.report-globe-light .suitcase-hero .actions svg,.report-globe-light .suitcase-hero .actions .report-arrow{display:none}
+.report-globe-light .suitcase-hero .copy{width:60%;max-width:800px}
+.report-globe-light .suitcase-hero h1{max-width:800px;font-size:clamp(44px,4.6vw,76px)}
+.gen-tabbed .sb-layout{display:block;max-width:1540px;padding:0 90px 50px}
+.gen-section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:26px}
+.gen-tabbed .sb-section-title{margin:0;flex:1;min-width:0}
+.gen-tabbed .sb-section-title h2{margin:0 0 16px}
+.gen-tabs{display:flex;gap:12px;flex:1.15;min-width:0}
+.gen-tabs button{flex:1;min-width:0;white-space:nowrap;padding:14px 20px;border:1px solid #d7e4ef;border-radius:999px;background:#fff;color:#303846;font:400 16px/1.3 'Source Sans 3',sans-serif;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.gen-tabs button:hover{background:#edf4ff;border-color:#9fbff8}
+.gen-tabs button[aria-pressed="true"]{color:#fff;background:#306eff;border-color:#306eff}
+.gen-tabs button:focus-visible{outline:2px solid #006dff;outline-offset:3px}
+#generations.gen-tabbed .gen-carousel .gen-story{padding-top:0}
+@media(min-width:901px){
+ #generations.gen-tabbed .sb-layout{padding-right:90px}
+ .gen-tabbed .gen-carousel-arrow{top:50%}
+ .gen-tabbed .gen-prev{left:-70px}.gen-tabbed .gen-next{right:-70px}
+}
+@media(min-width:901px) and (max-width:1200px){
+ .gen-section-heading{align-items:flex-start;flex-direction:column;gap:22px}
+ .gen-tabs{width:100%;flex:auto}
+ .gen-tabbed .sb-layout,#generations.gen-tabbed .sb-layout{padding-inline:70px}
+ .gen-tabbed .gen-prev{left:-58px}.gen-tabbed .gen-next{right:-58px}
+}
+@media(max-width:900px){
+ .report-globe-light .suitcase-hero .copy{width:100%;max-width:560px}
+ .report-globe-light .suitcase-hero h1{font-size:clamp(38px,7vw,58px);max-width:540px}
+ .gen-tabbed .sb-layout{padding:0 18px 30px}
+ .gen-section-heading{display:contents}
+ .gen-tabbed .sb-section-title{margin-bottom:24px}
+ .gen-tabs{position:sticky;top:var(--sb-top-nav-height,60px);z-index:75;padding:12px 0;background:#f7fbfd;gap:6px}
+ .gen-tabs button{padding:11px 6px;font-size:13px}
+ .gen-tabbed .gen-story{scroll-margin-top:calc(var(--sb-top-nav-height,60px) + 78px)}
+}
+.report-nav .report-cta{font-weight:400}
+@media(min-width:1251px){
+ .report-nav:not(.is-compact) .report-brand>.report-brand-title{max-width:280px}
+}
+/* Restore the existing single-line desktop compact brand treatment. */
+@media(min-width:901px){
+ .report-nav.is-compact .report-brand>.report-brand-title{max-width:none;white-space:nowrap;font-size:16px;font-weight:400}
+ .report-nav.is-compact .report-brand-title b{display:inline;font-size:inherit;font-weight:600;margin:0}
+}
+@media(min-width:901px) and (max-width:1100px){
+ .report-nav.is-compact{gap:12px;padding-inline:18px}
+ .report-nav.is-compact .report-brand>.report-brand-title{font-size:14px}
+ .report-nav.is-compact>nav{gap:12px}
+ .report-nav.is-compact>nav a,.report-nav.is-compact .report-cta{font-size:14px}
+}
+
+/* Mobile hero: two deliberate title lines and a readable survey caption. */
+@media(max-width:900px){
+ .report-globe-light:not(.static-export) #report-top.suitcase-hero .copy{container-type:inline-size}
+ .report-globe-light:not(.static-export) #report-top.suitcase-hero h1{font-size:clamp(26px,10.5cqw,54px);max-width:100%;white-space:nowrap;line-height:1.08}
+ .report-globe-light:not(.static-export) #report-top.suitcase-hero h1 br{display:none}
+ .report-globe-light:not(.static-export) #report-top.suitcase-hero h1 em{display:block;width:max-content;max-width:100%}
+ .report-globe-light:not(.static-export) #report-top.suitcase-hero .copy>.micro{display:block;font-size:14px;line-height:1.5;color:#52657e;max-width:100%;margin-top:18px}
+}
+/* Both hero actions share the width required by the longer Playbook label. */
+.report-globe-light:not(.static-export) #report-top.suitcase-hero .actions{display:inline-grid;grid-template-columns:repeat(2,minmax(0,1fr));width:max-content;max-width:100%;align-items:stretch}
+.report-globe-light:not(.static-export) #report-top.suitcase-hero .actions>a{width:100%;min-width:0;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center}
+/* Mobile keeps its existing 60px sticky header; compact transitions are desktop-only. */
+@media(max-width:900px){
+ .report-globe-light:not(.static-export) .report-nav{position:sticky;top:0;height:60px;min-height:60px;transition:none!important}
+ .report-globe-light:not(.static-export) .report-nav .report-brand,
+ .report-globe-light:not(.static-export) .report-nav .report-brand *,
+ .report-globe-light:not(.static-export) .report-nav .report-cta{transition:none!important}
+}
+
+/* Mobile scroll-away header; section menus retain their own sticky positioning. */
+@media(max-width:900px){
+ .report-globe-light:not(.static-export) .report-nav{transform:translateY(0);transition:transform .2s ease!important}
+ .report-globe-light:not(.static-export) .report-nav.is-scroll-hidden{transform:translateY(-100%)}
+ .report-globe-light:not(.static-export) :is(.sb-nav,.profile-country-nav,.gen-tabs){top:var(--mobile-nav-visible-height,60px);transition:top .2s ease}
+}
+@media(max-width:900px) and (prefers-reduced-motion:reduce){
+ .report-globe-light:not(.static-export) :is(.report-nav,.sb-nav,.profile-country-nav,.gen-tabs){transition:none!important}
+}
+
+/* Approved desktop header: permanent compact height, full brand and live-text edition badge. */
+.hero-report-badge{display:none}
+@media(min-width:901px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{height:58px;min-height:58px;padding-block:8px;gap:30px;transition:none;box-sizing:border-box}
+ .report-nav.desktop-persistent .report-brand{gap:16px}
+ .report-nav.desktop-persistent .report-brand .report-logo{display:block;width:114px;height:28px;object-fit:contain}
+ .report-nav.desktop-persistent .report-brand .report-mark{display:none}
+ .report-nav.desktop-persistent .report-brand>.report-brand-title{max-width:none;white-space:nowrap;padding-left:12px;font-size:16px;font-weight:400;line-height:1.25}
+ .report-nav.desktop-persistent .report-brand-title b{display:inline;font-size:inherit;font-weight:400;margin:0}
+ .report-globe-light:not(.static-export) #report-top .hero-mobile-kicker{display:none}
+ .report-globe-light:not(.static-export) #report-top .hero-report-badge{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;height:32px;box-sizing:border-box;padding:3px 3px 3px 12px;margin:0 0 24px;border:1px solid #e4e8ec;border-radius:999px;background:#fff;color:#333;font:400 14px/1.2 'Source Sans 3',sans-serif;letter-spacing:0;text-transform:none;white-space:nowrap}
+ .report-globe-light:not(.static-export) #report-top .hero-report-year{display:inline-flex;align-items:center;justify-content:center;height:24px;box-sizing:border-box;padding:0 9px;border:1px solid #80bfff;border-radius:999px;background:#f7faff;color:#004199}
+}
+@media(min-width:901px) and (max-width:1250px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{padding-inline:18px;gap:14px}
+ .report-nav.desktop-persistent .report-brand{gap:10px}
+ .report-nav.desktop-persistent .report-brand .report-logo{width:100px}
+ .report-nav.desktop-persistent .report-brand>.report-brand-title{font-size:14px;padding-left:10px}
+ .report-nav.desktop-persistent>nav{gap:12px}
+ .report-nav.desktop-persistent>nav a,.report-nav.desktop-persistent .report-cta{font-size:14px}
+}
+
+
+/* Mobile header matches the full-brand desktop treatment; Playbook lives in the menu. */
+.report-nav .report-mobile-playbook{display:none}
+@media(max-width:900px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{padding-left:10px;padding-right:14px;gap:10px;flex-wrap:nowrap}
+ .report-nav.desktop-persistent>.report-cta{display:none}
+ .report-nav.desktop-persistent .report-brand{flex:1;gap:6px;min-width:0}
+ .report-nav.desktop-persistent .report-logo-link{flex:0 0 auto}
+ .report-nav.desktop-persistent .report-brand .report-logo{display:block;width:76px;height:24px;object-fit:contain}
+ .report-nav.desktop-persistent .report-brand .report-mark{display:none}
+ .report-nav.desktop-persistent .report-brand>.report-brand-title{max-width:none;white-space:nowrap;font-size:13px;line-height:1.2;padding-left:9px;font-weight:400}
+ .report-nav.desktop-persistent .report-brand-title b{display:inline;font-size:inherit;font-weight:400;margin:0}
+ .report-nav.desktop-persistent .report-menu-toggle{margin-left:auto;flex-shrink:0}
+ .report-nav.desktop-persistent>nav{padding:12px 20px 26px;box-shadow:none;background:#f5f9fc;max-height:calc(100dvh - 60px)}
+ .report-nav.desktop-persistent>nav a{padding:14px 10px;font-size:16px;border-radius:10px}
+ .report-nav.desktop-persistent>nav a.current{background:#fff;color:#006dff}
+ .report-nav.desktop-persistent>nav .report-mobile-playbook{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;margin-top:8px;padding:10px 14px;min-height:38px;border-radius:8px;background:#0878d4;color:#fff;font-size:13px}
+ .report-nav.desktop-persistent>nav .report-mobile-playbook:hover{background:#066ac0}
+ .report-globe-light:not(.static-export) #report-top .hero-mobile-kicker{display:none}
+ .report-globe-light:not(.static-export) #report-top .hero-report-badge{display:inline-flex;align-items:center;gap:8px;width:max-content;max-width:100%;height:32px;box-sizing:border-box;padding:3px 3px 3px 11px;margin:0 0 14px;border:1px solid #e4e8ec;border-radius:999px;background:#fff;color:#333;font:400 clamp(12px,3.6vw,14px)/1.2 'Source Sans 3',sans-serif;letter-spacing:0;text-transform:none;white-space:nowrap}
+ .report-globe-light:not(.static-export) #report-top .hero-report-year{display:inline-flex;align-items:center;justify-content:center;height:24px;box-sizing:border-box;padding:0 9px;border:1px solid #80bfff;border-radius:999px;background:#f7faff;color:#004199}
+}
+@media(max-width:370px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{padding-inline:10px;gap:6px}
+ .report-nav.desktop-persistent .report-brand{gap:5px}
+ .report-nav.desktop-persistent .report-brand .report-logo{width:56px}
+ .report-nav.desktop-persistent .report-brand>.report-brand-title{font-size:13px;padding-left:7px}
+}
+
+/* Mobile Global Signals mirrors the market selector, using compact shift labels. */
+@media(max-width:900px){
+ body:not(.static-export) #global-headlines .sb-nav-toggle{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;min-height:48px;padding:9px 18px;text-align:left;background:#f5f9fc;color:#173b5c}
+ body:not(.static-export) #global-headlines .sb-nav-section{font-size:16px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:#527389;white-space:nowrap}
+ body:not(.static-export) #global-headlines .sb-nav-current{font-size:16px;font-weight:700;white-space:nowrap;letter-spacing:normal}
+ body:not(.static-export) #global-headlines .sb-menu-chevron{width:17px;height:17px;color:#173b5c}
+}

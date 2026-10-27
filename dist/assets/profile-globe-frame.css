@@ -1,0 +1,68 @@
+.report-globe-light .profile-globe{height:auto;min-height:0;background:transparent;overflow:visible;padding:0 48px 96px}
+.report-globe-light .profile-globe:before{display:none}
+.report-globe-light .profile-globe .hero-inner{display:flex;flex-direction:column;width:100%;max-width:1224px;height:auto;min-height:0;padding:0;margin:auto;gap:34px}
+.report-globe-light .profile-globe .copy{width:100%;max-width:950px;text-align:center;margin:0;z-index:2}
+.report-globe-light .profile-globe .kicker{justify-content:center;font-size:12px;font-weight:500;color:#367cff;letter-spacing:.08em;margin-bottom:22px}
+.report-globe-light .profile-globe .kicker:before{display:none}
+.report-globe-light .profile-globe h2{font-weight:400;font-size:clamp(38px,4.6vw,64px);letter-spacing:-.04em;line-height:1.08;margin:0 0 22px;color:#102653}
+.report-globe-light .profile-globe .lead{font-size:21px;line-height:1.5;max-width:850px;margin:0 auto;color:#102653}
+.report-globe-light .profile-globe .system{position:relative;isolation:isolate;width:min(100%,800px);height:auto;min-height:0;margin:0;padding:24px 64px;border-radius:40px;overflow:hidden;background:radial-gradient(ellipse at 64% 72%,rgba(40,76,132,.25),transparent 51%),radial-gradient(ellipse at 20% 22%,rgba(81,73,127,.2),transparent 45%),radial-gradient(ellipse at 52% 48%,#123871 0%,#091f48 48%,#061631 100%);border:1px solid rgba(93,130,180,.14)}
+/* Tiny static star points, painted once. No particle canvas, blur, or animation. */
+.profile-globe .system:before{content:'';position:absolute;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 12% 16%,#cbdcf080 0 .7px,transparent 1.3px),radial-gradient(circle at 32% 10%,#cbdcf050 0 .6px,transparent 1.2px),radial-gradient(circle at 68% 13%,#cbdcf070 0 .7px,transparent 1.3px),radial-gradient(circle at 86% 26%,#cbdcf060 0 .7px,transparent 1.3px),radial-gradient(circle at 91% 63%,#cbdcf070 0 .8px,transparent 1.5px),radial-gradient(circle at 80% 85%,#cbdcf050 0 .6px,transparent 1.2px),radial-gradient(circle at 58% 92%,#cbdcf080 0 .7px,transparent 1.3px),radial-gradient(circle at 21% 87%,#cbdcf060 0 .8px,transparent 1.4px),radial-gradient(circle at 7% 57%,#cbdcf070 0 .7px,transparent 1.3px),radial-gradient(circle at 16% 38%,#cbdcf040 0 .6px,transparent 1.2px),radial-gradient(circle at 74% 31%,#cbdcf050 0 .6px,transparent 1.2px),radial-gradient(circle at 38% 78%,#cbdcf050 0 .6px,transparent 1.2px)}
+.report-globe-light .profile-globe .globe-stage{width:min(100%,590px);height:auto;min-height:0;aspect-ratio:1;margin:auto}
+.report-globe-light .profile-globe .globe-help{top:18px;right:18px;z-index:40}
+.report-globe-light .profile-globe .globe-help-button{width:40px;height:40px;background:rgba(255,255,255,.035);border:1px solid rgba(228,234,242,.15);border-radius:50%;color:#bdc8d7;filter:none;box-shadow:none;backdrop-filter:none}
+.report-globe-light .profile-globe .globe-help-button:hover,.report-globe-light .profile-globe .globe-help-button:focus-visible{color:#fff;border-color:#a7b8ce;box-shadow:none;background:rgba(255,255,255,.08)}
+.globe-rotate-icon{width:28px;height:28px}
+@media(prefers-reduced-motion:no-preference){.globe-help-button:hover .globe-rotate-icon,.globe-help-button:focus-visible .globe-rotate-icon{animation:globe-rotate-cue 1.6s ease-in-out 2}}
+@keyframes globe-rotate-cue{0%,100%{transform:rotate(0)}30%{transform:rotate(-10deg)}70%{transform:rotate(10deg)}}
+.report-globe-light .profile-globe .globe-help-text{top:48px;right:0;background:#13233a;color:#e2e8f0;border:1px solid #ffffff26;box-shadow:0 8px 24px #0003;font-size:13px;max-width:calc(100vw - 92px)}
+@media(max-width:900px){.report-globe-light .profile-globe{padding:0 32px 72px}.report-globe-light .profile-globe .system{padding:28px 40px;border-radius:32px}.report-globe-light .profile-globe .hero-inner{gap:28px}}
+@media(max-width:560px){.report-globe-light .profile-globe{padding:0 18px 58px}.report-globe-light .profile-globe .hero-inner{gap:25px}.report-globe-light .profile-globe h2{font-size:38px;margin-bottom:16px}.report-globe-light .profile-globe .lead{font-size:18px}.report-globe-light .profile-globe .system{padding:48px 6px 18px;border-radius:26px}.report-globe-light .profile-globe .globe-stage{width:100%}.report-globe-light .profile-globe .globe-help{top:12px;right:12px}.report-globe-light .profile-globe .globe-help-button{width:34px;height:34px}.globe-rotate-icon{width:25px;height:25px}}
+
+.profile-globe .globe-rotate-icon{scale:1 -1}
+.profile-globe #globe:focus,.profile-globe #globe:focus-visible{outline:none;box-shadow:none}
+.globe-explore-note{position:absolute;bottom:22px;left:24px;right:24px;margin:0;text-align:center;color:#c4d0e1;font:400 14px/1.4 'Source Sans 3',sans-serif;opacity:clamp(0,calc((var(--globe-expand,0) - .3)*2),1);pointer-events:none}
+@media(min-width:901px){.report-globe-light .profile-globe .system{height:640px;padding:24px 0;max-width:100%;display:grid;place-items:center}.report-globe-light .profile-globe .globe-stage{width:590px;max-width:100%;transform:scale(calc(1 + var(--globe-expand,0)*.1));transform-origin:center}}
+@media(max-width:900px){.globe-explore-note{display:none}}
+@media(prefers-reduced-motion:reduce){.report-globe-light .profile-globe .globe-stage{transform:none}}
+.profile-globe .system:before{background-image:var(--globe-stars);opacity:.9}
+.report-globe-light .profile-globe .system{background:radial-gradient(ellipse at 83% 72%,rgba(36,104,155,.28),transparent 47%),radial-gradient(ellipse at 18% 23%,rgba(107,76,154,.26),transparent 45%),radial-gradient(ellipse at 47% 89%,rgba(48,83,150,.18),transparent 46%),radial-gradient(ellipse at 52% 48%,#123871 0%,#091f48 48%,#061631 100%)}
+.profile-globe .system:before{background-size:100% 100%;background-repeat:no-repeat}
+.globe-scroll-track{display:contents}
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ .report-globe-light .profile-globe{padding-inline:48px}
+ .report-globe-light .profile-globe .hero-inner{max-width:1224px}
+ .globe-scroll-track{display:block;width:100%;height:calc(var(--globe-card-height,640px) + clamp(160px,22vh,240px));position:relative}
+ .report-globe-light .profile-globe .system{position:sticky;top:var(--globe-pin-top,100px);height:calc(var(--globe-base-height,640px) + (var(--globe-card-height,780px) - var(--globe-base-height,640px))*var(--globe-expand,0));margin-inline:auto}
+ .report-globe-light .profile-globe .globe-stage{width:min(590px,calc(var(--globe-base-height,640px) - 48px));transform:scale(calc(1 + var(--globe-expand,0)*.16))}
+}
+/* Expanded globe shares the profile rail + content's exact outer grid. */
+@media(min-width:901px) and (prefers-reduced-motion:no-preference){
+ .report-globe-light .profile-globe{width:min(1580px,100%);margin-inline:auto;padding-inline:max(3vw,24px);box-sizing:border-box}
+ .report-globe-light .profile-globe .hero-inner{max-width:none}
+}
+
+/* Country portraits link directly to profiles; only a desktop name tag appears. */
+.profile-globe .geo-marker{text-decoration:none}
+@media(max-width:900px),(hover:none),(pointer:coarse){.profile-globe .geo-marker span{display:none!important}}
+
+.profile-globe .geo-marker>span{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.9);color:#35404b;border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 4px 18px rgba(16,40,71,.16)}
+.profile-globe .country-tooltip-chevron{width:14px;height:14px;flex:none;fill:none;stroke:#0878d4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+/* Flags identify travellers' home markets. Hover journeys remain lightweight. */
+.profile-globe .geo-marker{border:0;border-radius:0;background:none;padding:0;box-shadow:none;outline:none;display:flex;align-items:center;justify-content:center}
+.profile-globe .geo-marker>.country-marker-flag{width:50px;height:36px;border-radius:7px;border:1.5px solid rgba(255,255,255,.95);object-fit:cover;box-shadow:0 4px 12px #00172d66;transition:transform .2s ease}
+.profile-globe .geo-marker:hover,.profile-globe .geo-marker.selected,.profile-globe .geo-marker:focus-visible{outline:none;box-shadow:none}
+.profile-globe .geo-marker:is(:hover,:focus-visible)>.country-marker-flag{transform:scale(1.08)}
+.profile-globe .geo-marker:focus-visible>.country-marker-flag{outline:2px solid white;outline-offset:4px}
+.profile-globe .geo-marker>.country-flight-tooltip{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;background:rgba(9,29,58,.95);border:1px solid #c4eaff38;color:#f4f9ff;box-shadow:0 8px 24px #00122c44;backdrop-filter:none;-webkit-backdrop-filter:none;bottom:calc(100% + 9px);font-size:14px;line-height:1.3;max-width:300px;white-space:normal;width:max-content;text-align:left;pointer-events:none}
+.profile-globe .country-flight-tooltip>.country-tooltip-flag{width:26px;height:19px;border-radius:3px;flex:none;object-fit:cover}
+.profile-globe .country-flight-tooltip>.country-tooltip-copy{all:unset;display:block;max-width:210px;color:inherit;font:inherit;opacity:1}
+.profile-globe .country-flight-tooltip>.country-tooltip-chevron{width:18px;height:18px;flex:none;color:#91d7ff;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:700px){.profile-globe .geo-marker>.country-marker-flag{width:43px;height:31px}}
+@media(prefers-reduced-motion:reduce){.profile-globe .geo-marker>.country-marker-flag{transition:none}}
+/* Keep the flag and its tooltip connected by an invisible hover bridge. */
+@media(min-width:901px) and (hover:hover) and (pointer:fine){
+ .profile-globe .geo-marker:is(:hover,:focus-visible,.selected)>.country-flight-tooltip{opacity:1;pointer-events:auto}
+ .profile-globe .geo-marker>.country-flight-tooltip:after{content:'';position:absolute;left:0;right:0;top:100%;height:12px;background:transparent}
+}

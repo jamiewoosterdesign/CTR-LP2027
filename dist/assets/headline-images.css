@@ -1,0 +1,41 @@
+/* One photographic system; alternating compositions have their glow baked in. */
+.gh-photo-hero.sb-story-hero{container-type:inline-size;height:clamp(390px,34vw,500px);min-height:0;padding:38px 42px;background:#edf6fc;isolation:isolate}
+.gh-photo-hero .sb-hero-photo{width:100%;height:100%;object-fit:cover;object-position:center}
+.gh-photo-hero.sb-story-hero:after{display:none}
+.gh-photo-hero>.sb-index{max-width:55%;font-weight:600;line-height:1.4}
+.gh-photo-hero>div{width:64%;max-width:none;margin:0}
+.gh-photo-hero.sb-story-hero h2{font-size:clamp(40px,6.6cqi,78px);line-height:1.04;max-width:none;text-wrap:balance;letter-spacing:-.035em}
+.gh-photo-hero>div>p{font-size:clamp(20px,2.3cqi,26px);max-width:95%;line-height:1.25}
+.gh-photo-reverse>.sb-index,.gh-photo-reverse>div{align-self:flex-end;text-align:left}
+.gh-photo-reverse>div{width:58%}
+.gh-photo-reverse>.sb-index{width:58%;max-width:58%}
+@media(max-width:1100px) and (min-width:901px){
+ .gh-photo-hero.sb-story-hero{padding:30px;height:390px}
+ .gh-photo-hero.sb-story-hero h2{font-size:clamp(39px,6.7cqi,64px)}
+}
+@media(max-width:900px){
+ .gh-photo-hero.sb-story-hero{height:400px;padding:26px}
+ .gh-photo-hero.sb-story-hero h2{font-size:clamp(40px,7cqi,65px)}
+}
+@media(max-width:600px){
+ .gh-photo-hero.sb-story-hero{height:400px;padding:24px;justify-content:space-between}
+ .gh-photo-hero .sb-hero-photo{object-position:83% center}
+ .gh-photo-reverse .sb-hero-photo{object-position:17% center}
+ .gh-photo-hero.sb-story-hero:after{display:block;content:'';position:absolute;inset:0;height:100%;z-index:0;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,0) 22%,rgba(255,255,255,0) 38%,rgba(255,255,255,.85) 75%,rgba(255,255,255,.97))}
+ .gh-photo-hero>.sb-index,.gh-photo-reverse>.sb-index{width:100%;max-width:100%;font-size:11px;align-self:stretch;text-align:left}
+ .gh-photo-hero>div,.gh-photo-reverse>div{width:100%;max-width:none;align-self:stretch;text-align:left}
+ .gh-photo-hero.sb-story-hero h2{font-size:clamp(38px,12cqi,56px);line-height:1.03}
+ .gh-photo-hero>div>p{font-size:20px;max-width:100%}
+}
+
+@media(max-width:900px){.gh-photo-hero>.sb-index{color:#fff;text-shadow:0 1px 4px rgba(15,43,76,.2)}}
+@media(min-width:901px){
+ .gh-photo-hero>.sb-index{width:auto;max-width:none;align-self:flex-start;color:#006dff;text-shadow:none}
+ .gh-photo-reverse>.sb-index{width:auto;max-width:none;align-self:flex-end;text-align:right}
+}
+/* Match the approved story portraits while retaining the original assets. */
+.gh-photo-mirrored .sb-hero-photo{transform:scaleX(-1)}
+@media(max-width:600px){
+ .gh-photo-mirrored:not(.gh-photo-reverse) .sb-hero-photo{object-position:17% center}
+ .gh-photo-mirrored.gh-photo-reverse .sb-hero-photo{object-position:83% center}
+}

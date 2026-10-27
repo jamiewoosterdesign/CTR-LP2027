@@ -1,0 +1,30 @@
+/* Only the selected country takes up space; other profiles retain their state. */
+.profile-carousel>.au-profile[hidden]{display:none!important}
+.profile-carousel>.au-profile{margin-bottom:0;padding-bottom:0}
+.profile-pagination{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:40px 0 64px;width:100%;box-sizing:border-box}
+.profile-pagination button{cursor:pointer;font:400 16px/1.25 'Source Sans 3',sans-serif}
+.profile-page-prev,.profile-page-next{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#333;color:white;border:1px solid #333;border-radius:8px;padding:13px 18px;min-height:48px;transition:background .18s,box-shadow .18s;flex:none}
+.profile-page-prev:hover,.profile-page-next:hover{background:#163853;box-shadow:0 5px 18px #12345026}
+.profile-pagination svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.profile-page-numbers{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap}
+.profile-page-numbers button{min-width:36px;min-height:40px;border:0;background:transparent;color:#64748b;padding:6px;border-radius:6px}
+.profile-page-numbers button:hover{background:#e7eff8;color:#006dff}
+.profile-page-numbers button[aria-current]{color:#31425b;font-weight:600;background:#eaf0f7}
+.profile-page-numbers>span{color:#64748b;padding:0 4px}
+.profile-pagination button:focus-visible{outline:2px solid #006dff;outline-offset:3px}
+.profile-page-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .profile-page-counter{display:none}
+@media(max-width:900px){
+ .profile-pagination{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;gap:16px;padding:32px 16px 36px}
+ .profile-page-numbers,.profile-page-prev>span,.profile-page-next>span{display:none}
+ .profile-page-counter{display:block;text-align:center;color:#31425b;font:500 16px/1.4 'Source Sans 3',sans-serif}
+ .profile-page-prev,.profile-page-next{width:48px;height:48px;min-height:48px;padding:0;border-radius:8px;gap:0}
+ .profile-pagination svg{width:24px;height:24px}
+}
+/* Match the reference's unmistakable dark square generation arrows. */
+@media(min-width:901px){#generations .gen-carousel-arrow{width:48px;height:48px;border-radius:6px;background:#333;border:1px solid #333;color:#fff;box-shadow:0 3px 10px #16324c14}#generations .gen-carousel-arrow:hover:not(:disabled){background:#163853;color:#fff;box-shadow:0 6px 20px #17395730;transform:translateY(-50%) scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.profile-pagination button{transition:none}}
+.profile-carousel>.au-profile{margin-top:0}
+
+/* Temporarily hide traveller pagination; retain its markup and behaviour for restoration. */
+body:not(.static-export) .profile-pagination{display:none!important}

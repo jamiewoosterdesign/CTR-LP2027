@@ -1,0 +1,61 @@
+{
+  "title": "“Dear AI, we're still in control”",
+  "subtitle": "How travellers are letting AI into their trips, one condition at a time",
+  "stories": [
+    {
+      "key": "research",
+      "title": "Rising influence, not control",
+      "copy": "As a starting point for accommodation research, AI assistants have nearly doubled their share over the past year, up to 7.3% and growing faster than any other channel. Travellers are looking ahead, too, expecting AI to handle nearly 6% of bookings in 2027. But adoption hasn't turned into an appetite for full automation: half of all travellers still want to plan trips themselves, and only one-in-eight would hand over the planning process entirely.",
+      "value": 6,
+      "prefix": "",
+      "suffix": "%",
+      "label": "of travellers expect to book their accommodation through an AI agent in 2027.",
+      "stat": "6% of travellers expect to book their accommodation through an AI agent in 2027.",
+      "alt": "Glass search bubble containing an accommodation search bar."
+    },
+    {
+      "key": "trust",
+      "title": "Where trust lives today",
+      "copy": "For now, the intermediaries travellers already know hold the advantage. Booking platforms are trusted with personal data by more travellers than hotels (37.5% vs 29.6%), and both comfortably outrank AI assistants (13.0%). Among OTA loyalists, trust in the platform and its reviews outweighs loyalty points as a reason to keep booking there (40.2% vs 31.6%). AI’s fastest route to adoption is likely through these platforms, not around them.",
+      "value": 13,
+      "prefix": "",
+      "suffix": "%",
+      "label": "Only 13% of travellers trust AI assistants to use their personal data.",
+      "stat": "Only 13% of travellers trust AI assistants to use their personal data.",
+      "alt": "Hotel booking cards protected by a transparent glass shield."
+    },
+    {
+      "key": "choice",
+      "title": "Where choice really matters, AI hits a ceiling",
+      "copy": "When it comes to the biggest decision in travel — where to go — personal trust still wins by a wide margin. Friends and family shape destination choice more than film, influencers or magazines, and tailored recommendations from AI trail them all.",
+      "value": 5,
+      "prefix": "#",
+      "suffix": "",
+      "label": "AI ranks fifth among six influences on destination choice, ahead of advertising only.",
+      "stat": "#5 AI ranks fifth among six influences on destination choice, ahead of advertising only.",
+      "alt": "A destination map and compass guided by friends and family."
+    },
+    {
+      "key": "verification",
+      "title": "The trust gap AI could close",
+      "copy": "Among 26.5% of travellers, unreliable reviews, photos or details are the biggest cause of booking abandonment, ahead of fraud fears or a website that feels insecure. The most tech-comfortable travellers are doing the vetting: nearly three-in-four Gen Z travellers have walked away from a booking over a trust concern, versus roughly one-in-four Baby Boomers. That’s where travellers say they want AI’s help, with spotting fake listings and summarising reviews now two of the most valued AI capabilities. What travellers trust least is exactly where they’d welcome AI most.",
+      "value": 33,
+      "prefix": "",
+      "suffix": "%",
+      "label": "of travellers would use AI to spot fake listings and scams.",
+      "stat": "33% of travellers would use AI to spot fake listings and scams.",
+      "alt": "A magnifying glass examining a hotel listing and its reviews."
+    },
+    {
+      "key": "safeguards",
+      "title": "Comfort comes as a bundle, not a feature",
+      "copy": "Three-in-four travellers say they'd let AI complete a booking under the right conditions, but no single safeguard unlocks that comfort alone. Easy cancellation, staying on budget, full refundability, final approval and human backup all sit within a few points of each other. Younger travellers are again asking for more of these safeguards, not fewer. Trust isn't being earned feature-by-feature; it’s arriving as a package or not at all.",
+      "value": 75,
+      "prefix": "",
+      "suffix": "%",
+      "label": "of travellers would let AI complete their hotel booking, under the right conditions.",
+      "stat": "75% of travellers would let AI complete their hotel booking, under the right conditions.",
+      "alt": "A hotel booking surrounded by budget, cancellation, refund, approval and human-support safeguards."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+export function buildAILongform(page){
+ const data=JSON.parse(fs.readFileSync('scripts/ai-longform-copy.json','utf8'));
+ const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+ const rows=data.stories.map((s,i)=>`<article class="ai-row" id="ai-${s.key==='trust'?'trust-gap':s.key}" aria-labelledby="ai-title-${i}"><span class="ai-timeline-dot" aria-hidden="true"></span><figure class="ai-art"><span class="ai-image-number" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><img src="/assets/ai-${s.key}.png" alt="${esc(s.alt)}" width="1536" height="1024" loading="lazy" decoding="async"></figure><div class="ai-story-copy"><span class="ai-story-number">${String(i+1).padStart(2,'0')}</span><h3 id="ai-title-${i}">${esc(s.title)}</h3><p class="ai-body">${esc(s.copy)}</p><div class="ai-stat" aria-label="${esc(s.stat)}"><strong aria-hidden="true">${s.prefix||''}<span data-count="${s.value}">${s.value}</span>${s.suffix?`<span class="ai-stat-unit">${s.suffix}</span>`:''}</strong><p>${esc(s.label)}</p></div></div></article>`).join('');
+ const section=`<section class="ai-longform" id="ai-trust" aria-labelledby="ai-heading"><header class="ai-section-header"><p class="ai-eyebrow">AI &amp; trust</p><h2 id="ai-heading">${esc(data.title).replace(/([“”])/g,'<span class="ai-title-quote">$1</span>')}</h2><p>${esc(data.subtitle)}</p></header><div class="ai-timeline">${rows}</div></section>`;
+ page=page.replace('<section class="hero globe-light-hero profile-globe"',section+'<section class="hero globe-light-hero profile-globe"');
+ return page.replaceAll('href="/concept-globe-light/#ai-trust"','href="#ai-trust"').replace('</head>','<link rel="stylesheet" href="/assets/ai-longform.css"></head>').replace('</body>','<script src="/assets/ai-longform.js" defer></script></body>');
+}

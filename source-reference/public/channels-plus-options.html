@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Channels Plus - feature graphic options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    :root{--ink:#26323a;--muted:#7a8790;--line:#e9eef1;--blue:#176df5;--blue2:#54baf6;--lime:#d8ff68;--green:#2da966;--pale:#f6f8f9}
+    html,body{margin:0;background:#f5f6f7;color:var(--ink);font-family:"Source Sans 3",Arial,sans-serif;font-weight:400}
+    body{padding:48px 24px 72px}
+    .wrap{max-width:1280px;margin:0 auto}
+    .page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px;padding:0 4px}
+    h1{font-size:28px;line-height:1.1;font-weight:600;letter-spacing:-.02em;margin:0}
+    .sub{margin:6px 0 0;color:#78838a;font-size:15px}
+    .grid{display:grid;grid-template-columns:repeat(2,600px);gap:34px 28px;justify-content:center}
+    .option{margin:0}
+    .label{font-size:15px;font-weight:600;color:#37444b;margin:0 0 10px 4px}
+    .art{width:600px;height:520px;border-radius:30px;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;background:
+      radial-gradient(circle at 88% 20%,rgba(222,255,118,.95) 0,rgba(222,255,118,0) 39%),
+      radial-gradient(circle at 42% 44%,rgba(255,255,255,.52) 0,rgba(255,255,255,0) 42%),
+      linear-gradient(137deg,#cce2ff 0%,#bff3df 45%,#bcfeb4 72%,#deff76 100%)}
+    .frame{width:433px;height:368px;background:#fff;border:10px solid rgba(255,255,255,.2);background-clip:padding-box;border-radius:28px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+    .topline{height:5px;background:var(--lime);flex:0 0 auto}
+    .header{height:63px;display:flex;align-items:center;justify-content:space-between;padding:0 26px;border-bottom:1px solid #f0f3f4;flex:0 0 auto}
+    .brand{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:#39464d}
+    .spark{width:25px;height:25px;border-radius:8px;background:#edf4ff;color:var(--blue);display:grid;place-items:center;font-size:16px;line-height:1}
+    .pill{display:inline-flex;align-items:center;gap:6px;color:#4d6a5c;background:#f0faef;border:1px solid #dff1df;border-radius:999px;padding:5px 9px;font-size:10px;font-weight:600}
+    .dot{width:6px;height:6px;border-radius:50%;background:#47b86b}
+    .content{flex:1;min-height:0;padding:18px 26px 14px;display:flex;flex-direction:column}
+    .kicker{font-size:10px;color:#8b969d;font-weight:500;letter-spacing:.02em;margin-bottom:5px}
+    .title{font-size:18px;line-height:1.1;font-weight:600;letter-spacing:-.01em;color:#27343c}
+    .micro{margin-top:5px;font-size:10px;color:#8a959c}
+    .cta{margin:0 26px 22px;height:38px;background:var(--blue);border-radius:9px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;flex:0 0 auto}
+    .line{height:1px;background:#edf0f2}
+    .stroke{height:3px;border-radius:10px;background:#e4e9ec}
+    .stroke.dark{background:#cfd7dc}.stroke.blue{background:#a9c9ff}
+    .iconbox{width:32px;height:32px;border-radius:10px;background:#f1f6ff;color:var(--blue);display:grid;place-items:center;font-size:15px;font-weight:600}
+    .check{width:19px;height:19px;border-radius:50%;background:#e7f8e9;color:#299354;display:grid;place-items:center;font-size:11px;font-weight:600}
+
+    /* 1 - contract simplification */
+    .contracts{display:grid;grid-template-columns:1fr 44px 1fr;align-items:center;gap:9px;margin-top:15px;flex:1}
+    .stack{display:flex;flex-direction:column;gap:7px}
+    .contract{height:34px;border:1px solid #edf0f2;border-radius:9px;padding:7px 9px;display:flex;align-items:center;gap:8px;background:#fff}
+    .contract .mini{width:20px;height:20px;border-radius:6px;background:#f4f6f7;color:#708089;font-size:8px;font-weight:600;display:grid;place-items:center}
+    .contract .strokes{flex:1;display:flex;flex-direction:column;gap:5px}
+    .merge{display:grid;place-items:center;color:#93a0a7;font-size:22px;font-weight:500}
+    .one-setup{border:1px solid #dfeafa;border-radius:14px;padding:15px 13px;background:#fbfdff;text-align:center}
+    .one-setup .big-icon{width:42px;height:42px;border-radius:13px;background:#176df5;color:white;margin:0 auto 9px;display:grid;place-items:center;font-size:20px}
+    .one-setup strong{display:block;font-size:12px;font-weight:600}.one-setup span{display:block;font-size:9px;color:#87939a;margin-top:3px}
+
+    /* 2 - channel reach */
+    .reach{display:flex;align-items:center;gap:16px;margin-top:13px;flex:1}
+    .reach-stat{width:118px;height:118px;border-radius:50%;border:10px solid #e8f1ff;position:relative;display:grid;place-items:center;flex:0 0 auto}
+    .reach-stat:after{content:"";position:absolute;inset:-10px;border:10px solid transparent;border-top-color:#176df5;border-right-color:#176df5;border-radius:50%;transform:rotate(16deg)}
+    .stat{text-align:center;z-index:1}.stat b{display:block;font-size:27px;line-height:.9;color:#176df5;font-weight:600}.stat span{font-size:9px;color:#849198}
+    .channels{display:grid;grid-template-columns:1fr 1fr;gap:7px;flex:1}
+    .channel{height:43px;border:1px solid #edf0f2;border-radius:9px;padding:7px;display:flex;align-items:center;gap:7px;background:#fff}
+    .channel .mini{width:24px;height:24px;border-radius:7px;background:#f5f7f8;display:grid;place-items:center;font-size:8px;font-weight:600;color:#63727b}
+    .channel .name{font-size:8px;font-weight:600;color:#59676f;line-height:1.05}.channel .state{font-size:7px;color:#50a46d;margin-top:2px}
+
+    /* 3 - completed stays */
+    .stay-flow{margin-top:15px;display:flex;align-items:flex-start;justify-content:space-between;position:relative;flex:1;padding-top:6px}
+    .stay-flow:before{content:"";position:absolute;left:34px;right:34px;top:24px;height:2px;background:#e8edf0}
+    .stage{width:70px;position:relative;text-align:center;z-index:1}
+    .stage-icon{width:38px;height:38px;margin:0 auto 8px;border-radius:12px;border:1px solid #e6ebee;background:#fff;display:grid;place-items:center;font-size:15px;color:#809099}
+    .stage.done .stage-icon{background:#eef8ff;color:#176df5;border-color:#dcecff}.stage.final .stage-icon{background:#ecf9ec;color:#2e9a59;border-color:#d9f0dc}
+    .stage b{display:block;font-size:9px;font-weight:600;color:#59666d}.stage span{font-size:7px;color:#97a0a5}
+    .commission{margin-top:6px;border:1px solid #e7edef;border-radius:10px;padding:8px 10px;display:flex;align-items:center;justify-content:space-between;background:#fbfcfc}
+    .commission div:first-child{font-size:9px;color:#738087}.commission strong{font-size:10px;font-weight:600;color:#2f9b5c}
+
+    /* 4 - expansion */
+    .expand{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:9px;flex:1}
+    .connected{border:1px solid #e6edf0;border-radius:13px;padding:10px 12px;background:#fff}
+    .connected-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}.connected-head b{font-size:10px;font-weight:600}.count{font-size:9px;color:#2f9c5b;background:#eef9ef;padding:3px 6px;border-radius:99px}
+    .mini-row{height:30px;display:flex;align-items:center;gap:7px;border-top:1px solid #f1f3f4}.mini-row:first-of-type{border-top:0}.mini-row .mini{width:21px;height:21px;border-radius:6px;background:#f4f6f7;display:grid;place-items:center;font-size:7px;font-weight:600;color:#66747c}.mini-row .stroke{flex:1}.plus{font-size:12px;color:#176df5}
+    .next{border:1px solid #dceafb;border-radius:13px;padding:10px 12px;background:#fbfdff;display:flex;flex-direction:column}
+    .next .eyebrow{font-size:8px;color:#849198}.next b{font-size:13px;font-weight:600;margin-top:2px}.next .search{height:30px;border:1px solid #e8edf0;border-radius:8px;margin-top:8px;padding:0 9px;display:flex;align-items:center;gap:7px;color:#a0a9ae;font-size:9px;background:white}.suggestion{margin-top:7px;display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;background:#f2f7ff}.suggestion .mini{width:24px;height:24px;border-radius:7px;background:white;display:grid;place-items:center;font-size:8px;font-weight:600}.suggestion div:last-child{font-size:8px;color:#526169}.suggestion small{display:block;color:#6dab7d;font-size:7px}
+    @media(max-width:1260px){.grid{grid-template-columns:600px}.page-head{max-width:600px;margin-left:auto;margin-right:auto}}
+    @media(max-width:650px){body{padding:24px 12px}.grid{grid-template-columns:1fr}.option{overflow:auto}.art{transform-origin:top left}.page-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="page-head"><div><h1>Channels Plus - feature graphic concepts</h1><p class="sub">Four static 600 × 520 directions</p></div></div>
+    <section class="grid">
+
+      <figure class="option">
+        <figcaption class="label">01 - One setup, not many contracts</figcaption>
+        <div class="art">
+          <div class="frame">
+            <div class="topline"></div>
+            <div class="header"><div class="brand"><span class="spark">✦</span>Channels Plus</div><span class="pill"><span class="dot"></span>Connected</span></div>
+            <div class="content">
+              <div class="kicker">Distribution simplified</div><div class="title">Replace separate OTA setup</div>
+              <div class="contracts">
+                <div class="stack">
+                  <div class="contract"><span class="mini">OTA</span><div class="strokes"><span class="stroke dark" style="width:72%"></span><span class="stroke" style="width:48%"></span></div></div>
+                  <div class="contract"><span class="mini">OTA</span><div class="strokes"><span class="stroke dark" style="width:61%"></span><span class="stroke" style="width:43%"></span></div></div>
+                  <div class="contract"><span class="mini">OTA</span><div class="strokes"><span class="stroke dark" style="width:78%"></span><span class="stroke" style="width:51%"></span></div></div>
+                </div>
+                <div class="merge">→</div>
+                <div class="one-setup"><div class="big-icon">✦</div><strong>One setup</strong><span>SiteMinder handles the rest</span></div>
+              </div>
+            </div>
+            <div class="cta">Manage channels</div>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="option">
+        <figcaption class="label">02 - 40+ OTAs from one connection</figcaption>
+        <div class="art">
+          <div class="frame">
+            <div class="topline"></div>
+            <div class="header"><div class="brand"><span class="spark">✦</span>Channels Plus</div><span class="pill"><span class="dot"></span>Live</span></div>
+            <div class="content">
+              <div class="kicker">Channel reach</div><div class="title">Connect where guests book</div>
+              <div class="reach">
+                <div class="reach-stat"><div class="stat"><b>40+</b><span>OTAs available</span></div></div>
+                <div class="channels">
+                  <div class="channel"><span class="mini">B</span><div><div class="name">Booking</div><div class="state">Connected</div></div></div>
+                  <div class="channel"><span class="mini">E</span><div><div class="name">Expedia</div><div class="state">Connected</div></div></div>
+                  <div class="channel"><span class="mini">A</span><div><div class="name">Agoda</div><div class="state">Available</div></div></div>
+                  <div class="channel"><span class="mini">+</span><div><div class="name">More OTAs</div><div class="state">Add anytime</div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="cta">Explore channels</div>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="option">
+        <figcaption class="label">03 - Pay commission after the stay</figcaption>
+        <div class="art">
+          <div class="frame">
+            <div class="topline"></div>
+            <div class="header"><div class="brand"><span class="spark">✦</span>Channels Plus</div><span class="pill"><span class="dot"></span>Automated</span></div>
+            <div class="content">
+              <div class="kicker">Completed stays</div><div class="title">Commission follows the outcome</div>
+              <div class="stay-flow">
+                <div class="stage done"><div class="stage-icon">↗</div><b>Booking</b><span>Received</span></div>
+                <div class="stage done"><div class="stage-icon">⌂</div><b>Check-in</b><span>Guest arrives</span></div>
+                <div class="stage final"><div class="stage-icon">✓</div><b>Stay complete</b><span>Confirmed</span></div>
+              </div>
+              <div class="commission"><div>Commission status</div><strong>Ready to settle ✓</strong></div>
+            </div>
+            <div class="cta">View completed stays</div>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="option">
+        <figcaption class="label">04 - Expand without another extranet</figcaption>
+        <div class="art">
+          <div class="frame">
+            <div class="topline"></div>
+            <div class="header"><div class="brand"><span class="spark">✦</span>Channels Plus</div><span class="pill"><span class="dot"></span>Active</span></div>
+            <div class="content">
+              <div class="kicker">Flexible distribution</div><div class="title">Add channels when you're ready</div>
+              <div class="expand">
+                <div class="connected"><div class="connected-head"><b>Connected</b><span class="count">8 live</span></div>
+                  <div class="mini-row"><span class="mini">B</span><span class="stroke dark" style="width:54%"></span><span class="check">✓</span></div>
+                  <div class="mini-row"><span class="mini">E</span><span class="stroke dark" style="width:47%"></span><span class="check">✓</span></div>
+                  <div class="mini-row"><span class="mini">A</span><span class="stroke dark" style="width:60%"></span><span class="check">✓</span></div>
+                </div>
+                <div class="next"><span class="eyebrow">40+ channels available</span><b>Grow your reach</b><div class="search">⌕ Search channels</div><div class="suggestion"><span class="mini">+</span><div>New channel<small>Ready to connect</small></div></div></div>
+              </div>
+            </div>
+            <div class="cta">Add a channel</div>
+          </div>
+        </div>
+      </figure>
+
+    </section>
+  </main>
+</body>
+</html>

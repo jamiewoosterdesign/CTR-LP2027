@@ -47,4 +47,3 @@ localization/translation-audit-source.csv is the supplied copy deck snapshot. Pr
 
 ## Honest QA status
 Source and screenshot-based fixes were published, but a complete live visual desktop/mobile audit was NOT completed. Do not mark this task done without opening every language in an actual browser. See NEXT-CHAT.md for the remaining task.
-

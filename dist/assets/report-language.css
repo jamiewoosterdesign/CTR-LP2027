@@ -1,0 +1,65 @@
+.report-language{position:relative;flex:0 0 auto;font-family:'Source Sans 3',sans-serif;color:#34445e}
+.report-language-toggle{display:flex;align-items:center;gap:7px;padding:10px 4px;border:0;background:transparent;color:inherit;font:400 16px/1.3 'Source Sans 3',sans-serif;cursor:pointer}
+.report-language img{width:20px;height:20px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.report-language-toggle svg{width:14px;height:14px;fill:none;stroke:#92a7bc;stroke-width:1.8}
+.report-language-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+.report-language-menu{position:absolute;z-index:120;top:calc(100% + 8px);right:0;width:208px;padding:7px;border:1px solid #e0e6ec;border-radius:10px;background:#fff;box-shadow:0 12px 36px #18385b24;box-sizing:border-box}
+.report-language-menu[hidden]{display:none}
+.report-language-menu button{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:0;border-radius:7px;background:#fff;color:#34445e;text-align:left;font:400 16px/1.3 'Source Sans 3',sans-serif;cursor:pointer}
+.report-language-menu button:is(:hover,[aria-selected=true]){background:#f5f7f9}
+.report-language button:focus-visible{outline:2px solid #306eff;outline-offset:2px}
+.report-language-actions{display:contents}
+@media(max-width:1100px){
+ .report-nav>.report-language{display:none}
+ .report-nav.desktop-persistent>nav .report-language-actions{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:0;margin-top:12px}
+ .report-nav.desktop-persistent>nav .report-language-actions .report-mobile-playbook{width:auto;margin:0;padding:10px 20px;font-size:13px;min-height:38px}
+ .report-language-actions .report-language-menu{top:auto;bottom:calc(100% + 6px);width:200px}
+ .report-language-actions .report-language-menu button{padding:10px 12px}
+}
+@media(max-width:1100px){.report-nav.desktop-persistent>nav:has(.report-language-toggle[aria-expanded=true]){overflow:visible}}
+
+/* Native modal escapes the sticky header and its clipping/stacking context. */
+.report-language-dialog{border:0;padding:0;background:transparent;max-width:none;max-height:calc(100dvh - 48px);width:min(440px,calc(100vw - 40px));margin:auto;overflow:auto;color:#31425b}
+.report-language-dialog::backdrop{background:rgba(19,36,60,.42)}
+.report-language-dialog>.report-language{padding:20px;border:1px solid #e0e6ec;border-radius:18px;background:#fff;box-shadow:0 20px 70px #142b4b40}
+.report-language-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.report-language-heading strong{font:600 18px/1.3 'Source Sans 3',sans-serif}
+.report-language-heading button{display:flex;align-items:center;justify-content:center;width:36px;height:36px;padding:8px;margin:-6px -6px 0 0;border:0;border-radius:7px;background:transparent;cursor:pointer}
+.report-language-heading svg{width:20px;height:20px;stroke:#64748b;stroke-width:1.5;fill:none;stroke-linecap:round}
+.report-language-dialog .report-language-menu{position:static;inset:auto;width:100%;padding:0;border:0;border-radius:0;box-shadow:none}
+.report-language-dialog .report-language-menu button{min-height:44px;padding:12px}
+
+/* Keep desktop navigation readable; change layout before squeezing the labels. */
+@media(min-width:1101px) and (max-width:1250px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{gap:20px;padding-inline:18px}
+ .report-nav.desktop-persistent>nav{gap:20px}
+ .report-nav.desktop-persistent>nav a,.report-nav.desktop-persistent .report-cta,.report-nav.desktop-persistent .report-brand>.report-brand-title,.report-language-toggle{font-size:14px}
+ .report-nav.desktop-persistent .report-cta{padding-inline:14px}
+}
+/* Header-only breakpoint: the report content retains its existing layout. */
+@media(min-width:901px) and (max-width:1100px){
+ .report-globe-light:not(.static-export) .report-nav.desktop-persistent{height:60px;min-height:60px;padding:8px 18px;gap:16px;flex-wrap:nowrap}
+ .report-nav.desktop-persistent>.report-cta{display:none}
+ .report-nav.desktop-persistent .report-brand{flex:1;gap:12px;min-width:0}
+ .report-nav.desktop-persistent .report-brand .report-logo{width:100px;height:28px}
+ .report-nav.desktop-persistent .report-brand>.report-brand-title{font-size:14px;padding-left:12px}
+ .report-nav.desktop-persistent .report-menu-toggle{order:3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:38px;height:38px;flex:0 0 38px;margin-left:auto;border:1px solid var(--report-line);border-radius:8px;background:transparent;color:var(--report-text);cursor:pointer}
+ .report-nav.desktop-persistent .report-menu-toggle span{width:20px;height:2px;background:currentColor;transition:transform .15s,opacity .15s}
+ .report-nav.desktop-persistent.menu-open .report-menu-toggle span:first-child{transform:translateY(7px) rotate(45deg)}
+ .report-nav.desktop-persistent.menu-open .report-menu-toggle span:nth-child(2){opacity:0}
+ .report-nav.desktop-persistent.menu-open .report-menu-toggle span:last-child{transform:translateY(-7px) rotate(-45deg)}
+ .report-nav.desktop-persistent>nav{display:none;position:absolute;top:100%;left:0;right:0;width:auto;margin:0;padding:12px 20px 26px;background:#f5f9fc;border-bottom:1px solid var(--report-line);box-shadow:none;max-height:calc(100dvh - 60px);overflow:auto}
+ .report-nav.desktop-persistent.menu-open>nav{display:flex;flex-direction:column;gap:0}
+ .report-nav.desktop-persistent>nav a{padding:14px 10px;font-size:16px;border-radius:10px}
+ .report-nav.desktop-persistent>nav a.current{background:#fff;color:#006dff}
+ .report-nav.desktop-persistent>nav .report-language-actions .report-mobile-playbook{display:flex;align-items:center;justify-content:center;box-sizing:border-box;border-radius:8px;background:#0878d4;color:#fff;font-size:14px}
+}
+
+@media(max-width:1100px){
+ .report-language-actions>.report-mobile-playbook{grid-column:2;grid-row:1;justify-self:center}
+ .report-language-actions>.report-language{grid-column:3;grid-row:1;justify-self:end}
+}
+@media(max-width:359px){
+ .report-nav.desktop-persistent>nav .report-language-actions .report-mobile-playbook{padding-inline:10px}
+ .report-language-actions .report-language-toggle{gap:4px}
+}

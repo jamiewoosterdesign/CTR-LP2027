@@ -1,0 +1,171 @@
+{
+  "australia": {
+    "research": [
+      0,
+      2
+    ],
+    "booking": [
+      3
+    ],
+    "return": [
+      1
+    ]
+  },
+  "canada": {
+    "research": [
+      0,
+      2
+    ],
+    "booking": [
+      1
+    ],
+    "return": [
+      3
+    ]
+  },
+  "china": {
+    "research": [
+      1,
+      2
+    ],
+    "booking": [
+      0,
+      2
+    ],
+    "return": [
+      0,
+      1
+    ]
+  },
+  "france": {
+    "research": [
+      0
+    ],
+    "booking": [
+      1
+    ],
+    "return": [
+      0
+    ]
+  },
+  "germany": {
+    "research": [
+      0,
+      1
+    ],
+    "booking": [
+      2,
+      3
+    ],
+    "return": [
+      0,
+      1
+    ]
+  },
+  "india": {
+    "research": [
+      3
+    ],
+    "booking": [
+      0,
+      4
+    ],
+    "return": [
+      1
+    ]
+  },
+  "indonesia": {
+    "research": [
+      1,
+      3
+    ],
+    "booking": [
+      0,
+      3
+    ],
+    "return": [
+      1
+    ]
+  },
+  "italy": {
+    "research": [
+      0
+    ],
+    "booking": [
+      3
+    ],
+    "return": [
+      5
+    ]
+  },
+  "mexico": {
+    "research": [
+      2,
+      3
+    ],
+    "booking": [
+      2
+    ],
+    "return": [
+      1,
+      3
+    ]
+  },
+  "singapore": {
+    "research": [
+      2
+    ],
+    "booking": [
+      0
+    ],
+    "return": [
+      1
+    ]
+  },
+  "spain": {
+    "research": [
+      0
+    ],
+    "booking": [
+      3
+    ],
+    "return": [
+      0
+    ]
+  },
+  "thailand": {
+    "research": [
+      2,
+      3
+    ],
+    "booking": [
+      0
+    ],
+    "return": [
+      1,
+      2
+    ]
+  },
+  "uk": {
+    "research": [
+      1
+    ],
+    "booking": [
+      1
+    ],
+    "return": [
+      1
+    ]
+  },
+  "usa": {
+    "research": [
+      3
+    ],
+    "booking": [
+      4
+    ],
+    "return": [
+      5
+    ]
+  }
+}

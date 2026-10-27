@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CTR 2027 Hero Concept - Light world signals</title>
+  <meta name="description" content="A light interactive world-signals hero for SiteMinder's Changing Traveller Report 2027.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23012C66'/%3E%3Cpath d='M14 18h36M14 30h28M14 42h20' stroke='%2304C3FE' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap');
+    :root{--navy:#062e63;--blue:#0872dd;--cyan:#00bff3;--lime:#a9e342;--ink:#0c315d;--muted:#587087}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7fbfd;color:var(--ink);font-family:"Source Sans 3",Arial,sans-serif}button,select,a{font:inherit}
+    .page-switch{position:fixed;z-index:100;top:16px;right:16px}.page-switch select{appearance:none;width:218px;background:rgba(255,255,255,.91) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23012c66' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 12px center;backdrop-filter:blur(14px);border:1px solid rgba(169,190,210,.8);box-shadow:0 5px 18px rgba(10,40,75,.09);border-radius:9px;padding:8px 34px 8px 11px;color:#17385e;font-size:13px;font-weight:600}
+    .hero{position:relative;min-height:100vh;overflow:hidden;background:linear-gradient(180deg,#fff 0,#f4fbfe 64%,#e6f5fb 100%)}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 10% 13%,rgba(0,191,243,.1),transparent 28%),radial-gradient(circle at 90% 8%,rgba(169,227,66,.1),transparent 25%);pointer-events:none}
+    .intro{position:relative;z-index:2;width:min(1240px,calc(100% - 40px));margin:auto;padding:8.5vh 0 4.5vh;text-align:center}.kicker{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 0 15px;color:#0872c8;font-size:13px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}.kicker:before,.kicker:after{content:"";width:28px;height:1px;background:#7fcae9}
+    h1{max-width:930px;margin:0 auto 18px;font-size:clamp(48px,5.1vw,78px);line-height:.95;letter-spacing:-.052em;color:#092f61}h1 span{color:#0782da}.lead{max-width:720px;margin:0 auto;color:var(--muted);font-size:clamp(17px,1.4vw,21px);line-height:1.48}.edition{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:#557087;font-size:13px}.edition:before{content:"";width:7px;height:7px;border-radius:50%;background:#60cb72;box-shadow:0 0 0 4px rgba(96,203,114,.12)}
+    .carousel-shell{position:relative;z-index:3;width:100%;padding:0 0 38px}
+    .carousel{position:relative;touch-action:pan-y;user-select:none;cursor:grab;overflow-anchor:none;display:flex;gap:14px;overflow-x:auto;padding:0 max(3.5vw,24px) 18px;scroll-padding-inline:max(3.5vw,24px);scroll-snap-type:none;scrollbar-width:none}.carousel.autoplay{scroll-snap-type:none}.carousel::-webkit-scrollbar{display:none}
+    .country{position:relative;flex:0 0 244px;height:455px;overflow:hidden;border:1px solid rgba(255,255,255,.72);border-radius:30px;padding:8px;background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(255,255,255,.13));box-shadow:0 12px 30px rgba(9,53,95,.14),inset 0 1px 0 #fff;backdrop-filter:blur(15px) saturate(135%);scroll-snap-align:center;cursor:pointer;outline:none;transition:flex-basis .48s cubic-bezier(.22,.78,.2,1),transform .25s ease,box-shadow .3s}.country:after{content:"";position:absolute;z-index:2;inset:8px;border-radius:23px;background:linear-gradient(125deg,rgba(255,255,255,.36),transparent 27%,transparent 72%,rgba(255,255,255,.12));pointer-events:none}.country.active{flex-basis:520px;transform:translateY(-3px);box-shadow:0 19px 44px rgba(9,53,95,.19),inset 0 1px 0 #fff}.country:focus-visible{box-shadow:0 0 0 3px #72d5f4,0 19px 44px rgba(9,53,95,.19)}
+    .country img{position:absolute;z-index:0;inset:8px;width:calc(100% - 16px);height:calc(100% - 16px);border-radius:23px;object-fit:cover;object-position:center;transform:none;transition:transform .55s cubic-bezier(.2,.8,.2,1),object-position .45s}.country.active img{transform:none;object-position:center 43%}.country:before{content:"";position:absolute;z-index:1;inset:8px;border-radius:23px;background:linear-gradient(180deg,rgba(2,22,46,0) 35%,rgba(2,28,59,.2) 56%,rgba(2,28,59,.92) 100%);pointer-events:none}.country.active:before{background:linear-gradient(180deg,rgba(2,22,46,0) 28%,rgba(2,28,59,.15) 50%,rgba(2,28,59,.94) 100%)}
+    .country-copy{position:absolute;z-index:3;left:29px;right:29px;bottom:27px;color:#fff}.country h2{margin:0;font-size:29px;line-height:1;letter-spacing:-.025em;text-shadow:0 2px 12px rgba(0,0,0,.28)}.country-detail{max-width:390px;max-height:0;margin:0;overflow:hidden;color:#eaf4f8;font-size:15px;line-height:1.4;opacity:0;transform:translateY(8px);transition:max-height .45s,margin .35s,opacity .25s .08s,transform .35s .08s}.country.active .country-detail{max-height:85px;margin-top:11px;opacity:1;transform:none}.country-links{display:flex;align-items:center;gap:17px;max-height:0;margin:0;overflow:hidden;opacity:0;transform:translateY(8px);transition:max-height .45s,margin .35s,opacity .25s .12s,transform .35s .12s}.country.active .country-links{max-height:46px;margin-top:13px;opacity:1;transform:none}.country-links a{color:#fff;font-size:14px;font-weight:700;text-decoration:none}.country-links a:first-child:after{content:"→";display:inline-block;margin-left:7px;transition:transform .2s}.country-links a:first-child:hover:after{transform:translateX(4px)}.country-links a.secondary{color:#cdefff;font-weight:600;text-decoration:underline;text-decoration-color:rgba(205,239,255,.45);text-underline-offset:4px}
+    .next{min-height:54vh;padding:92px 6vw;background:#fff;display:grid;place-items:center;text-align:center}.next-inner{max-width:820px}.next h2{font-size:clamp(38px,4.4vw,62px);line-height:1;letter-spacing:-.04em;margin:0 0 20px}.next p{font-size:19px;line-height:1.5;color:#5c7185;margin:0}.country-list{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:28px}.country-list span{border:1px solid #d7e5ed;background:#f8fbfd;border-radius:99px;padding:7px 11px;color:#3f6682;font-size:13px;font-weight:600}
+    @media(max-width:780px){.intro{padding-top:98px;padding-bottom:36px}.carousel-top{width:calc(100% - 32px)}.carousel{padding-inline:16px;scroll-padding-inline:16px;scroll-snap-type:none}.carousel.autoplay{scroll-snap-type:none}.country{flex-basis:210px;height:430px}.country:hover{flex-basis:210px;transform:none}.country.active{flex-basis:calc(100vw - 46px);transform:none}.country:hover .country-detail,.country:hover .country-links{max-height:0;margin:0;opacity:0;transform:translateY(8px)}.country.active .country-detail{max-height:85px;margin-top:11px;opacity:1;transform:none}.country.active .country-links{max-height:46px;margin-top:13px;opacity:1;transform:none}.country-copy{left:25px;right:25px}.next{padding:76px 20px}}
+    @media(max-width:560px){.page-switch{top:10px;right:10px}.page-switch select{width:202px}.intro{width:calc(100% - 34px);padding-top:88px}h1{font-size:47px}.lead{font-size:17px}.carousel-label{max-width:none}.country{height:410px}.country.active{flex-basis:calc(100vw - 34px)}.country h2{font-size:27px}.country-links{gap:12px}.country-links a{font-size:13px}.carousel-dots{gap:6px}.dot{width:7px;height:7px}.dot.current{width:20px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    .carousel.dragging,.carousel.dragging .country{cursor:grabbing}.country img{-webkit-user-drag:none;pointer-events:none}
+
+    @media(min-width:781px){
+      .hero{height:100svh;min-height:680px;display:flex;flex-direction:column}
+      .intro{flex:0 0 auto;padding-top:clamp(70px,8vh,92px);padding-bottom:clamp(16px,2.5vh,28px)}
+      .carousel-shell{flex:1 1 auto;min-height:0;display:flex;align-items:center;padding-bottom:0;margin-top:0}
+      .carousel{height:100%;min-height:0;align-items:center;padding-top:24px;padding-bottom:38px}
+    }
+    @media(min-width:781px) and (max-height:860px){
+      .hero{min-height:620px}
+      .intro{padding-top:58px;padding-bottom:10px}
+      .intro h1{font-size:clamp(48px,7.5vh,62px);margin-bottom:13px}
+      .kicker{margin-bottom:10px}.lead{font-size:18px;line-height:1.38}.edition{margin-top:11px}
+      .carousel{padding-top:16px;padding-bottom:28px}
+      .carousel .card-slot{height:min(390px,calc(100svh - 330px))}
+    }
+    .carousel{overflow-y:hidden}
+    .carousel-shell{padding-bottom:0}
+    .carousel-shell:before,.carousel-shell:after{content:"";position:absolute;top:0;bottom:0;width:clamp(100px,10vw,180px);z-index:40;pointer-events:none;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+    .carousel-shell:before{left:0;background:linear-gradient(90deg,rgba(239,249,253,.24),transparent);mask-image:linear-gradient(90deg,#000 5%,rgba(0,0,0,.8) 35%,transparent)}
+    .carousel-shell:after{right:0;background:linear-gradient(270deg,rgba(239,249,253,.24),transparent);mask-image:linear-gradient(270deg,#000 5%,rgba(0,0,0,.8) 35%,transparent)}
+    .card-slot{position:relative;flex:0 0 244px;height:455px;transition:flex-basis .3s ease}.card-slot.open{flex-basis:var(--expanded,390px);z-index:20}
+    .card-slot .country{position:absolute;left:0;top:0;width:100%;height:100%;transition:width .3s ease,left .3s ease,transform .3s ease,box-shadow .3s ease}
+    .card-slot .country.active{width:100%;left:0;transform:translateY(-6px);box-shadow:0 22px 40px rgba(9,53,95,.23),inset 0 1px 0 #fff}
+    .country-links{flex-wrap:wrap;gap:10px 16px}.country.active .country-links{max-height:90px}
+    @media(max-width:780px){.card-slot{flex-basis:210px;height:430px}.carousel-shell:before,.carousel-shell:after{width:58px}}
+    @media(max-width:560px){.card-slot{height:410px}.country-copy{left:22px;right:22px}}
+  </style>
+  <link rel="stylesheet" href="/assets/world-signals.css">
+  <link rel="stylesheet" href="/assets/report-sections.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/report-refinements.css">
+  <link rel="stylesheet" href="/assets/sidebar-profile.css">
+  <link rel="stylesheet" href="/assets/globe-light.css">
+  <link rel="stylesheet" href="/assets/globe-light-headlines.css">
+</head>
+<body class="report-regions report-globe-light">
+<header class="report-nav"><a class="report-brand" href="#report-top"><img class="report-logo" src="/assets/siteminder-logo-dark.svg" alt="SiteMinder" width="130" height="32"><img class="report-mark" src="/assets/siteminder-mark-dark.svg" alt="" width="28" height="28"><span class="report-brand-title">Changing Traveller Report <b>2027</b></span></a><button class="report-menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="report-menu"><span></span><span></span><span></span></button><nav id="report-menu" aria-label="Report sections"><a href="#global-headlines">Global headlines</a><a href="#ai-trust">AI &amp; trust</a><a href="#generations">Generations</a><a href="#traveller-profiles">Traveller profiles</a></nav><a class="report-cta" href="#playbook">Hotelier’s Playbook <span aria-hidden="true"><i class="report-arrow arrow-down" aria-hidden="true"></i></span></a></header>
+  <main>
+    <section class="hero globe-light-hero" id="report-top">
+      <div class="hero-inner">
+        <div class="copy">
+          <p class="kicker">Changing Traveller Report 2027</p>
+          <h1>The world is telling us <em>what comes&nbsp;next.</em></h1>
+          <p class="lead">Explore the signals reshaping accommodation choice, trust and booking behaviour - then turn global traveller insight into practical hotel strategy.</p>
+          <div class="actions"><a class="primary" href="#global-headlines">Read the signals</a><a class="ghost" href="#playbook">Hotelier’s Playbook</a></div>
+          <div class="micro">The world’s largest accommodation-specific traveller study&nbsp;·&nbsp;2027</div>
+        </div>
+        <div class="system" aria-label="Interactive world of traveller signals">
+          <div class="globe-stage">
+            <canvas id="globe" tabindex="0" role="img" aria-label="Interactive globe. Drag to rotate, or use arrow keys. Select a country photo to explore."></canvas>
+            <div id="globe-markers"></div>
+            <aside class="country-popover" id="country-popover" hidden aria-label="Country insight">
+              <button class="popover-close" aria-label="Close country details">×</button>
+              <div class="popover-heading"><img id="country-photo" alt=""><div><p class="popover-kicker">Traveller perspectives</p><h2 id="country-name"></h2></div></div>
+              <p id="country-description"></p>
+              <span id="country-link" class="future-link"></span>
+              <a class="global-link future-link" href="#global-headlines">Global findings <i class="report-arrow arrow-right" aria-hidden="true"></i></a>
+            </aside>
+            <div class="globe-help"><button class="globe-help-button" aria-label="How to explore" aria-expanded="false" aria-describedby="globe-help-text"><span class="globe-bulb" aria-hidden="true"></span></button><span class="globe-help-text" id="globe-help-text" role="tooltip">Drag the globe or select a country.<br>Or simply scroll to explore.</span></div>
+          </div>
+        </div>
+        <div class="micro micro-mobile">The world’s largest accommodation-specific traveller study&nbsp;·&nbsp;2027</div>
+      </div>
+      <a class="globe-scroll-hint" href="#global-headlines" aria-label="Scroll to Global headlines"><i class="report-arrow arrow-down" aria-hidden="true"></i></a>
+    </section>
+    <section class="hero carousel-source-hero" aria-hidden="true">
+      <header class="intro"><p class="kicker">Changing Traveller Report 2027</p><h1>Meet tomorrow’s <span>traveller.</span></h1><p class="lead">Explore how accommodation choice, trust and booking behaviour are shifting around the world - and what hotels can do next.</p><div class="edition">Global traveller research · 2027 edition</div></header>
+      <div class="carousel-shell">
+        <div class="carousel" aria-label="Country insights carousel">
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Australia"><img src="/assets/country-australia.webp" alt="Traveller at Sydney Harbour"><div class="country-copy"><h2>Australia</h2><p class="country-detail">See the priorities, booking habits and stay expectations shaping Australian travellers.</p><div class="country-links"><a href="#profile-overview">View Australia insights</a><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Canada"><img src="/assets/country-canada.webp" alt="Travellers in Banff National Park"><div class="country-copy"><h2>Canada</h2><p class="country-detail">Explore what Canadian guests value as they research, book and experience a stay.</p><div class="country-links"><span class="future-country-link">View Canada insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="China"><img src="/assets/country-china.webp" alt="Family exploring the Great Wall of China"><div class="country-copy"><h2>China</h2><p class="country-detail">Discover the choices and digital behaviours defining China’s accommodation market.</p><div class="country-links"><span class="future-country-link">View China insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="France"><img src="/assets/country-france.webp" alt="Travellers exploring Paris"><div class="country-copy"><h2>France</h2><p class="country-detail">Understand what French travellers expect from discovery through to the hotel stay.</p><div class="country-links"><span class="future-country-link">View France insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Germany"><img src="/assets/country-germany.webp" alt="Travellers at Berlin's Brandenburg Gate"><div class="country-copy"><h2>Germany</h2><p class="country-detail">See the booking preferences and hotel expectations influencing German guests.</p><div class="country-links"><span class="future-country-link">View Germany insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="India"><img src="/assets/country-india.webp" alt="Travellers visiting the Taj Mahal"><div class="country-copy"><h2>India</h2><p class="country-detail">Explore the technology, value and experience signals shaping Indian travellers.</p><div class="country-links"><span class="future-country-link">View India insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Indonesia"><img src="/assets/country-indonesia.webp" alt="Travellers exploring a Balinese temple"><div class="country-copy"><h2>Indonesia</h2><p class="country-detail">Follow how Indonesian travellers discover accommodation and decide where to book.</p><div class="country-links"><span class="future-country-link">View Indonesia insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Italy"><img src="/assets/country-italy.webp" alt="Traveller visiting Rome"><div class="country-copy"><h2>Italy</h2><p class="country-detail">See what matters to Italian guests before, during and after their hotel stay.</p><div class="country-links"><span class="future-country-link">View Italy insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Mexico"><img src="/assets/country-mexico.webp" alt="Travellers exploring Mexico City"><div class="country-copy"><h2>Mexico</h2><p class="country-detail">Explore the booking signals and experience priorities emerging across Mexico.</p><div class="country-links"><span class="future-country-link">View Mexico insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Singapore"><img src="/assets/country-singapore.webp" alt="Travellers at Singapore's Marina Bay"><div class="country-copy"><h2>Singapore</h2><p class="country-detail">Understand the digital and service expectations shaping Singaporean travellers.</p><div class="country-links"><span class="future-country-link">View Singapore insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Spain"><img src="/assets/country-spain.webp" alt="Travellers visiting Barcelona"><div class="country-copy"><h2>Spain</h2><p class="country-detail">See how service, value and experience influence Spain’s accommodation choices.</p><div class="country-links"><span class="future-country-link">View Spain insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="Thailand"><img src="/assets/country-thailand.webp" alt="International friends visiting a temple in Bangkok"><div class="country-copy"><h2>Thailand</h2><p class="country-detail">Discover the behaviours and priorities defining Thailand’s next traveller.</p><div class="country-links"><span class="future-country-link">View Thailand insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="United Kingdom"><img src="/assets/country-uk-fixed.png" alt="Travellers beside the River Thames in London"><div class="country-copy"><h2>United Kingdom</h2><p class="country-detail">Explore how UK travellers balance price, trust, convenience and experience.</p><div class="country-links"><span class="future-country-link">View UK insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+          <article class="country" tabindex="0" role="button" aria-expanded="false" data-country="United States"><img src="/assets/country-united-states.webp" alt="Family exploring New York City"><div class="country-copy"><h2>United States</h2><p class="country-detail">See the discovery, loyalty and direct-booking signals shaping American guests.</p><div class="country-links"><span class="future-country-link">View US insights</span><a class="secondary" href="#global-headlines">Global findings</a></div></div></article>
+        </div>
+      </div>
+    </section>
+<div class="side-layout headline-layout"><aside class="report-side-nav headline-side-nav" aria-label="Global headline stories"><button class="side-nav-toggle" type="button" aria-expanded="false" aria-controls="headline-side-nav-links"><span>Global headlines</span><strong>The discovery shift</strong><i class="report-arrow arrow-down" aria-hidden="true"></i></button><nav id="headline-side-nav-links"><p>Global headlines</p><a href="#story-discovery">The discovery shift</a><a href="#story-experience">The experience premium</a><a href="#story-events">Event-led travel</a><a href="#story-purpose">Paying with purpose</a></nav></aside><div class="side-content">
+<section class="gh-section" id="global-headlines" aria-labelledby="gh-title"><div class="gh-section-intro"><div><p class="gh-eyebrow">The global perspective</p><h2 id="gh-title">Global headlines<span>.</span></h2><p>Four shifts in how we discover, choose and experience a stay.</p></div><span class="gh-concept-label">2026 sourced · 2027 illustrative</span></div><div class="gh-layout"><nav class="gh-story-nav" aria-label="Global headline stories"><a href="#story-discovery" data-story="0"><span>01</span>The discovery shift<span class="gh-nav-dot" aria-hidden="true"></span></a><a href="#story-experience" data-story="1"><span>02</span>The experience premium<span class="gh-nav-dot" aria-hidden="true"></span></a><a href="#story-events" data-story="2"><span>03</span>Event-led travel<span class="gh-nav-dot" aria-hidden="true"></span></a><a href="#story-purpose" data-story="3"><span>04</span>Paying with purpose<span class="gh-nav-dot" aria-hidden="true"></span></a></nav><div class="gh-stories"><article class="gh-story" id="story-discovery" aria-labelledby="title-discovery">
+ <div class="gh-story-heading"><div><p class="gh-eyebrow">Story 01 / The discovery shift</p><h3 id="title-discovery">Every search is a new doorway.</h3><p class="gh-deck">The route to a hotel starts in many places. A strong presence across research channels helps travellers find a stay they can feel confident choosing.</p></div><img src="/assets/country-uk-fixed.png" alt="Travellers exploring their destination" loading="lazy"></div>
+ <div class="gh-evidence"><div class="gh-change"><p class="gh-eyebrow">The year-on-year view</p><p class="gh-metric">start their hotel research on an OTA</p><div class="gh-comparison"><div><span>2026</span><strong>26<small>%</small></strong></div><div><span>2027</span><strong>30<small>%</small></strong></div></div><span class="gh-delta">+4 pp</span><p class="gh-source">Global travellers · <a href="https://www.siteminder.com/news/changing-traveller-report-2026/" target="_blank" rel="noopener">2026 source</a></p></div>
+ <div class="gh-chart"><h4>Where hotel research begins</h4><p class="gh-chart-sub">Global travellers · 2027 · selected channels</p><div class="gh-bar-row"><span>Online travel agencies</span><b>30%</b><div class="gh-bar-track"><i style="--bar:30%"></i></div></div><div class="gh-bar-row"><span>Search engines</span><b>20%</b><div class="gh-bar-track"><i style="--bar:20%"></i></div></div><div class="gh-bar-row"><span>Friends & family</span><b>16%</b><div class="gh-bar-track"><i style="--bar:16%"></i></div></div><div class="gh-bar-row"><span>Familiar hotel brands</span><b>8%</b><div class="gh-bar-track"><i style="--bar:8%"></i></div></div><div class="gh-bar-row"><span>AI</span><b>6%</b><div class="gh-bar-track"><i style="--bar:6%"></i></div></div><p class="hx-chart-note">Selected research channels; not booking channels.</p></div></div>
+ <details class="gh-more"><summary><span class="more-label">More insights &amp; interpretations</span><span class="less-label">Show less</span><i class="report-arrow arrow-down" aria-hidden="true"></i></summary><div class="gh-support"><div><strong>18<small>%</small></strong><p>of travellers who start researching on an OTA go on to book directly with the hotel</p></div><div><strong>14<small>%</small></strong><p>begin hotel research with recommendations from friends and family</p></div><div class="gh-reading"><h4>What this tells us</h4><p>Discovery and booking can happen in different places. Keep your OTA listing and hotel website consistent, and give travellers clear reasons to complete the booking directly.</p></div></div><p class="gh-source support-source">Published 2026 · Global travellers · <a href="https://www.siteminder.com/r/hotel-distribution-concepts-best-practice/" target="_blank" rel="noopener">2026 source</a> · <a href="https://www.siteminder.com/news/changing-traveller-report-2026/" target="_blank" rel="noopener">Research channels</a></p></details>
+ <div class="gh-takeaway"><span class="gh-takeaway-icon" aria-hidden="true"><i class="report-arrow arrow-right" aria-hidden="true"></i></span><div><p class="gh-eyebrow">The hotel opportunity · interpretation</p><h4>Be easy to discover, everywhere</h4><p>Keep room information, photography and property details consistent across your OTA listings and website.</p></div></div>
+ </article><article class="gh-story" id="story-experience" aria-labelledby="title-experience">
+ <div class="gh-story-heading"><div><p class="gh-eyebrow">Story 02 / The experience premium</p><h3 id="title-experience">Make the upgrade worth it.</h3><p class="gh-deck">Travellers are choosing elevated stays. Make the space, comfort and details behind each room category easy to see.</p></div><img src="/assets/country-france.webp" alt="Travellers exploring their destination" loading="lazy"></div>
+ <div class="gh-evidence"><div class="gh-change"><p class="gh-eyebrow">The year-on-year view</p><p class="gh-metric">choose superior or luxury rooms</p><div class="gh-comparison"><div><span>2026</span><strong>58<small>%</small></strong></div><div><span>2027</span><strong>62<small>%</small></strong></div></div><span class="gh-delta">+4 pp</span><p class="gh-source">Global travellers · <a href="https://www.siteminder.com/r/latest-trends-in-hotel-industry/" target="_blank" rel="noopener">2026 source</a></p></div>
+ <div class="gh-chart"><h4>Premium room preferences by market</h4><p class="gh-chart-sub">2027 · share within each source market</p><div class="gh-bar-row"><span>China</span><b>86%</b><div class="gh-bar-track"><i style="--bar:86%"></i></div></div><div class="gh-bar-row"><span>Indonesia</span><b>77%</b><div class="gh-bar-track"><i style="--bar:77%"></i></div></div><div class="gh-bar-row"><span>India</span><b>74%</b><div class="gh-bar-track"><i style="--bar:74%"></i></div></div><div class="gh-bar-row"><span>Australia</span><b>63%</b><div class="gh-bar-track"><i style="--bar:63%"></i></div></div><div class="gh-bar-row"><span>France</span><b>60%</b><div class="gh-bar-track"><i style="--bar:60%"></i></div></div><p class="hx-chart-note">Non-standard room preferences in selected markets; global superior/luxury preference: 62%. <a href="https://www.siteminder.com/r/latest-trends-in-hotel-industry/" target="_blank" rel="noopener">2026 source</a></p></div></div>
+ <details class="gh-more"><summary><span class="more-label">More insights &amp; interpretations</span><span class="less-label">Show less</span><i class="report-arrow arrow-down" aria-hidden="true"></i></summary><div class="gh-support"><div><strong>48<small>%</small></strong><p>of Australian travellers will pay extra for breakfast</p></div><div><strong>32<small>%</small></strong><p>of Australian travellers will pay extra for early check-in or late check-out</p></div><div class="gh-reading"><h4>What this tells us</h4><p>An elevated stay can be practical as well as luxurious. For Australian guests, breakfast and more time at the property offer concrete ways to improve the experience alongside a room upgrade.</p></div></div><p class="gh-source support-source">Published 2026 · Australian travellers · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Theyll-Pay-Extra-for_au.svg" target="_blank" rel="noopener">2026 source</a></p></details>
+ <div class="gh-takeaway"><span class="gh-takeaway-icon" aria-hidden="true"><i class="report-arrow arrow-right" aria-hidden="true"></i></span><div><p class="gh-eyebrow">The hotel opportunity · interpretation</p><h4>Show what makes the room better</h4><p>Use specific imagery and clear room descriptions to explain the practical benefits of an upgrade.</p></div></div>
+ </article><article class="gh-story" id="story-events" aria-labelledby="title-events">
+ <div class="gh-story-heading"><div><p class="gh-eyebrow">Story 03 / Event-led travel</p><h3 id="title-events">An occasion becomes a journey.</h3><p class="gh-deck">An event gives a trip a reason and a date. Hotels can become part of the occasion by making the journey and the stay easier to plan.</p></div><img src="/assets/country-canada.webp" alt="Travellers exploring their destination" loading="lazy"></div>
+ <div class="gh-evidence"><div class="gh-change"><p class="gh-eyebrow">The year-on-year view</p><p class="gh-metric">are more likely to travel for special events</p><div class="gh-comparison"><div><span>2026</span><strong>63<small>%</small></strong></div><div><span>2027</span><strong>67<small>%</small></strong></div></div><span class="gh-delta">+4 pp</span><p class="gh-source">Global travellers · <a href="https://www.siteminder.com/changing-traveller-report/" target="_blank" rel="noopener">2026 source</a></p></div>
+ <div class="gh-chart"><h4>An occasion, across generations</h4><p class="gh-chart-sub">2027 · more likely to travel for an event</p><div class="gh-bar-row"><span>Gen Z</span><b>84%</b><div class="gh-bar-track"><i style="--bar:84%"></i></div></div><div class="gh-bar-row"><span>Millennials</span><b>78%</b><div class="gh-bar-track"><i style="--bar:78%"></i></div></div><div class="gh-bar-row"><span>Gen X</span><b>58%</b><div class="gh-bar-track"><i style="--bar:58%"></i></div></div><div class="gh-bar-row"><span>Baby Boomers</span><b>40%</b><div class="gh-bar-track"><i style="--bar:40%"></i></div></div><div class="gh-bar-row"><span>Radio babies</span><b>35%</b><div class="gh-bar-track"><i style="--bar:35%"></i></div></div><p class="hx-chart-note">Each bar represents that generation, not a share of all event travellers. <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Graph-The-Expanding-Value-Mindset-3-of-3.svg" target="_blank" rel="noopener">2026 source</a></p></div></div>
+ <details class="gh-more"><summary><span class="more-label">More insights &amp; interpretations</span><span class="less-label">Show less</span><i class="report-arrow arrow-down" aria-hidden="true"></i></summary><div class="gh-support"><div><strong>81<small>%</small></strong><p>of Gen Z travellers are more likely to travel for an event</p></div><div><strong>74<small>%</small></strong><p>of millennials are more likely to travel for an event</p></div><div class="gh-reading"><h4>What this tells us</h4><p>Occasions are a strong travel motivation for younger guests. Connect the stay to the event with venue information, travel guidance and arrival options that help guests make the most of their trip.</p></div></div><p class="gh-source support-source">Published 2026 · Global generation groups · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Graph-The-Expanding-Value-Mindset-3-of-3.svg" target="_blank" rel="noopener">2026 source</a></p></details>
+ <div class="gh-takeaway"><span class="gh-takeaway-icon" aria-hidden="true"><i class="report-arrow arrow-right" aria-hidden="true"></i></span><div><p class="gh-eyebrow">The hotel opportunity · interpretation</p><h4>Connect the stay to the occasion</h4><p>Make event dates, venue access and arrival information easy to find. Help guests plan a stay around the reason they are travelling.</p></div></div>
+ </article><article class="gh-story" id="story-purpose" aria-labelledby="title-purpose">
+ <div class="gh-story-heading"><div><p class="gh-eyebrow">Story 04 / Paying with purpose</p><h3 id="title-purpose">A higher price needs a clear purpose.</h3><p class="gh-deck">Travellers weigh the cost of a trip against its impact on the destination. Clear explanations can help them understand what an extra contribution supports.</p></div><img src="/assets/country-australia.webp" alt="Travellers exploring their destination" loading="lazy"></div>
+ <div class="gh-evidence"><div class="gh-change"><p class="gh-eyebrow">The year-on-year view</p><p class="gh-metric">are willing to pay more to reduce overtourism</p><div class="gh-comparison"><div><span>2026</span><strong>42<small>%</small></strong></div><div><span>2027</span><strong>46<small>%</small></strong></div></div><span class="gh-delta">+4 pp</span><p class="gh-source">Global travellers · <a href="https://www.siteminder.com/changing-traveller-report/" target="_blank" rel="noopener">2026 source</a></p></div>
+ <div class="gh-chart"><h4>Would travellers pay more?</h4><p class="gh-chart-sub">2027 · willingness to reduce overtourism</p><div class="gh-bar-row"><span>Willing to pay more</span><b>46%</b><div class="gh-bar-track"><i style="--bar:46%"></i></div></div><div class="gh-bar-row"><span>Depends on the destination</span><b>25%</b><div class="gh-bar-track"><i style="--bar:25%"></i></div></div><div class="gh-bar-row"><span>Refuse to pay more</span><b>29%</b><div class="gh-bar-track"><i style="--bar:29%"></i></div></div><p class="hx-chart-note">Three response groups. Destination-dependent willingness is shown separately. <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Graph-The-Expanding-Value-Mindset-2-of-3.svg" target="_blank" rel="noopener">2026 source</a></p></div></div>
+ <details class="gh-more"><summary><span class="more-label">More insights &amp; interpretations</span><span class="less-label">Show less</span><i class="report-arrow arrow-down" aria-hidden="true"></i></summary><div class="gh-support"><div><strong>24<small>%</small></strong><p>say willingness to pay more to reduce overtourism depends on the destination</p></div><div><strong>34<small>%</small></strong><p>refuse to pay more to reduce overtourism</p></div><div class="gh-reading"><h4>What this tells us</h4><p>A destination contribution will not appeal to everyone. Explain the local issue, what the additional payment supports and any conditions clearly, so guests can make an informed choice.</p></div></div><p class="gh-source support-source">Published 2026 · Global travellers · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Graph-The-Expanding-Value-Mindset-2-of-3.svg" target="_blank" rel="noopener">2026 source</a></p></details>
+ <div class="gh-takeaway"><span class="gh-takeaway-icon" aria-hidden="true"><i class="report-arrow arrow-right" aria-hidden="true"></i></span><div><p class="gh-eyebrow">The hotel opportunity · interpretation</p><h4>Explain where the money goes</h4><p>If a charge supports the destination, clearly explain its purpose, recipient and intended benefit before guests book.</p></div></div>
+ </article></div></div></section>
+</div></div>
+    <div class="side-layout profile-layout"><aside class="report-side-nav profile-country-nav" aria-label="Traveller profiles"><button class="side-nav-toggle" type="button" aria-expanded="false" aria-controls="profile-country-links"><span>Traveller profiles</span><strong>Australia</strong><i class="report-arrow arrow-down" aria-hidden="true"></i></button><nav id="profile-country-links"><p>Select a market</p><a class="current" href="#profile-overview" data-country="Australia"><img src="/assets/flag-au.png" alt="">Australia</a><button type="button" disabled><img src="/assets/flag-ca.png" alt="">Canada</button><button type="button" disabled><img src="/assets/flag-cn.png" alt="">China</button><button type="button" disabled><img src="/assets/flag-fr.png" alt="">France</button><button type="button" disabled><img src="/assets/flag-de.png" alt="">Germany</button><button type="button" disabled><img src="/assets/flag-in.png" alt="">India</button><button type="button" disabled><img src="/assets/flag-id.png" alt="">Indonesia</button><button type="button" disabled><img src="/assets/flag-it.png" alt="">Italy</button><button type="button" disabled><img src="/assets/flag-mx.png" alt="">Mexico</button><button type="button" disabled><img src="/assets/flag-sg.png" alt="">Singapore</button><button type="button" disabled><img src="/assets/flag-es.png" alt="">Spain</button><button type="button" disabled><img src="/assets/flag-th.png" alt="">Thailand</button><button type="button" disabled><img src="/assets/flag-gb.png" alt="">United Kingdom</button><button type="button" disabled><img src="/assets/flag-us.png" alt="">United States</button></nav></aside><div class="side-content profile-content">
+    <section class="profile-section" id="traveller-profiles" aria-labelledby="profile-title">
+      <header class="profile-hero" id="profile-overview">
+        <div class="profile-portrait"><img src="/assets/country-australia.webp" alt="Travellers exploring Australia" loading="lazy"><span>Australia</span></div>
+        <div class="profile-intro"><p class="gh-eyebrow">Traveller profile · Australia</p><h2 id="profile-title">The detail-conscious explorer<span>.</span></h2><p class="profile-lead">Australian travellers scrutinise location and the small comforts that shape a stay. Make every detail easy to find, then deliver on it.</p><div class="profile-tags"><span>Google-faithful</span><span>Detail-conscious</span><span>Schedule-optimiser</span><span>Location-focused</span></div><p class="profile-note">2027 illustrative profile · based on published 2026 measures.</p></div>
+      </header>
+
+      <div class="profile-signal-grid" aria-label="Australian traveller signals">
+        <article class="profile-signal signal-search"><span class="signal-icon" aria-hidden="true">⌕</span><p>Discovery signal</p><strong>Search</strong><h3>A doorway to discovery</h3><small>Australian travellers</small></article>
+        <article class="profile-signal signal-location"><span class="signal-icon" aria-hidden="true">⌖</span><p>Booking signal</p><strong>Location</strong><h3>The detail they examine most</h3><small>Australian travellers</small></article>
+        <article class="profile-signal signal-comfort"><span class="signal-icon" aria-hidden="true">◌</span><p>Return signal</p><strong>77%</strong><h3>Return for value for money</h3><small>Australian travellers</small></article>
+      </div>
+
+      <section class="profile-panel profile-journey" id="profile-before-booking" aria-labelledby="journey-title">
+        <div class="profile-panel-heading"><div><p class="gh-eyebrow">Before booking</p><h3 id="journey-title">From broad search to precise reassurance.</h3></div><p>Select a stage to see what the finding means for the hotel experience.</p></div>
+        <div class="journey-tabs" role="tablist" aria-label="Australian traveller journey"><button role="tab" aria-selected="true" aria-controls="journey-panel" data-stage="discover"><span>Discover</span></button><button role="tab" aria-selected="false" aria-controls="journey-panel" data-stage="compare"><span>Compare</span></button><button role="tab" aria-selected="false" aria-controls="journey-panel" data-stage="commit"><span>Commit</span></button></div>
+        <div class="journey-panel" id="journey-panel" role="tabpanel"><div class="journey-orbit" aria-hidden="true"><i></i><i></i><i></i><span>Search</span></div><div><p class="gh-eyebrow" id="journey-kicker">Discovery behaviour</p><h4 id="journey-heading">Win the search result before the room comparison.</h4><p id="journey-copy">Search is an important doorway for Australian travellers. Clear page titles, current imagery and useful destination information make the first impression work harder.</p><ul id="journey-actions"><li>Use specific room and location language</li><li>Keep property details consistent across channels</li><li>Answer high-intent questions on the landing page</li></ul></div></div>
+      </section>
+
+      <section class="profile-panel profile-priorities" id="profile-on-property" aria-labelledby="priority-title">
+        <div class="profile-panel-heading"><div><p class="gh-eyebrow">At the property</p><h3 id="priority-title">Three signals worth acting on.</h3></div><p>Select an insight or interact with its ring.</p></div>
+        <div class="priority-layout"><div class="activity-gauge" role="img" aria-label="Australian traveller findings"><div class="gauge-ring ring-one"></div><div class="gauge-ring ring-two"></div><div class="gauge-ring ring-three"></div><div class="gauge-centre"><small>Booking priority</small><strong>68%</strong></div></div><div class="priority-list"><button class="priority-item is-open" type="button" aria-expanded="true"><span>01</span><div><h4>Make location tangible</h4><p><strong>68%</strong> prioritise location details when booking. Explain neighbourhood character, walking time and arrival routes.</p></div></button><button class="priority-item" type="button" aria-expanded="false"><span>02</span><div><h4>Show the overlooked comforts</h4><p><strong>48%</strong> select pillow and bedding as essential, ahead of room quietness at 40%.</p></div></button><button class="priority-item" type="button" aria-expanded="false"><span>03</span><div><h4>Give time back</h4><p><strong>35%</strong> will pay extra for early check-in or late check-out.</p></div></button></div></div>
+        <details class="profile-more"><summary>More profile detail <i class="report-arrow arrow-down" aria-hidden="true"></i></summary><div><p><strong>Pre-arrival:</strong> Google-faithful and detail-conscious.</p><p><strong>On property:</strong> Schedule-optimising and location-focused.</p><p><strong>Published 2026 sources · Australia:</strong> <a href="https://www.siteminder.com/wp-content/uploads/2025/11/What_they_Prioritise_au.svg" target="_blank" rel="noopener">Location details</a> · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Essential-room-features_au.svg" target="_blank" rel="noopener">Room features</a> · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Theyll-Pay-Extra-for_au.svg" target="_blank" rel="noopener">Paid extras</a> · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Why-they-return_au.svg" target="_blank" rel="noopener">Return drivers</a> · <a href="https://www.siteminder.com/wp-content/uploads/2025/11/Room-Type-Preferences_au.svg" target="_blank" rel="noopener">Room preferences</a></p></div></details>
+      </section>
+
+      <section class="profile-opportunity" id="profile-opportunity" aria-labelledby="opportunity-title"><div><p class="gh-eyebrow">The hotel opportunity</p><h3 id="opportunity-title">Turn precise information into repeat intent.</h3><p>Win confidence before booking, remove friction on arrival and make the details that represent real value easy to recognise.</p></div><ol><li><span>01</span><strong>Own high-intent search</strong><p>Build useful property and destination pages around the questions travellers actually ask.</p></li><li><span>02</span><strong>Prove the location</strong><p>Use maps, walking times and neighbourhood guidance close to the room choice.</p></li><li><span>03</span><strong>Balance value and flexibility</strong><p>Show what is included and make flexible arrival options easy to find.</p></li></ol></section>
+    </section>
+    </div></div>
+    <section class="report-coming" aria-label="More in the report"><div class="report-coming-intro"><p class="gh-eyebrow">Continue exploring</p><h2>More perspectives.<br>Better decisions.</h2></div><div class="report-coming-grid"><article id="ai-trust"><span>Coming in the full report</span><h3>AI &amp; trust</h3><p>How much of the booking journey are travellers ready to hand over? A deeper look at confidence, control and AI.</p></article><article id="generations"><span>Coming in the full report</span><h3>Across generations</h3><p>Four insights. Four generations. Explore the differences that matter to your next guest.</p></article><article id="traveller-profiles-coming"><span>Coming in the full report</span><h3>Traveller profiles</h3><p>Meet 12 traveller profiles, with practical perspectives on motivations, booking channels and relevant offers.</p></article></div></section>
+    <section class="report-playbook" id="playbook"><div><p class="gh-eyebrow">From insight to action</p><h2>Your next move,<br>in one playbook.</h2><p>Bring the findings together with practical ideas for your property in the 2027 Hotelier’s Playbook.</p></div><div class="report-download"><span class="report-pdf">PDF</span><h3>Hotelier’s Playbook 2027</h3><p>The complete download will be available with the final report.</p><button disabled>Download coming soon <i class="report-arrow arrow-down" aria-hidden="true"></i></button></div></section>
+    <footer class="report-footer" id="methodology"><strong>About this concept</strong><p>The 2026 figures are published SiteMinder Changing Traveller Report findings. The 2027 values and changes are illustrative design placeholders, not research or forecasts. Each mocked measure exists in the 2026 report; its inclusion and comparability in 2027 must be confirmed against the final questionnaire. The Australian traveller profile also uses illustrative 2027 values based on existing 2026 measures.</p><a href="https://www.siteminder.com/changing-traveller-report/" target="_blank" rel="noopener">Read the published 2026 report <i class="report-arrow arrow-right" aria-hidden="true"></i></a></footer>
+  </main>
+  <script>
+    const carousel=document.querySelector('.carousel'),originals=[...carousel.querySelectorAll('.country')],count=originals.length;
+    // Three identical runs allow invisible wrapping in either direction.
+    const before=document.createDocumentFragment(),after=document.createDocumentFragment();
+    originals.forEach(c=>{before.append(c.cloneNode(true));after.append(c.cloneNode(true))});
+    carousel.prepend(before);carousel.append(after);
+    const cards=[...carousel.querySelectorAll('.country')];
+    cards.forEach(card=>{const slot=document.createElement('div');slot.className='card-slot';card.before(slot);slot.append(card)});
+    const slots=cards.map(c=>c.parentElement);
+    let position=0,direction=1,last=0,active=null,drag=null,until=0,keyboard=false,suppressClick=false,inside=false,anchor=null;
+    function holdEdge(card,side){
+      const slot=card.parentElement,box=slot.getBoundingClientRect();
+      anchor={slot,side,value:box[side],expires:performance.now()+340};
+    }
+    function setActive(card){
+      active=card;
+      cards.forEach(c=>{const on=c===card;c.classList.toggle('active',on);c.parentElement.classList.toggle('open',on);c.setAttribute('aria-expanded',String(on));c.querySelectorAll('a').forEach(a=>a.tabIndex=on?0:-1)});
+    }
+
+    function open(card){
+      if(drag||card===active)return;
+      const box=card.parentElement.getBoundingClientRect(),view=carousel.getBoundingClientRect(),edge=innerWidth<780?20:48;
+      if(box.left<view.left+edge||box.right>view.right-edge)return;
+      const width=Math.min(390,view.width-edge*2);
+      const side=box.left+box.width/2<view.left+view.width/2?'left':'right';
+      holdEdge(card,side);
+      card.parentElement.style.setProperty('--expanded',width+'px');
+      setActive(card);position=carousel.scrollLeft;
+    }
+    function close(){if(active)holdEdge(active,anchor?.side||'left');setActive(null);until=performance.now()+350;position=carousel.scrollLeft;}
+    function wrap(){
+      const first=slots[count].offsetLeft,lastRun=slots[count*2].offsetLeft,span=lastRun-first;
+      if(span<=0)return;
+      while(position<first)position+=span;
+      while(position>=lastRun)position-=span;
+    }
+    cards.forEach((card,i)=>{
+      if(i<count||i>=count*2)card.tabIndex=-1;
+      card.querySelector('img').draggable=false;
+      card.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!drag)open(card)});
+      card.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'&&active===card&&!drag)close()});
+      card.addEventListener('focusin',()=>{if(keyboard)open(card)});
+      card.addEventListener('focusout',()=>setTimeout(()=>{if(keyboard&&active===card&&!card.contains(document.activeElement))close()},0));
+      card.addEventListener('keydown',e=>{if(e.key==='Escape'){close();card.blur()}else if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open(card)}});
+    });
+    carousel.addEventListener('pointerdown',e=>{
+      if(e.button!==0)return;keyboard=false;
+      drag={id:e.pointerId,x:e.clientX,y:e.clientY,lastX:e.clientX,moved:false,type:e.pointerType,card:e.target.closest('.country')};
+      until=Infinity;
+    });
+    window.addEventListener('pointermove',e=>{
+      if(drag&&e.pointerId===drag.id){
+        const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
+        if(!drag.moved&&Math.abs(dx)>8&&Math.abs(dx)>Math.abs(dy)){
+          drag.moved=true;anchor=null;setActive(null);
+          position=carousel.scrollLeft;carousel.setPointerCapture(e.pointerId);carousel.classList.add('dragging');
+        }
+        if(drag.moved){const delta=e.clientX-drag.lastX;position-=delta;if(Math.abs(delta)>.5)direction=delta>0?-1:1;wrap();carousel.scrollLeft=position;}
+        drag.lastX=e.clientX;return;
+      }
+      if(e.pointerType==='mouse'&&inside){
+        const hit=document.elementFromPoint(e.clientX,e.clientY)?.closest('.country');
+        if(hit&&carousel.contains(hit)){if(hit!==active)open(hit);}else if(active)close();
+      }
+    });
+    function release(e){
+      if(!drag||e.pointerId!==drag.id)return;
+      const ended=drag;drag=null;carousel.classList.remove('dragging');
+      if(carousel.hasPointerCapture(e.pointerId))carousel.releasePointerCapture(e.pointerId);
+      until=performance.now()+700;position=carousel.scrollLeft;
+      if(ended.moved){suppressClick=true;setTimeout(()=>suppressClick=false,0);}
+      else if(ended.type!=='mouse'&&ended.card&&!e.target.closest('a')){active===ended.card?close():open(ended.card);}
+    }
+    window.addEventListener('pointerup',release);
+    window.addEventListener('pointercancel',e=>{release(e);close()});
+    carousel.addEventListener('click',e=>{if(suppressClick){e.preventDefault();e.stopPropagation()}},true);
+    carousel.addEventListener('dragstart',e=>e.preventDefault());
+    carousel.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){inside=true;position=carousel.scrollLeft}});
+    carousel.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'){inside=false;if(!drag)close()}});
+    carousel.addEventListener('wheel',()=>{close();until=performance.now()+1400},{passive:true});
+    document.addEventListener('keydown',()=>keyboard=true);
+    document.addEventListener('pointerdown',e=>{if(!carousel.contains(e.target))close()});
+    document.addEventListener('visibilitychange',()=>{last=0;position=carousel.scrollLeft});
+    function tick(now){
+      const dt=last?Math.min(now-last,50):0;last=now;
+      if(anchor&&!drag){
+        carousel.scrollLeft+=anchor.slot.getBoundingClientRect()[anchor.side]-anchor.value;
+        position=carousel.scrollLeft;
+        if(now>=anchor.expires)anchor=null;
+      }
+      if(!document.hidden&&!inside&&!drag&&!active&&now>=until){
+        position+=direction*dt*.024;wrap();carousel.scrollLeft=position;
+      }else if(!drag)position=carousel.scrollLeft;
+      requestAnimationFrame(tick);
+    }
+    setActive(null);position=slots[count].offsetLeft;carousel.scrollLeft=position;requestAnimationFrame(tick);
+  </script>
+  <script src="/assets/world-signals.js" defer></script>
+  <script src="/assets/report-sections.js" defer></script>
+  <script src="/assets/globe-light-profile.js" defer></script>
+  <script src="/assets/globe-light-headlines.js" defer></script>
+</body>
+</html>

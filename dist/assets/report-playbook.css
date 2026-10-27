@@ -1,0 +1,74 @@
+.report-playbook{max-width:1360px;margin:20px auto 90px;padding:48px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,1fr);align-items:center;gap:64px;box-sizing:border-box;border:1px solid #dfe8f2;border-radius:24px;background:#edf3fa;scroll-margin-top:calc(var(--report-nav-height,72px) + 28px);color:#31425b}
+.report-playbook h2{font:400 clamp(30px,3.2vw,46px)/1.12 'Spline Sans',sans-serif;letter-spacing:-.035em;color:#253246;margin:0 0 24px;max-width:18ch}
+.report-playbook h2 span{color:#006dff}
+.report-playbook p{font:400 16px/1.5 'Source Sans 3',sans-serif;margin:0;max-width:58ch}
+.report-playbook .playbook-lead{font-size:22px;line-height:1.35;margin-bottom:16px;max-width:33ch}
+.playbook-select-card{background:#fff;border:1px solid #e0e8f1;border-radius:18px;padding:30px;min-width:0}
+.report-playbook .playbook-format{font-size:12px;letter-spacing:.06em;color:#52657e;margin-bottom:14px}
+.playbook-select-card h3{font:400 25px/1.2 'Spline Sans',sans-serif;letter-spacing:-.025em;color:#253246;margin:0 0 24px}
+.playbook-picker{position:relative}
+.playbook-toggle{width:100%;min-height:52px;display:flex;align-items:center;justify-content:space-between;gap:16px;border:1px solid #006dff;border-radius:8px;background:#006dff;color:#fff;padding:14px 18px;font:400 16px/1.3 'Source Sans 3',sans-serif;text-align:left;cursor:pointer;transition:background .18s,box-shadow .18s}
+.playbook-toggle:hover{background:#005cda;box-shadow:0 4px 14px #006dff25}
+.playbook-toggle svg{width:20px;height:20px;flex:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+.playbook-toggle[aria-expanded="true"] svg{transform:rotate(180deg)}
+.playbook-options{position:absolute;z-index:40;right:0;top:calc(100% + 8px);width:max(100%,440px);max-width:calc(100vw - 48px);padding:16px;background:#fff;border:1px solid #dce6f1;border-radius:14px;box-shadow:0 16px 44px #18365522;box-sizing:border-box}
+.playbook-options[hidden]{display:none}
+.report-playbook .playbook-options>p{font-size:12px;color:#64748b;margin:0 8px 10px}
+.playbook-options-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.playbook-options button{display:flex;align-items:center;gap:10px;text-align:left;border:0;border-radius:8px;background:#fff;color:#31425b;padding:10px 8px;font:400 14px/1.3 'Source Sans 3',sans-serif;cursor:pointer;min-height:42px}
+.playbook-options button:hover,.playbook-options button[aria-pressed="true"]{background:#edf4ff;color:#006dff}
+.playbook-options img{object-fit:cover;border-radius:3px;flex:none}
+.playbook-options button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;margin-left:auto;opacity:0;flex:none}
+.playbook-options button[aria-pressed="true"] svg{opacity:1}
+.report-playbook button:focus-visible{outline:2px solid #006dff;outline-offset:3px}
+.report-playbook .playbook-selection{font-size:12px;color:#64748b;margin-top:12px;min-height:18px}
+@media(max-width:1456px){.report-playbook{margin-inline:48px}}
+@media(max-width:900px){.report-playbook{margin:20px 24px 60px;padding:28px;gap:28px;grid-template-columns:1fr}.report-playbook h2{font-size:34px;max-width:23ch}.report-playbook .playbook-lead{font-size:20px}.playbook-select-card{padding:24px}.playbook-options{width:100%;max-width:none}.playbook-options-grid{grid-template-columns:1fr;max-height:300px;overflow:auto;scrollbar-width:thin;scrollbar-color:#c6d5e5 transparent}.playbook-options button{min-height:44px}.playbook-select-card h3{font-size:24px}}
+@media(max-width:420px){.report-playbook{padding:24px;margin-inline:16px}.playbook-select-card{padding:18px}.report-playbook h2{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.playbook-toggle,.playbook-toggle svg{transition:none}}
+/* Preserve this section's type hierarchy against the report-wide legacy reset. */
+.report-playbook p{font-size:16px!important}
+.report-playbook .playbook-lead{font-size:22px!important}
+.report-playbook .playbook-format,.report-playbook .playbook-selection,.report-playbook .playbook-options>p{font-size:12px!important}
+@media(max-width:900px){.report-playbook .playbook-lead{font-size:20px!important}}
+/* Neutral field and persistent multi-selection; download action stays inside. */
+.playbook-toggle{background:#fff;color:#31425b;border-color:#cbd7e5}
+.playbook-toggle:hover{background:#f6f9fc;border-color:#9aadc4;box-shadow:none}
+.playbook-toggle[aria-expanded="true"]{border-color:#52657e}
+.playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:4px;opacity:1;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
+.playbook-options [data-market][aria-pressed="true"]>svg{background:#006dff;border-color:#006dff;stroke:#fff}
+.playbook-download-footer{border-top:1px solid #e5ebf2;margin-top:12px;padding-top:12px}
+.playbook-options .playbook-download-selected{width:100%;justify-content:center;background:#006dff;color:white;border:1px solid #006dff;border-radius:8px;min-height:44px;font-size:14px}
+.playbook-options .playbook-download-selected:hover:not(:disabled){background:#005cda;color:#fff}
+.playbook-options .playbook-download-selected:disabled{background:#edf1f6;border-color:#e1e7ef;color:#8693a4;cursor:default}
+.report-playbook .playbook-download-note{font-size:12px!important;color:#64748b;margin-top:8px}
+.playbook-download-note:empty{display:none}
+
+/* Branded playbook header, matching the supplied reference. */
+.playbook-select-card{padding:0;border-radius:18px}
+.playbook-brand-bar{display:flex;align-items:center;gap:20px;padding:22px 30px;background:#2e6dff;border-radius:17px 17px 0 0}
+.playbook-brand-bar img{display:block;width:116px;height:auto;flex:none}
+.report-playbook .playbook-brand-bar .playbook-format{color:#fff;margin:0;letter-spacing:.06em;font-size:12px!important;line-height:1.4}
+.playbook-select-body{padding:28px 30px 30px}
+.report-playbook .playbook-copy>p{color:#526b85}
+@media(max-width:1100px) and (min-width:901px){.playbook-brand-bar{gap:14px;padding:20px}.playbook-brand-bar img{width:104px}.playbook-select-body{padding:24px}}
+@media(max-width:900px){.playbook-brand-bar{padding:20px;gap:16px}.playbook-select-body{padding:24px}.playbook-brand-bar img{width:108px}}
+@media(max-width:420px){.playbook-brand-bar{padding:18px 16px;gap:12px}.playbook-brand-bar img{width:94px}.playbook-select-body{padding:20px 16px}.report-playbook .playbook-brand-bar .playbook-format{font-size:11px!important}}
+
+/* Mobile picker uses the browser's modal layer, outside page clipping and sticky navigation. */
+.playbook-modal-heading,.playbook-scroll-rail{display:none}
+.playbook-mobile-dialog{border:0;padding:0;background:transparent;overflow:visible;max-width:none;max-height:none;width:min(440px,calc(100vw - 40px));margin:auto;color:#31425b}
+.playbook-mobile-dialog::backdrop{background:rgba(19,36,60,.42)}
+.playbook-mobile-dialog .playbook-modal-context{display:block;padding:0;margin:0;border:0;background:transparent;border-radius:0;max-width:none}
+.playbook-mobile-dialog .playbook-options{position:relative;inset:auto;width:100%;max-width:none;max-height:calc(100dvh - 48px);padding:20px;display:flex;flex-direction:column;box-shadow:0 20px 70px #142b4b40;border-radius:18px}
+.playbook-mobile-dialog .playbook-modal-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:4px;flex:none}
+.playbook-modal-heading strong{font:600 18px/1.3 'Source Sans 3',sans-serif}
+.playbook-options .playbook-modal-heading button{padding:8px;min-height:36px;width:36px;justify-content:center;margin:-6px -6px 0 0}
+.playbook-options .playbook-modal-heading svg{opacity:1;width:20px;height:20px;margin:0;stroke:#64748b;fill:none;stroke-linecap:round}
+.playbook-mobile-dialog .playbook-options>p{margin:0 0 14px}
+.playbook-mobile-dialog .playbook-options-grid{position:relative;min-height:0;max-height:min(360px,calc(100dvh - 230px));overflow-y:auto;overscroll-behavior:contain;grid-template-columns:1fr;flex:1 1 auto;padding-right:14px;scrollbar-width:none}
+.playbook-mobile-dialog .playbook-options-grid::-webkit-scrollbar{display:none}
+.playbook-mobile-dialog .playbook-download-footer{flex:none}
+.playbook-mobile-dialog .playbook-scroll-rail{display:block;position:absolute;right:21px;width:4px;border-radius:4px;background:#edf1f6;pointer-events:none}
+.playbook-mobile-dialog .playbook-scroll-rail[hidden]{display:none}
+.playbook-scroll-rail i{display:block;width:4px;border-radius:4px;background:#a8b9ce}

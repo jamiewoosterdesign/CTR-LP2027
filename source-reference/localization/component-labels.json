@@ -1,0 +1,42 @@
+{
+  "th": {
+    "Gen Z": "Gen Z",
+    "Millennials": "มิลเลนเนียล",
+    "Gen X": "Gen X",
+    "Boomers": "เบบี้บูมเมอร์",
+    "Baby Boomers": "เบบี้บูมเมอร์",
+    "Japan": "ญี่ปุ่น",
+    "South Korea": "เกาหลีใต้",
+    "USA": "สหรัฐอเมริกา"
+  },
+  "es": {
+    "Gen Z": "Generación Z",
+    "Millennials": "Millennials",
+    "Gen X": "Generación X",
+    "Boomers": "Baby boomers",
+    "Baby Boomers": "Baby boomers",
+    "Japan": "Japón",
+    "South Korea": "Corea del Sur",
+    "USA": "EE. UU."
+  },
+  "it": {
+    "Gen Z": "Gen Z",
+    "Millennials": "Millennial",
+    "Gen X": "Gen X",
+    "Boomers": "Baby boomer",
+    "Baby Boomers": "Baby boomer",
+    "Japan": "Giappone",
+    "South Korea": "Corea del Sud",
+    "USA": "Stati Uniti"
+  },
+  "de": {
+    "Gen Z": "Generation Z",
+    "Millennials": "Millennials",
+    "Gen X": "Generation X",
+    "Boomers": "Babyboomer",
+    "Baby Boomers": "Babyboomer",
+    "Japan": "Japan",
+    "South Korea": "Südkorea",
+    "USA": "USA"
+  }
+}

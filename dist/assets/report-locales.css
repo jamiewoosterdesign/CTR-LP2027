@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&display=swap');
+html:not([lang=en]) .report-nav nav a{white-space:normal;line-height:1.25}
+html:not([lang=en]) .report-nav{gap:clamp(8px,1vw,18px)}
+html:not([lang=en]) .ib-heading h3{overflow-wrap:normal;hyphens:auto;line-height:1.25}
+html:not([lang=en]) .sb-insight,html:not([lang=en]) .au-journey p,html:not([lang=en]) .gen-copy{line-height:1.55}
+html:not([lang=en]) .sb-market-bars b,html:not([lang=en]) .sb-chart-note,html:not([lang=en]) .au-compare-label{white-space:normal;overflow-wrap:break-word}
+html:not([lang=en]) .suitcase-hero h1 em{white-space:normal!important;width:auto!important}
+html:not([lang=en]) .suitcase-hero h1{font-size:clamp(40px,4.2vw,68px)}
+html[lang=th] body,html[lang=th] button,html[lang=th] h1,html[lang=th] h2,html[lang=th] h3,html[lang=th] h4,html[lang=th] .gen-copy,html[lang=th] .report-nav a{font-family:'Noto Sans Thai','Source Sans 3',sans-serif!important;letter-spacing:normal!important;word-break:normal;line-break:auto}
+html[lang=th] .suitcase-hero h1{font-size:clamp(34px,3.5vw,55px);line-height:1.4!important}
+html[lang=th] .ib-card h3{font-size:clamp(18px,4.5cqi,25px)!important;line-height:1.45!important}
+html[lang=th] .sb-insight,html[lang=th] .lead,html[lang=th] .au-intro,html[lang=th] .gen-copy{line-height:1.75!important}
+html[lang=th] .report-nav nav a{font-size:13px}
+html[lang=th] .sb-chart-note{line-height:1.6}
+@media(max-width:900px){html:not([lang=en]) .suitcase-hero h1{font-size:clamp(34px,6vw,48px)}html[lang=th] .suitcase-hero h1{font-size:34px}html:not([lang=en]) .ib-row{height:auto!important}}
+@media(max-width:560px){html:not([lang=en]) .report-nav .report-cta{white-space:normal}html[lang=th] .suitcase-hero .lead{font-size:16px}}
+/* Localized labels must wrap within existing cards rather than widen their frames. */
+html:not([lang=en]) .au-comparison>div{white-space:normal;flex-wrap:wrap;row-gap:4px}
+html:not([lang=en]) .au-benchmark-label>b{min-width:0;white-space:normal;overflow-wrap:anywhere;line-height:1.35;font-size:12px}
+html:not([lang=en]) .au-tabs button{white-space:normal;line-height:1.35;overflow-wrap:normal}
+html:not([lang=en]) .au-tags{font-size:16px;gap:12px;flex-wrap:wrap}
+html:not([lang=en]) .au-hero h2{font-size:clamp(40px,4.5vw,70px);line-height:1.15}
+html:not([lang=en]) .sr-influence-benchmark>span{min-width:0;white-space:normal;line-height:1.4;font-size:12px}
+html:not([lang=en]) .country-tooltip-copy{white-space:normal;line-height:1.4;max-width:260px}
+html:not([lang=en]) .profile-country-nav nav a{white-space:normal;line-height:1.4;min-width:0}
+html[lang=th] .au-hero h2{font-size:clamp(34px,3.8vw,58px);line-height:1.4}
+html[lang=th] .au-figure h4,html[lang=th] .au-journey h4{font-size:24px;line-height:1.5}
+html[lang=th] .au-tags{font-size:15px;line-height:1.6}
+html[lang=th] .au-benchmark-label>b{font-size:12px;line-height:1.6}
+@media(max-width:900px){html:not([lang=en]) .au-hero h2{font-size:clamp(34px,7vw,52px)}html[lang=th] .au-hero h2{font-size:36px}html:not([lang=en]) .country-tooltip-copy{max-width:210px}html:not([lang=en]) .au-benchmark-label>b{font-size:11px}}
+/* Explicit component fixes: keep figures separate from labels and badges in flow. */
+html:not([lang=en]) #solo-detail-0 .sb-bubbles b,html:not([lang=en]) #solo-detail-0 .ib-preview-bubble b{display:block;max-width:88%;margin:5px auto 0;text-align:center;white-space:normal;overflow-wrap:normal;line-height:1.3;font-size:12px}
+html:not([lang=en]) #solo-detail-0 .ib-preview-bubble b{font-size:14px}
+html:not([lang=en]) #solo-detail-0 .sb-bubbles strong,html:not([lang=en]) #solo-detail-0 .ib-preview-bubble strong{white-space:nowrap;line-height:1.15}
+html:not([lang=en]) #solo-detail-0 small{font-size:11px;letter-spacing:0}
+html:not([lang=en]) .gen-tabs button{white-space:normal;line-height:1.3;padding:12px 10px;font-size:15px;overflow-wrap:normal}
+html:not([lang=en]) #global-headlines .ib-destinations .ib-preview .ib-rank-summary{display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;min-width:0}
+html:not([lang=en]) #global-headlines .ib-destinations .ib-preview .ib-rank-summary>.sb-badge{position:static!important;inset:auto!important;align-self:flex-start;max-width:100%;margin:0;white-space:nowrap;font-size:12px;padding:5px 8px}
+html:not([lang=en]) #global-headlines .ib-destination-preview{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;max-width:340px;width:100%}
+html:not([lang=en]) #global-headlines .ib-rank-plot{min-width:0;width:100%}
+html:not([lang=en]) #global-headlines .ib-rank-plot .sb-lollipop-stem>strong{font-size:clamp(24px,8cqi,38px);white-space:nowrap;letter-spacing:-.04em}
+html:not([lang=en]) .ib-chart .sb-lollipop .sb-badge{white-space:nowrap;max-width:100%;font-size:11px;padding:4px 7px}
+@media(max-width:560px){html:not([lang=en]) .gen-tabs{flex-wrap:wrap;gap:8px}html:not([lang=en]) .gen-tabs button{flex:1 1 calc(50% - 8px);min-height:44px;font-size:14px}html:not([lang=en]) #solo-detail-0 .sb-bubbles b{font-size:11px}html:not([lang=en]) #solo-detail-0 .sb-bubbles strong{font-size:23px}html:not([lang=en]) #solo-detail-0 .bubble-z strong{font-size:18px}}
