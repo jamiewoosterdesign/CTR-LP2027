@@ -74,7 +74,7 @@ html:not([lang=en]) .au-journey :is(span,b){overflow-wrap:anywhere;hyphens:auto;
 }
 
 html:not([lang=en]) .au-panel-head p{white-space:normal;min-width:0;max-width:100%;overflow-wrap:anywhere}
-html:not([lang=en]) .ib-influence-mobile b{max-width:100%;overflow-wrap:anywhere;line-height:1.35}
+html:not([lang=en]) .ib-influence-mobile b{max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.35}
 @media(max-width:900px){
  html:not([lang=en]) .profile-country-nav .side-nav-toggle{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 17px;gap:10px;min-height:48px}
  html:not([lang=en]) .profile-country-nav .side-nav-toggle>span,
