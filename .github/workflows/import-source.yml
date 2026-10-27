@@ -34,7 +34,7 @@ jobs:
       - name: Commit complete project
         run: |
           git config user.name jamiewoosterdesign
-          git config user.email jamiewoosterdesign@users.noreply.github.com
+          git config user.email jamiewoosterdesign@gmail.com
           git add .
           git commit -m "Import complete CTR site, translations, assets and videos"
           git push origin HEAD:main
