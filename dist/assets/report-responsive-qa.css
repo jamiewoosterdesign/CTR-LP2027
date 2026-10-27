@@ -1,0 +1,42 @@
+/* Responsive translation QA. Preserve the English design and all control padding. */
+html:not([lang=en]) .report-globe-light:not(.static-export) #report-top .hero-report-badge{
+ height:auto;min-height:32px;max-width:100%;padding:4px 12px;gap:6px 8px;
+ flex-wrap:wrap;white-space:normal;line-height:1.5;box-sizing:border-box;
+}
+html:not([lang=en]) .hero-report-name,html:not([lang=en]) .hero-report-attribution{min-width:0}
+html:not([lang=en]) .report-globe-light:not(.static-export) #report-top .hero-report-year{
+ flex:0 0 auto;height:auto;min-height:24px;padding:2px 9px;line-height:1.25;white-space:nowrap;
+}
+@media(max-width:1100px){
+ html:not([lang=en]) .report-nav.desktop-persistent>nav .report-language-actions{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;width:100%;
+ }
+ html:not([lang=en]) .report-language-actions>.report-mobile-playbook{
+  grid-column:1;grid-row:1;justify-self:start;max-width:100%;white-space:normal;text-align:center;
+ }
+ html:not([lang=en]) .report-language-actions>.report-language{grid-column:2;grid-row:1;justify-self:end}
+ html:not([lang=en]) .report-nav.desktop-persistent>nav .report-language-actions .report-mobile-playbook{
+  padding:10px 14px;font-size:14px;line-height:1.4;min-height:44px;margin:0;
+ }
+}
+@media(max-width:900px){
+ /* Scroll the tab strip instead of wrapping labels or taking padding away. */
+ .gen-tabs,.au-tabs{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;scroll-padding-inline:18px}
+ html:not([lang=en]) .gen-tabs,html:not([lang=en]) .au-tabs{flex-wrap:nowrap;gap:8px;max-width:100%;min-width:0}
+ html:not([lang=en]) .gen-tabs button,html:not([lang=en]) .au-tabs button{
+  flex:0 0 auto;min-width:max-content;min-height:44px;padding:12px 18px;
+  font-size:15px;line-height:1.35;white-space:nowrap;
+ }
+ html:not([lang=en]) .report-globe-light:not(.static-export) #report-top.suitcase-hero h1{
+  white-space:normal!important;min-width:0;max-width:100%;overflow-wrap:normal;
+ }
+ html:not([lang=en]) .report-globe-light:not(.static-export) #report-top.suitcase-hero .actions{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,145px),1fr));
+  width:100%;max-width:420px;gap:12px;align-items:stretch;
+ }
+ html:not([lang=en]) .report-globe-light:not(.static-export) #report-top.suitcase-hero .actions>a{
+  padding:10px 14px;min-height:44px;font-size:14px!important;line-height:1.4;
+  white-space:normal;max-width:100%;min-width:0;
+ }
+ html:not([lang=en]) .report-nav.desktop-persistent .report-brand>.report-brand-title{white-space:normal;line-height:1.3}
+}
