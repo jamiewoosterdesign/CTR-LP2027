@@ -40,3 +40,22 @@ html:not([lang=en]) .report-globe-light:not(.static-export) #report-top .hero-re
  }
  html:not([lang=en]) .report-nav.desktop-persistent .report-brand>.report-brand-title{white-space:normal;line-height:1.3}
 }
+
+/* Long compounds and slash-separated market lists must wrap, never clip. */
+html:is([lang=de],[lang=es],[lang=it]) :is(.sb-section-title h2,.sb-story-hero h2,.ib-chart .sb-spend p){hyphens:auto;overflow-wrap:anywhere}
+html:not([lang=en]) .sb-market-list :is(dt,dd){min-width:0;overflow-wrap:anywhere;hyphens:auto}
+
+html:is([lang=de],[lang=es],[lang=it]) :is(h1,h2,h3,h4,p,dt,dd,.gen-copy){hyphens:auto;overflow-wrap:anywhere}
+html:not([lang=en]) .au-comparison strong{flex-shrink:0}
+html:not([lang=en]) .ib-chart .sb-bubbles b{max-width:90%;min-width:0;overflow-wrap:normal;hyphens:auto}
+@media(max-width:380px){
+ html:not([lang=en]) #solo-detail-0 .ib-chart .sb-bubbles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:6px}
+ html:not([lang=en]) #solo-detail-0 .ib-chart .sb-bubbles>div{width:100%;height:auto;aspect-ratio:1;border-radius:50%;min-width:0}
+ html:not([lang=en]) #solo-detail-0 .ib-chart .sb-bubbles b{font-size:11px;line-height:1.3;max-width:92%;overflow-wrap:anywhere;margin-top:4px}
+ html:not([lang=en]) #solo-detail-0 .ib-chart .sb-bubbles strong{font-size:20px}
+ html:not([lang=en]) #solo-detail-0 .ib-chart .sb-bubbles small{font-size:10px}
+}
+
+html:not([lang=en]) .report-footer-brand{min-width:0;max-width:100%}
+html:not([lang=en]) .report-footer-title{white-space:normal;min-width:0}
+html:not([lang=en]) .au-journey :is(span,b){overflow-wrap:anywhere;hyphens:auto;min-width:0}

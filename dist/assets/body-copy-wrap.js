@@ -1,5 +1,6 @@
 /* Keep the final two words together in prose without touching heading layouts. */
 (()=>{
+ if(document.documentElement.lang!=='en')return;
  const selector='p,.au-tip,.profile-lead,.profile-note,#report-top .copy>.micro';
  document.querySelectorAll(selector).forEach(el=>{
   if(el.closest('h1,h2,h3,h4,h5,h6,nav,button,svg,[role="tablist"]')||el.matches('.kicker,.ai-eyebrow,.au-eyebrow,.sb-index,.popover-kicker,.gh-eyebrow'))return;
