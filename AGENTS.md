@@ -1,5 +1,9 @@
 # SiteMinder shared design rules
 
+## CTR story-card heading emphasis
+- All four `.sb-story-hero h2` headings must highlight only their final word, including trailing punctuation, using the shared existing blue `<em>` style in every language.
+- Run `node scripts/highlight-story-headings.mjs` after changing or generating these headings. It preserves copy and line breaks and uses `Intl.Segmenter` for language-aware word boundaries, including Thai without spaces. Never split Thai by whitespace or by character.
+
 ## CTR hero report badge
 - The English badge defines spacing for every language. All locales use the shared component in `dist/assets/report-navigation-update.css`; never add language-specific badge padding, gap, typography, or year-chip sizing.
 - Use two children: `.hero-report-name` for the report label and `.hero-report-year` for the edition year. The year chip stays last.

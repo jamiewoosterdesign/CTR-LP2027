@@ -169,5 +169,7 @@ def build(code,col):
 
 if __name__=='__main__':
  missing={c:build(c,i) for c,i in [('fr',6),('pt',5)]}
+ import subprocess
+ subprocess.run(['node',str(ROOT/'scripts/highlight-story-headings.mjs'),'fr','pt'],check=True)
  (ROOT/'localization/fr-pt-remaining.json').write_text(json.dumps(missing,ensure_ascii=False,indent=2),encoding='utf-8')
  print({c:len(v) for c,v in missing.items()})
