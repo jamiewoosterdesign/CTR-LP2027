@@ -6,6 +6,8 @@ import sys, re, json, html, unicodedata
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / '.local-tools'))
 from bs4 import BeautifulSoup, NavigableString, Comment
+from importlib import import_module
+badge_markup=import_module('hero-badge').badge_markup
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / 'dist/concept-traveller-stories-interactive'
 DATA = json.loads((ROOT/'localization/translation-source-2026-10-28.json').read_text(encoding='utf-8'))['rows']
@@ -123,6 +125,9 @@ def build(code,col):
   for g,card in zip(profile.select('.au-rings g[aria-label]'),cards):
    title=card.select_one('button')
    if title:g['aria-label']=clean(title.get_text(' ',strip=True))+', '+g.get('data-value','')+' %'
+ # Preserve the shared badge structure if this locale is generated again.
+ badge=soup.select_one('.hero-report-badge')
+ badge.replace_with(BeautifulSoup(badge_markup(DATA[3][col]),'html.parser').p)
  # Normalise only visible numeric text, preserving all data attributes/styles.
  for node in list(soup.find_all(string=True)):
   if isinstance(node,Comment) or node.parent.name in ['script','style'] or node.find_parent('svg'):continue

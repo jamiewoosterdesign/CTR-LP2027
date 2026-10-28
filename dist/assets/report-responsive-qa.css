@@ -1,12 +1,5 @@
 /* Responsive translation QA. Preserve the English design and all control padding. */
-html:not([lang=en]) .report-globe-light:not(.static-export) #report-top .hero-report-badge{
- height:auto;min-height:32px;max-width:100%;padding:4px 12px;gap:6px 8px;
- flex-wrap:wrap;white-space:normal;line-height:1.5;box-sizing:border-box;
-}
-html:not([lang=en]) .hero-report-name,html:not([lang=en]) .hero-report-attribution{min-width:0}
-html:not([lang=en]) .report-globe-light:not(.static-export) #report-top .hero-report-year{
- flex:0 0 auto;height:auto;min-height:24px;padding:2px 9px;line-height:1.25;white-space:nowrap;
-}
+/* Hero badge spacing comes only from report-navigation-update.css for all locales. */
 @media(max-width:1100px){
  html:not([lang=en]) .report-nav.desktop-persistent>nav .report-language-actions{
   display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;width:100%;

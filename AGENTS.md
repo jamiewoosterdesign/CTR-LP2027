@@ -1,5 +1,12 @@
 # SiteMinder shared design rules
 
+## CTR hero report badge
+- The English badge defines spacing for every language. All locales use the shared component in `dist/assets/report-navigation-update.css`; never add language-specific badge padding, gap, typography, or year-chip sizing.
+- Use two children: `.hero-report-name` for the report label and `.hero-report-year` for the edition year. The year chip stays last.
+- Preserve the English desktop and mobile spacing tokens. Long labels may wrap; never reduce padding or font size for a particular language.
+- Use `localization/hero-badge.py` to normalize badge markup without regenerating pages or changing hero animation assets. The French/Portuguese generator reuses the same helper.
+- Before publishing a badge change, compare computed padding, gap and chip height for all seven languages at desktop, tablet and narrow mobile widths.
+
 Apply these rules to every SiteMinder project worked on from this workspace.
 
 ## Approved arrows
