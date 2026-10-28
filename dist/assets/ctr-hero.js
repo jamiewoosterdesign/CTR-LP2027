@@ -37,7 +37,8 @@
   if (!alpha) return;
   const allowed = () => visible && !document.hidden && !reduced.matches;
   const seekTo = (v, t) => new Promise(r => { if (Math.abs(v.currentTime - t) < 0.001 && v.readyState >= 2) return r(); v.addEventListener('seeked', r, { once: true }); v.currentTime = t; });
-  const drawn = v => new Promise(r => hasRVFC ? v.requestVideoFrameCallback(() => r()) : setTimeout(r, 40));
+  // wait for the incoming video's first drawn frame, but never stall if the callback doesn't fire (hidden/occluded windows)
+  const drawn = v => Promise.race([new Promise(r => hasRVFC ? v.requestVideoFrameCallback(() => r()) : setTimeout(r, 40)), new Promise(r => setTimeout(r, 300))]);
   const showOnly = el => { [poster, vI, vR].forEach(x => x.classList.toggle('is-on', x === el)); };
 
   const swap = async (from, to, toTime, fromPark) => {
@@ -77,7 +78,10 @@
     if (hasRVFC) vR.requestVideoFrameCallback(onRest);
   };
   if (hasRVFC) { vI.requestVideoFrameCallback(onIntro); vR.requestVideoFrameCallback(onRest); }
-  else { vI.addEventListener('timeupdate', () => onIntro(0, { mediaTime: vI.currentTime })); vR.addEventListener('timeupdate', () => onRest(0, { mediaTime: vR.currentTime })); }
+  // backup trigger (in case frame callbacks are throttled): wider window, still lands on the matching rest frame
+  vI.addEventListener('timeupdate', () => { const f = Math.floor(vI.currentTime * FPS + 0.01);
+    if (current === vI && !switching && allowed() && restReady && f >= BRANCH_FRAME - 2 && f < BRANCH_FRAME + 8) swap(vI, vR, Math.max(0, f + 1 - BRANCH_FRAME) / FPS, 0); });
+  vR.addEventListener('timeupdate', () => onRest(0, { mediaTime: vR.currentTime }));
   vR.addEventListener('ended', () => { if (current === vR) swap(vR, vI, 0, 0); });
   vI.loop = true; vI.muted = vR.muted = true;
 
