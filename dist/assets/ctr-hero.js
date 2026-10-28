@@ -41,13 +41,18 @@
   const drawn = v => Promise.race([new Promise(r => hasRVFC ? v.requestVideoFrameCallback(() => r()) : setTimeout(r, 40)), new Promise(r => setTimeout(r, 300))]);
   const showOnly = el => { [poster, vI, vR].forEach(x => x.classList.toggle('is-on', x === el)); };
 
+  // Hand-offs. Intro and rest share frames 0..289 only; from frame 290 the intro turns back to silver.
+  // So the switch to rest must happen while the intro is still on a shared frame, never after it.
+  // The outgoing video is paused first, so nothing past the shared frames is ever shown while the
+  // incoming one starts (worst case a frame or two holds at peak motion blur, which reads as part of the spin).
   const swap = async (from, to, toTime, fromPark) => {
     if (switching) return; switching = true;
     try {
+      if (from) from.pause();
       if (Math.abs(to.currentTime - toTime) > 0.02) await seekTo(to, toTime);
       const d = drawn(to); await to.play(); await d;
       showOnly(to); current = to;
-      if (from) { from.pause(); await seekTo(from, fromPark); }
+      if (from) await seekTo(from, fromPark);
     } catch (e) {} finally { switching = false; }
   };
 
@@ -63,25 +68,29 @@
     } catch (e) { restLoading = false; }   // the intro simply keeps looping
   };
 
-  const onIntro = (now, meta) => {
-    if (current === vI && !switching && allowed()) {
-      const f = Math.floor(meta.mediaTime * FPS + 0.01);
-      if (restReady && f >= BRANCH_FRAME - 2 && f < BRANCH_FRAME + 3) swap(vI, vR, Math.max(0, f + 1 - BRANCH_FRAME) / FPS, 0);
-    }
-    if (hasRVFC) vI.requestVideoFrameCallback(onIntro);
+  const LAST_SHARED = BRANCH_FRAME - 1;
+  const introFrame = () => Math.floor(vI.currentTime * FPS + 0.01);
+  const toRest = () => {
+    if (current !== vI || switching || !allowed() || !restReady) return;
+    const f = introFrame();
+    if (f >= LAST_SHARED - 2 && f <= LAST_SHARED) swap(vI, vR, 0, 0);   // too late (f >= 290): wait for the next intro loop
   };
-  const onRest = (now, meta) => {
-    if (current === vR && !switching && allowed()) {
-      const f = Math.floor(meta.mediaTime * FPS + 0.01);
-      if (f >= REST_FRAMES - 2) swap(vR, vI, 0, 0);
+  let armed = 0;
+  const arm = () => {            // timer-based backup for when frame callbacks are throttled
+    if (current !== vI || !restReady || armed) return;
+    const f = vI.currentTime * FPS;
+    if (f >= LAST_SHARED - 30 && f < LAST_SHARED - 2) {
+      armed = setTimeout(() => { armed = 0; toRest(); }, Math.max(0, (LAST_SHARED - 1 - f) / FPS * 1000 / (vI.playbackRate || 1)));
     }
+  };
+  const onIntro = () => { toRest(); arm(); if (hasRVFC) vI.requestVideoFrameCallback(onIntro); };
+  const onRest = () => {
+    if (current === vR && !switching && allowed() && Math.floor(vR.currentTime * FPS + 0.01) >= REST_FRAMES - 1) swap(vR, vI, 0, 0);
     if (hasRVFC) vR.requestVideoFrameCallback(onRest);
   };
   if (hasRVFC) { vI.requestVideoFrameCallback(onIntro); vR.requestVideoFrameCallback(onRest); }
-  // backup trigger (in case frame callbacks are throttled): wider window, still lands on the matching rest frame
-  vI.addEventListener('timeupdate', () => { const f = Math.floor(vI.currentTime * FPS + 0.01);
-    if (current === vI && !switching && allowed() && restReady && f >= BRANCH_FRAME - 2 && f < BRANCH_FRAME + 8) swap(vI, vR, Math.max(0, f + 1 - BRANCH_FRAME) / FPS, 0); });
-  vR.addEventListener('timeupdate', () => onRest(0, { mediaTime: vR.currentTime }));
+  vI.addEventListener('timeupdate', () => { toRest(); arm(); });
+  vR.addEventListener('timeupdate', onRest);
   vR.addEventListener('ended', () => { if (current === vR) swap(vR, vI, 0, 0); });
   vI.loop = true; vI.muted = vR.muted = true;
 
