@@ -6,7 +6,7 @@
 #report-top .ctr-clouds{background-repeat:repeat-x;background-size:auto 100%;background-position:0 0;will-change:background-position}
 #report-top .ctr-clouds-high{background-image:url(/assets/ctr-hero/clouds-high.webp)}
 #report-top .ctr-clouds-low{background-image:url(/assets/ctr-hero/clouds-low.webp)}
-#report-top .ctr-bag{object-fit:cover;object-position:50% 50%;transform:translateX(var(--ctr-bag-x,24%));visibility:hidden;pointer-events:none}
+#report-top .ctr-bag{object-fit:cover;object-position:50% 50%;transform:translateX(var(--ctr-bag-x,24%)) scale(var(--ctr-bag-scale,.75));visibility:hidden;pointer-events:none}
 #report-top .ctr-bag.is-on{visibility:visible}
 @media(max-width:900px){#report-top .ctr-stage{--ctr-bag-x:0%}}
 @media(prefers-reduced-motion:reduce){#report-top .ctr-clouds{will-change:auto}}
