@@ -81,3 +81,6 @@ html:not([lang=en]) .au-recommend button>span{min-width:0;max-width:100%;white-s
  html[lang=th] .ib-chart .ib-influence-mobile{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;align-items:center}
  html[lang=th] .ib-chart .ib-influence-mobile>div{width:100%;height:auto;aspect-ratio:1;min-width:0}
 }
+
+/* Italian hero prose wraps between words, never inside preferenze or other words. */
+html[lang=it] #report-top .lead{hyphens:none;overflow-wrap:normal;word-break:normal}
