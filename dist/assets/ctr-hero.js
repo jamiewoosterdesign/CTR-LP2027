@@ -39,6 +39,7 @@
   const seekTo = (v, t) => new Promise(r => { if (Math.abs(v.currentTime - t) < 0.001 && v.readyState >= 2) return r(); v.addEventListener('seeked', r, { once: true }); v.currentTime = t; });
   // wait for the incoming video's first drawn frame, but never stall if the callback doesn't fire (hidden/occluded windows)
   const drawn = v => Promise.race([new Promise(r => hasRVFC ? v.requestVideoFrameCallback(() => r()) : setTimeout(r, 40)), new Promise(r => setTimeout(r, 300))]);
+  let zTop = 1;
   const showOnly = el => { [poster, vI, vR].forEach(x => x.classList.toggle('is-on', x === el)); };
 
   // Hand-offs. Intro and rest share frames 0..289 only; from frame 290 the intro turns back to silver.
@@ -51,7 +52,11 @@
       if (from) from.pause();
       if (Math.abs(to.currentTime - toTime) > 0.02) await seekTo(to, toTime);
       const d = drawn(to); await to.play(); await d;
-      showOnly(to); current = to;
+      // put the incoming video on top while the outgoing one stays visible underneath, then hide the outgoing one
+      // two frames later: if the incoming video is a frame late to paint, the identical outgoing frame shows, never empty sky
+      to.style.zIndex = String(++zTop); to.classList.add('is-on'); current = to;
+      await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(r, 30))));
+      showOnly(to);
       if (from) await seekTo(from, fromPark);
     } catch (e) {} finally { switching = false; }
   };
