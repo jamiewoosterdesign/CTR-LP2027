@@ -35,8 +35,8 @@
 .playbook-toggle{background:#fff;color:#31425b;border-color:#cbd7e5}
 .playbook-toggle:hover{background:#f6f9fc;border-color:#9aadc4;box-shadow:none}
 .playbook-toggle[aria-expanded="true"]{border-color:#52657e}
-.playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:50%;opacity:1;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
-.playbook-options [data-market][aria-checked="true"]>svg{background:#006dff;border-color:#006dff;stroke:#fff}
+.playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:50%;opacity:0;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
+.playbook-options [data-market][aria-checked="true"]>svg{opacity:1;background:#006dff;border-color:#006dff;stroke:#fff}
 .playbook-download-footer{border-top:1px solid #e5ebf2;margin-top:12px;padding-top:12px}
 .playbook-options .playbook-download-selected{width:100%;justify-content:center;background:#006dff;color:white;border:1px solid #006dff;border-radius:8px;min-height:44px;font-size:14px}
 .playbook-options .playbook-download-selected:hover:not(:disabled){background:#005cda;color:#fff}
