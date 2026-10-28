@@ -1,0 +1,374 @@
+{
+  "The world’s largest accommodation-specific consumer survey": {
+    "fr": "La plus grande étude mondiale dédiée à l’hébergement",
+    "pt": "O maior inquérito mundial específico sobre alojamento"
+  },
+  "Solo trips": {
+    "fr": "Voyages en solo",
+    "pt": "Viagens a solo"
+  },
+  "The scroll is going regional": {
+    "fr": "La découverte via les réseaux sociaux stagne",
+    "pt": "A descoberta através das redes sociais está a estagnar"
+  },
+  "The scroll is": {
+    "fr": "La découverte via",
+    "pt": "A descoberta através"
+  },
+  "going": {
+    "fr": "les réseaux sociaux",
+    "pt": "das redes sociais"
+  },
+  "regional.": {
+    "fr": "stagne",
+    "pt": "está a estagnar"
+  },
+  "Canada": {
+    "fr": "Canada",
+    "pt": "Canadá"
+  },
+  "Germany": {
+    "fr": "Allemagne",
+    "pt": "Alemanha"
+  },
+  "Portugal": {
+    "fr": "Portugal",
+    "pt": "Portugal"
+  },
+  "Iceland": {
+    "fr": "Islande",
+    "pt": "Islândia"
+  },
+  "Finland": {
+    "fr": "Finlande",
+    "pt": "Finlândia"
+  },
+  "Costa Rica": {
+    "fr": "Costa Rica",
+    "pt": "Costa Rica"
+  },
+  "Global benchmark": {
+    "fr": "Référence mondiale",
+    "pt": "Referência global"
+  },
+  "Global": {
+    "fr": "Monde",
+    "pt": "Global"
+  },
+  "Boomers": {
+    "fr": "Baby-boomers",
+    "pt": "Baby Boomers"
+  },
+  "places climbed": {
+    "fr": "places gagnées",
+    "pt": "posições ganhas"
+  },
+  "Chooses a standard room": {
+    "fr": "Choisit une chambre standard",
+    "pt": "Escolhe um quarto standard"
+  },
+  "2027’s dream destinations": {
+    "fr": "Les destinations de rêve pour 2027",
+    "pt": "Destinos de sonho para 2027"
+  },
+  "Change in destination preference": {
+    "fr": "Évolution des préférences de destination",
+    "pt": "Variação nas preferências de destino"
+  },
+  "2026 rank": {
+    "fr": "Classement 2026",
+    "pt": "Classificação de 2026"
+  },
+  "Smart room controls": {
+    "fr": "Technologie de chambre connectée",
+    "pt": "Controlos inteligentes do quarto"
+  },
+  "India / Indonesia": {
+    "fr": "Inde / Indonésie",
+    "pt": "Índia / Indonésia"
+  },
+  "are open to letting AI handle most or all of their trip planning.": {
+    "fr": "sont ouverts à l’idée de laisser l’IA gérer la plupart ou la totalité de la planification de leurs voyages.",
+    "pt": "estão disponíveis para deixar a IA tratar da maior parte ou da totalidade do planeamento das suas viagens."
+  },
+  "Only 13% of travellers trust AI assistants to use their personal data.": {
+    "fr": "Seuls 13 % des voyageurs font confiance aux assistants IA pour utiliser leurs données personnelles.",
+    "pt": "Apenas 13% dos viajantes confiam nos assistentes de IA para a utilização dos seus dados pessoais."
+  },
+  "Even with search leading the way, personal recommendations still carry real weight.": {
+    "fr": "Même si la recherche arrive en tête, les recommandations personnelles gardent tout leur poids.",
+    "pt": "Mesmo com os motores de busca na liderança, as recomendações pessoais continuam a ter um peso significativo."
+  },
+  "Pioneers of AI and social discovery": {
+    "fr": "Pionniers de l’intelligence artificielle (IA) et de la découverte sociale",
+    "pt": "Pioneiros na IA e na descoberta através das redes sociais"
+  },
+  "Discovery runs through AI assistants and social content more than a traditional search bar.": {
+    "fr": "La découverte passe davantage par les assistants IA et les contenus des réseaux sociaux que par une barre de recherche traditionnelle.",
+    "pt": "A descoberta acontece sobretudo através de assistentes de IA e de conteúdos nas redes sociais, em vez de recorrerem a um motor de busca tradicional."
+  },
+  "Clear value through a deal or package influences the choice of property for": {
+    "fr": "La valeur clairement affichée d’une offre spéciale ou d’une formule influence le choix de l’établissement pour",
+    "pt": "Uma oferta ou pacote com uma boa relação qualidade/preço influencia a escolha do estabelecimento para"
+  },
+  "The French": {
+    "fr": "Le voyageur",
+    "pt": "O viajante"
+  },
+  "traveller": {
+    "fr": "français",
+    "pt": "francês"
+  },
+  "Drag to rotate. Select a country to explore its traveller profile.": {
+    "fr": "Faites glisser pour faire tourner le globe. Sélectionnez un pays pour explorer son profil de voyageur.",
+    "pt": "Arraste para rodar. Selecione um país para explorar o perfil dos seus viajantes."
+  },
+  "Traveller perspectives": {
+    "fr": "Perspectives des voyageurs",
+    "pt": "Perspetivas dos viajantes"
+  },
+  "Your market. Your next move.": {
+    "fr": "Votre marché. Votre prochaine action.",
+    "pt": "O seu mercado. O seu próximo passo."
+  },
+  "Select your market": {
+    "fr": "Sélectionnez votre marché",
+    "pt": "Selecione o seu mercado"
+  },
+  "Select your markets": {
+    "fr": "Sélectionnez vos marchés",
+    "pt": "Selecione os seus mercados"
+  },
+  "Select one or more": {
+    "fr": "Sélectionnez une ou plusieurs options",
+    "pt": "Selecione uma ou mais opções"
+  },
+  "Download PDFs": {
+    "fr": "Télécharger les PDF",
+    "pt": "Descarregar PDFs"
+  },
+  "Regional editions · PDF": {
+    "fr": "Éditions régionales · PDF",
+    "pt": "Edições regionais · PDF"
+  },
+  "View respondent breakdown": {
+    "fr": "Voir la répartition des répondants",
+    "pt": "Ver a distribuição dos participantes"
+  },
+  "Age demographics": {
+    "fr": "Répartition par âge",
+    "pt": "Distribuição por idade"
+  },
+  "Radio Babies": {
+    "fr": "Génération silencieuse",
+    "pt": "Geração silenciosa"
+  },
+  "Select language": {
+    "fr": "Sélectionner une langue",
+    "pt": "Selecionar idioma"
+  },
+  "Select language, English": {
+    "fr": "Sélectionner une langue, Français",
+    "pt": "Selecionar idioma, Português"
+  },
+  "Report language": {
+    "fr": "Langue du rapport",
+    "pt": "Idioma do relatório"
+  },
+  "Close language selector": {
+    "fr": "Fermer le sélecteur de langue",
+    "pt": "Fechar o seletor de idioma"
+  },
+  "Close market selector": {
+    "fr": "Fermer le sélecteur de marché",
+    "pt": "Fechar o seletor de mercado"
+  },
+  "Previous generation": {
+    "fr": "Génération précédente",
+    "pt": "Geração anterior"
+  },
+  "Next generation": {
+    "fr": "Génération suivante",
+    "pt": "Geração seguinte"
+  },
+  "Previous": {
+    "fr": "Précédent",
+    "pt": "Anterior"
+  },
+  "Next": {
+    "fr": "Suivant",
+    "pt": "Seguinte"
+  },
+  "PDF downloads aren't available yet.": {
+    "fr": "Les téléchargements PDF ne sont pas encore disponibles.",
+    "pt": "Os downloads de PDF ainda não estão disponíveis."
+  },
+  "Open menu": {
+    "fr": "Ouvrir le menu",
+    "pt": "Abrir menu"
+  },
+  "Close menu": {
+    "fr": "Fermer le menu",
+    "pt": "Fechar menu"
+  },
+  "Meet tomorrow’s": {
+    "fr": "Découvrez le voyageur",
+    "pt": "Conheça o viajante"
+  },
+  "traveller.": {
+    "fr": "de demain.",
+    "pt": "de amanhã."
+  },
+  "Global findings": {
+    "fr": "Résultats mondiaux",
+    "pt": "Resultados globais"
+  },
+  "Global traveller research · 2027 edition": {
+    "fr": "Étude mondiale des voyageurs · Édition 2027",
+    "pt": "Estudo global dos viajantes · Edição de 2027"
+  },
+  "Explore how accommodation choice, trust and booking behaviour are shifting around the world - and what hotels can do next.": {
+    "fr": "Découvrez comment le choix d’hébergement, la confiance et les habitudes de réservation évoluent dans le monde, et comment les hôtels peuvent y répondre.",
+    "pt": "Explore como a escolha de alojamento, a confiança e os hábitos de reserva estão a mudar em todo o mundo e como os hotéis podem responder."
+  },
+  "02 · TRAVEL INTENTIONS": {
+    "fr": "02 · INTENTIONS DE VOYAGE",
+    "pt": "02 · INTENÇÕES DE VIAGEM"
+  },
+  "Choose a generation": {
+    "fr": "Choisir une génération",
+    "pt": "Escolher uma geração"
+  },
+  "Explore traveller profiles by country": {
+    "fr": "Explorer les profils des voyageurs par pays",
+    "pt": "Explorar perfis de viajantes por país"
+  },
+  "Interactive globe. Drag to rotate. Select a country photo to explore.": {
+    "fr": "Globe interactif. Faites glisser pour le faire tourner. Sélectionnez la photo d’un pays pour explorer.",
+    "pt": "Globo interativo. Arraste para rodar. Selecione a fotografia de um país para explorar."
+  },
+  "Close country details": {
+    "fr": "Fermer les détails du pays",
+    "pt": "Fechar detalhes do país"
+  },
+  "Traveller journey pagination": {
+    "fr": "Pagination du parcours du voyageur",
+    "pt": "Paginação do percurso do viajante"
+  },
+  "Traveller journey": {
+    "fr": "Parcours du voyageur",
+    "pt": "Percurso do viajante"
+  },
+  "55% of solo travellers choose a Standard Room, versus 43.3% globally": {
+    "fr": "55 % des voyageurs solo choisissent une chambre standard, contre 43,3 % au niveau mondial",
+    "pt": "55% dos viajantes a solo escolhem um quarto standard, contra 43,3% a nível global"
+  },
+  "An Indian traveller in sunglasses enjoying the sunshine": {
+    "fr": "Un voyageur indien portant des lunettes de soleil profite du beau temps",
+    "pt": "Um viajante indiano com óculos de sol a aproveitar o sol"
+  },
+  "A traveller with his phone and backpack under a clear sky": {
+    "fr": "Un voyageur avec son téléphone et son sac à dos sous un ciel dégagé",
+    "pt": "Um viajante com o telemóvel e a mochila sob um céu limpo"
+  },
+  "A solo traveller looking up into a clear blue sky": {
+    "fr": "Un voyageur solo regarde le ciel bleu",
+    "pt": "Um viajante a solo a olhar para o céu azul"
+  },
+  "A Black traveller looking ahead with his backpack": {
+    "fr": "Un voyageur noir regarde devant lui avec son sac à dos",
+    "pt": "Um viajante negro a olhar em frente com a mochila"
+  },
+  "Australian traveller under a clear blue sky": {
+    "fr": "Un voyageur australien sous un ciel bleu dégagé",
+    "pt": "Um viajante australiano sob um céu azul limpo"
+  },
+  "Canadian traveller under a clear blue sky": {
+    "fr": "Un voyageur canadien sous un ciel bleu dégagé",
+    "pt": "Um viajante canadiano sob um céu azul limpo"
+  },
+  "Chinese traveller under a clear blue sky": {
+    "fr": "Un voyageur chinois sous un ciel bleu dégagé",
+    "pt": "Um viajante chinês sob um céu azul limpo"
+  },
+  "French traveller under a clear blue sky": {
+    "fr": "Un voyageur français sous un ciel bleu dégagé",
+    "pt": "Um viajante francês sob um céu azul limpo"
+  },
+  "German traveller under a clear blue sky": {
+    "fr": "Un voyageur allemand sous un ciel bleu dégagé",
+    "pt": "Um viajante alemão sob um céu azul limpo"
+  },
+  "Indian traveller under a clear blue sky": {
+    "fr": "Un voyageur indien sous un ciel bleu dégagé",
+    "pt": "Um viajante indiano sob um céu azul limpo"
+  },
+  "Indonesian traveller under a clear blue sky": {
+    "fr": "Un voyageur indonésien sous un ciel bleu dégagé",
+    "pt": "Um viajante indonésio sob um céu azul limpo"
+  },
+  "Italian traveller under a clear blue sky": {
+    "fr": "Un voyageur italien sous un ciel bleu dégagé",
+    "pt": "Um viajante italiano sob um céu azul limpo"
+  },
+  "Mexican traveller under a clear blue sky": {
+    "fr": "Un voyageur mexicain sous un ciel bleu dégagé",
+    "pt": "Um viajante mexicano sob um céu azul limpo"
+  },
+  "Singaporean traveller under a clear blue sky": {
+    "fr": "Un voyageur singapourien sous un ciel bleu dégagé",
+    "pt": "Um viajante singapurense sob um céu azul limpo"
+  },
+  "Spanish traveller under a clear blue sky": {
+    "fr": "Un voyageur espagnol sous un ciel bleu dégagé",
+    "pt": "Um viajante espanhol sob um céu azul limpo"
+  },
+  "Thai traveller under a clear blue sky": {
+    "fr": "Un voyageur thaïlandais sous un ciel bleu dégagé",
+    "pt": "Um viajante tailandês sob um céu azul limpo"
+  },
+  "UK traveller under a clear blue sky": {
+    "fr": "Un voyageur britannique sous un ciel bleu dégagé",
+    "pt": "Um viajante britânico sob um céu azul limpo"
+  },
+  "American traveller under a clear blue sky": {
+    "fr": "Un voyageur américain sous un ciel bleu dégagé",
+    "pt": "Um viajante americano sob um céu azul limpo"
+  },
+  "Australian traveller with a backpack under a clear blue sky": {
+    "fr": "Un voyageur australien avec son sac à dos sous un ciel bleu dégagé",
+    "pt": "Um viajante australiano com uma mochila sob um céu azul limpo"
+  },
+  "Women": {
+    "fr": "Femmes",
+    "pt": "Mulheres"
+  },
+  "Men": {
+    "fr": "Hommes",
+    "pt": "Homens"
+  },
+  "A big-screen": {
+    "fr": "Grand écran",
+    "pt": "Ecrã grande"
+  },
+  "& streaming": {
+    "fr": "& streaming",
+    "pt": "e streaming"
+  },
+  "Year-on-year change in": {
+    "fr": "Évolution annuelle des",
+    "pt": "Variação homóloga nas"
+  },
+  "destination preference": {
+    "fr": "préférences de destination",
+    "pt": "preferências de destino"
+  },
+  "Open navigation": {
+    "fr": "Ouvrir la navigation",
+    "pt": "Abrir navegação"
+  },
+  "Close navigation": {
+    "fr": "Fermer la navigation",
+    "pt": "Fechar navegação"
+  }
+}

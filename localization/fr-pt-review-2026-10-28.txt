@@ -1,0 +1,77 @@
+CTR French and Portuguese pre-build review — 28 October 2026
+
+Source: https://docs.google.com/spreadsheets/d/1mSlKlVWmQy-uZRCyRzyKm_xlzxvhp94Bk3zTZA_slqg/edit
+Sheet: Sheet1. English B, Portuguese G, French H. Read rows 1–1122.
+English implementation: local dist/concept-traveller-stories-interactive/index.html.
+The live Vercel page could not be fetched in this session; implementation comparisons refer to the local source.
+No production pages, navigation, spreadsheet cells or deployment were changed.
+
+WHY THE LANGUAGES ARE ABSENT
+The implemented locale list is en/th/es/it/de. Both G and H exist in the live sheet.
+The local CSV lacks these two columns. This does not establish why they were omitted previously.
+The earlier explanation attributing the omission to the snapshot was unsupported.
+
+STATISTICS TO MATCH TO THE ENGLISH IMPLEMENTATION (BOTH NEW LANGUAGES)
+G39/H39: +18.4% in the deck; current English page has +4.1 percentage points for Australian solo-travel growth (22.5 minus 18.4).
+G307/H307: global domestic-only share 29.2% in deck; English page 29.7%. The displayed difference 41.2 minus 29.7 = 11.5 supports the latter.
+G171/H171: Ho Chi Minh City 2026 rank #75 in deck; English page #82.
+G176/H176: Chengdu 2026 rank #75 in deck; English page #105.
+G181/H181: Frankfurt 2026 rank #75 in deck; English page #98.
+G186/H186: Gold Coast 2026 rank #75 in deck; English page #107.
+G111/H111: Thailand social-research growth labelled +0.9%; difference between shares should be expressed as +0.9 percentage points. Preserve the English implementation's unit.
+G134/H134: South Korea preference growth labelled +0.8%; English implementation +0.8pp.
+H169 only: Ho Chi Minh City 2027 rank n°5 versus English #55 and Portuguese n.º 55. Correct to n°55.
+Do not independently recalculate other source deltas from rounded display values: e.g. 39.7%, 28.4% and +11.2pp are shared by the deck and English implementation and need underlying unrounded data to reconcile.
+
+PORTUGUESE FINDINGS
+G1060: untranslated "23.6% Will travel solo". Proposed "23,6% viajarão a solo".
+G396: untranslated country "France". Use "França"; localise decimal separators.
+G16/G30/G31/G33/G34/G305/G396/G458/G859/G989/G1061/G1062: decimal points remain among comma-formatted figures. Use consistent Portuguese decimal commas; USA -> EUA.
+G203: repeats "do que os pontos de fidelização". Remove the second occurrence, retaining 40.2% versus 31.6%.
+G321: "UUma" -> "Uma".
+G372: "O personalidade" -> "A personalidade".
+G451: "Reserva po telefone" -> "Reserva por telefone".
+G474: "Regressp" -> "Regresso".
+G780–G781: "no momento do check-out" changes booking checkout into hotel departure. Proposed sentence: "Apresente a aventura como um extra que pode ser reservado no momento do pagamento, em vez de obrigar os hóspedes a procurá-la por conta própria."
+G342: deck reproduces incomplete English "Staff, customer, communication". English implementation has customer service; use "Pessoal, assistência ao cliente, comunicação".
+G385: repeats the view-upgrade recommendation, as does the English spreadsheet. Render once, as in the page.
+G2: CTR is expanded as click-through rate ("Taxa de cliques"), although here it names the Changing Traveller Report. Internal deck label, exclude from the public page.
+G1090–G1091: "mais do que qualquer outro" overstates English "almost any other". Proposed "Os programas de fidelização têm mais peso na decisão de regresso deste viajante do que na de quase todos os outros."
+G73: "membros de cadeias hoteleiras" can imply hotel members instead of traveller respondents; align the caption to the surrounding discussion of chain-hotel guests.
+The deck uses European Portuguese (ecrã, alojamento, pequeno-almoço, descarregar). Preserve that variety.
+All populated English rows have a populated Portuguese cell. No additional numerical value change was found against the English deck after accounting for decimal/thousands formatting, numbers moved into adjacent sentence fragments, the separate 13% display, and "#1" translated as "principal". This does not validate the underlying survey data.
+
+FRENCH FINDINGS
+H169: n°5 -> n°55.
+H1060: untranslated US solo-travel statistic -> "23,6 % voyageront en solo".
+H396/H1061 and other unchanged numeric labels: country/number formatting needs French localisation.
+H22: "et plus un rite de passage" is ambiguous; use "plutôt qu’un rite de passage". Missing determiner in "par vingtenaires"; use "par les voyageurs dans la vingtaine". Preserve the full English age range (people in their thirties through fifties).
+H43: "Choisis" -> "Choisit".
+H63/H1046: "les point" -> "les points".
+H81: "constituent sur le podium" -> "occupent les trois premières places".
+H187: "sa capitales" -> "sa capitale".
+H194–H195: "toute autre canal" -> "tout autre canal".
+H201: remove stray trailing "Réservation".
+H252: preserve "top reason" rather than merely "a reason" for the 57% statistic.
+H372–H373: join and repair the malformed sentence about property uniqueness and a standout experience.
+H387–H388: remove duplicated "le".
+H448–H451: repair singular/plural agreement through the German-traveller introduction.
+H453: "Préfère les indépendantq" -> "Esprit indépendant" (restore Independent-minded).
+H558: "à côté d’eux" -> "à leurs côtés" or "parallèlement".
+H620–H623: join and repair the Indonesian OTA paragraph; do not render translated line fragments independently.
+H761–H762: join and repair the Mexican return paragraph.
+H878: incomplete literal "toujours dans" -> "Les agences de voyages ont toujours la cote".
+H957: "Les personnel" -> "Le personnel".
+H986–H987: malformed joined text "voyageront avec leurs en couple" -> "40,5 % voyageront avec leur partenaire ou conjoint".
+H1078–H1080: "laisser l’IA gère" -> "laisser l’IA gérer".
+H1090–H1091: remove malformed repeated "attirer faire revenir", preserving comparison with almost every other traveller.
+Normalise decimals and percentage/percentage-point spacing throughout.
+Remove repeated recommendations inherited from the English spreadsheet; retain the current English page's content structure.
+
+IMPLEMENTATION FOLLOW-UP
+Create both /fr/ and /pt/ from the current corrected English page.
+Preserve all charts, numeric data, layout and interactions; avoid regenerating existing languages with the legacy fuzzy-matching scripts.
+Add both languages to the shared picker, including globe/runtime labels, accessibility text and download feedback.
+Verify complete translation coverage, numeric parity to English, and real desktop/mobile layouts.
+Build and deployment have not been performed: this report is the requested pre-build discrepancy notice.
+

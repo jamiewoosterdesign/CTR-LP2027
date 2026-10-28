@@ -1,6 +1,6 @@
 # CTR-LP2027 local handoff
 
-Complete published static site snapshot, including English, Thai, Spanish, Italian, German, all images, hero video clips, raw video gallery, translation review, and the original project source.
+Complete published static site snapshot, including English, Thai, Spanish, Italian, German, French, Portuguese, all images, hero video clips, raw video gallery, translation review, and the original project source.
 Snapshot: published Sites version 264; source commit b758aa15c2dcf1af6920729c882292dbd1a65110.
 
 ## Run locally
@@ -17,6 +17,8 @@ The local server supports byte ranges for video playback. Do not double-click HT
 - Spanish: /concept-traveller-stories-interactive/es/
 - Italian: /concept-traveller-stories-interactive/it/
 - German: /concept-traveller-stories-interactive/de/
+- French: /concept-traveller-stories-interactive/fr/
+- Portuguese (Portugal): /concept-traveller-stories-interactive/pt/
 - Original video downloads: /hero-videos/
 - Translation notes: /translation-review/
 - Prior audit landing page: /index.html
@@ -47,3 +49,6 @@ localization/translation-audit-source.csv is the supplied copy deck snapshot. Pr
 
 ## Honest QA status
 Source and screenshot-based fixes were published, but a complete live visual desktop/mobile audit was NOT completed. Do not mark this task done without opening every language in an actual browser. See NEXT-CHAT.md for the remaining task.
+
+## French and Portuguese — 28 October 2026
+Both pages use the live spreadsheet snapshot in localization/translation-source-2026-10-28.json. Obvious errors are repaired and chart data/figures match the English implementation. Deferred editorial questions remain unchanged; see localization/fr-pt-review-2026-10-28.txt. The targeted generator affects only fr/pt. Install beautifulsoup4 into .local-tools to run the localisation scripts, then run build-fr-pt.py, build-fr-pt-runtime.py and verify-fr-pt.py. npm run build validates all seven pages. Shared runtime supports French/Portuguese navigation and decimal commas; localhost root resolution works on Windows.
