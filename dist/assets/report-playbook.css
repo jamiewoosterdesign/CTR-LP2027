@@ -16,10 +16,10 @@
 .report-playbook .playbook-options>p{font-size:12px;color:#64748b;margin:0 8px 10px}
 .playbook-options-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
 .playbook-options button{display:flex;align-items:center;gap:10px;text-align:left;border:0;border-radius:8px;background:#fff;color:#31425b;padding:10px 8px;font:400 14px/1.3 'Source Sans 3',sans-serif;cursor:pointer;min-height:42px}
-.playbook-options button:hover,.playbook-options button[aria-pressed="true"]{background:#edf4ff;color:#006dff}
+.playbook-options button:hover,.playbook-options button[aria-checked="true"]{background:#edf4ff;color:#006dff}
 .playbook-options img{object-fit:cover;border-radius:3px;flex:none}
 .playbook-options button svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;margin-left:auto;opacity:0;flex:none}
-.playbook-options button[aria-pressed="true"] svg{opacity:1}
+.playbook-options button[aria-checked="true"] svg{opacity:1}
 .report-playbook button:focus-visible{outline:2px solid #006dff;outline-offset:3px}
 .report-playbook .playbook-selection{font-size:12px;color:#64748b;margin-top:12px;min-height:18px}
 @media(max-width:1456px){.report-playbook{margin-inline:48px}}
@@ -31,12 +31,12 @@
 .report-playbook .playbook-lead{font-size:22px!important}
 .report-playbook .playbook-format,.report-playbook .playbook-selection,.report-playbook .playbook-options>p{font-size:12px!important}
 @media(max-width:900px){.report-playbook .playbook-lead{font-size:20px!important}}
-/* Neutral field and persistent multi-selection; download action stays inside. */
+/* Neutral field and persistent single selection; download action stays inside. */
 .playbook-toggle{background:#fff;color:#31425b;border-color:#cbd7e5}
 .playbook-toggle:hover{background:#f6f9fc;border-color:#9aadc4;box-shadow:none}
 .playbook-toggle[aria-expanded="true"]{border-color:#52657e}
-.playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:4px;opacity:1;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
-.playbook-options [data-market][aria-pressed="true"]>svg{background:#006dff;border-color:#006dff;stroke:#fff}
+.playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:50%;opacity:1;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
+.playbook-options [data-market][aria-checked="true"]>svg{background:#006dff;border-color:#006dff;stroke:#fff}
 .playbook-download-footer{border-top:1px solid #e5ebf2;margin-top:12px;padding-top:12px}
 .playbook-options .playbook-download-selected{width:100%;justify-content:center;background:#006dff;color:white;border:1px solid #006dff;border-radius:8px;min-height:44px;font-size:14px}
 .playbook-options .playbook-download-selected:hover:not(:disabled){background:#005cda;color:#fff}
