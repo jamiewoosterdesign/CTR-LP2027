@@ -5,10 +5,14 @@
       backpack's peak-blur frame; at the end of rest it hands back to the intro. Both hand-offs wait for the incoming
       video's first drawn frame, so there is never a blank or stale frame. */
 (() => {
-  const stage = document.querySelector('#report-top .ctr-stage');
-  if (!stage) return;
+  const root = document.querySelector('#report-top .ctr-hero');
+  if (!root) return;
+  const stage = root.querySelector('.ctr-stage'), bags = root.querySelector('.ctr-bags'), frame = root.querySelector('.ctr-bagframe');
+  // size the 16:9 bag frame like object-fit:cover over the box, without clipping it
+  const fit = () => { const w = bags.clientWidth, h = bags.clientHeight; const fw = Math.max(w, h * 16 / 9); frame.style.width = fw + 'px'; };
+  fit(); new ResizeObserver(fit).observe(bags);
   const FPS = 24, BRANCH_FRAME = 290, REST_FRAMES = 844;
-  const poster = stage.querySelector('.ctr-bag-poster'), vI = stage.querySelector('.ctr-intro'), vR = stage.querySelector('.ctr-rest');
+  const poster = root.querySelector('.ctr-bag-poster'), vI = root.querySelector('.ctr-intro'), vR = root.querySelector('.ctr-rest');
   const hi = stage.querySelector('.ctr-clouds-high'), lo = stage.querySelector('.ctr-clouds-low');
   const reduced = matchMedia('(prefers-reduced-motion:reduce)');
   const params = new URLSearchParams(location.search);

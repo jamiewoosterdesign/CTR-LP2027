@@ -1,12 +1,18 @@
-/* CTR 2027 hero: bag loop (transparent VP9) over a separately animated sky. Box size/position/masks come from the existing
-   #report-top .suitcase-poster .suitcase-image rules, so desktop and mobile placement match the previous hero. */
+/* CTR 2027 hero. Layer order: sky (inside the existing masked media box) -> white copy glow (.suitcase-hero:before)
+   -> bags (own unmasked layer, never clipped by the media box) -> copy.
+   Box size/position come from the existing #report-top .suitcase-poster .suitcase-image rules. */
 #report-top .ctr-stage{overflow:hidden;background:#cfe6fb}
-#report-top .ctr-stage>*{position:absolute;inset:0;width:100%;height:100%;margin:0;border:0}
+#report-top .ctr-stage>*{position:absolute;inset:0;width:100%;height:100%}
 #report-top .ctr-sky{background:url(/assets/ctr-hero/sky-base.jpg) center/cover no-repeat}
 #report-top .ctr-clouds{background-repeat:repeat-x;background-size:auto 100%;background-position:0 0;will-change:background-position}
 #report-top .ctr-clouds-high{background-image:url(/assets/ctr-hero/clouds-high.webp)}
 #report-top .ctr-clouds-low{background-image:url(/assets/ctr-hero/clouds-low.webp)}
-#report-top .ctr-bag{object-fit:cover;object-position:50% 50%;transform:translateX(var(--ctr-bag-x,24%)) scale(var(--ctr-bag-scale,.75));visibility:hidden;pointer-events:none}
+/* bag layer: same box as the sky, but no mask, no clipping, above the white glow and the bottom fade */
+#report-top .suitcase-poster .suitcase-image.ctr-bags{-webkit-mask-image:none;mask-image:none;overflow:visible;z-index:2;pointer-events:none;background:none}
+#report-top .hero-inner{position:relative;z-index:3}
+/* 16:9 frame sized like object-fit:cover over the box (set by ctr-hero.js), centred, free to overflow */
+#report-top .ctr-bagframe{position:absolute;left:50%;top:50%;width:100%;aspect-ratio:16/9;transform:translate(-50%,-50%)}
+#report-top .ctr-bag{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;transform:translateX(var(--ctr-bag-x,24%)) scale(var(--ctr-bag-scale,.75));visibility:hidden}
 #report-top .ctr-bag.is-on{visibility:visible}
-@media(max-width:900px){#report-top .ctr-stage{--ctr-bag-x:0%}}
+@media(max-width:900px){#report-top .ctr-bags{--ctr-bag-x:0%}}
 @media(prefers-reduced-motion:reduce){#report-top .ctr-clouds{will-change:auto}}
