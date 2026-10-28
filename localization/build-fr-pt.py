@@ -135,6 +135,17 @@ def build(code,col):
   text=re.sub(r'(?<=\d)\s*pp\b',' pp' if code=='fr' else ' p.p.',text)
   if code=='fr':text=re.sub(r'(?<=\d)\s*%', '\u00a0%',text)
   if text!=str(node):node.replace_with(text)
+ # Badges share a row with country names: keep their unit compact in both locales.
+ original_badges=BeautifulSoup((BASE/'index.html').read_text(encoding='utf-8'),'html.parser')
+ for unused in original_badges.select('.carousel-source-hero'):unused.decompose()
+ badges=soup.select('.sb-badge');english_badges=original_badges.select('.sb-badge')
+ assert len(badges)==len(english_badges)
+ for src,badge in zip(english_badges,badges):
+  match=re.fullmatch(r'([+−-]?\d+(?:\.\d+)?)\s*pp',clean(src.get_text(' ',strip=True)))
+  if match:
+   value=match[1].replace('.',',');badge.clear();badge.append(value+'pp')
+   badge['aria-label']=value+(' points de pourcentage' if code=='fr' else ' pontos percentuais')
+   badge['title']=badge['aria-label']
  soup.title.string='Changing Traveller Report 2027 | '+('Français' if code=='fr' else 'Português')
  soup.select_one('meta[name=description]')['content']=DATA[5][col]
  css=soup.new_tag('link',rel='stylesheet',href='/assets/report-locales.css');soup.head.append(css)
