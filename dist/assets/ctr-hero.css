@@ -1,0 +1,12 @@
+/* CTR 2027 hero: bag loop (transparent VP9) over a separately animated sky. Box size/position/masks come from the existing
+   #report-top .suitcase-poster .suitcase-image rules, so desktop and mobile placement match the previous hero. */
+#report-top .ctr-stage{overflow:hidden;background:#cfe6fb}
+#report-top .ctr-stage>*{position:absolute;inset:0;width:100%;height:100%;margin:0;border:0}
+#report-top .ctr-sky{background:url(/assets/ctr-hero/sky-base.jpg) center/cover no-repeat}
+#report-top .ctr-clouds{background-repeat:repeat-x;background-size:auto 100%;background-position:0 0;will-change:background-position}
+#report-top .ctr-clouds-high{background-image:url(/assets/ctr-hero/clouds-high.webp)}
+#report-top .ctr-clouds-low{background-image:url(/assets/ctr-hero/clouds-low.webp)}
+#report-top .ctr-bag{object-fit:cover;object-position:50% 50%;transform:translateX(var(--ctr-bag-x,24%));visibility:hidden;pointer-events:none}
+#report-top .ctr-bag.is-on{visibility:visible}
+@media(max-width:900px){#report-top .ctr-stage{--ctr-bag-x:0%}}
+@media(prefers-reduced-motion:reduce){#report-top .ctr-clouds{will-change:auto}}
