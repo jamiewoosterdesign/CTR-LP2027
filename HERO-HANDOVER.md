@@ -14,10 +14,13 @@ A seamless loop of six bags (silver → backpack → pink → duffle → orange 
 - `dist/assets/ctr-hero/sky-base.jpg`, `clouds-high.webp`, `clouds-low.webp`: the sky. The two cloud layers drift left at different speeds (repeat-x, tile 2330×1080).
 
 ## Markup (identical in all 7 pages)
-- In `#report-top`, the old `<picture class="suitcase-poster">` and `<video class="suitcase-video">` were replaced by `<div class="suitcase-poster ctr-hero"><div class="suitcase-image ctr-stage" role="img" aria-label="…">`. This contains the sky layers, `img.ctr-bag-poster`, `video.ctr-intro` and `video.ctr-rest`.
-- The stage keeps the classes `suitcase-poster` / `suitcase-image` on purpose. The existing rules in `suitcase-profile-hero.css` (desktop 90% box top-right with masks; mobile square box at the bottom) still size and position it, and the white copy overlay (`.suitcase-hero:before`) is unchanged.
-- The `aria-label` holds the localized alt text from the old poster image. Translate it there if needed.
-- Head: added `<link href="/assets/ctr-hero.css">` after `suitcase-profile-hero.css`, and preloads for `sky-base.jpg` and `bag-poster.webp`.
+- In `#report-top`, the old `<picture class="suitcase-poster">` and `<video class="suitcase-video">` were replaced by `<div class="suitcase-poster ctr-hero">`. It holds two layers:
+  - `div.suitcase-image.ctr-stage` (role="img", localized `aria-label`): the sky and two cloud layers. It sits inside the existing masked media box, behind the white copy glow.
+  - `div.suitcase-image.ctr-bags` > `div.ctr-bagframe`: the still frame `img.ctr-bag-poster` plus `video.ctr-intro` and `video.ctr-rest`. It uses the same box but has no mask and doesn't clip. Its z-index is 2, so the bags sit in front of the white glow (`.suitcase-hero:before`) and the bottom fade; `.hero-inner` is z-index 3.
+- Layer order: sky → white glow → bags → copy.
+- Bags show at 75% scale and are shifted right on desktop (`--ctr-bag-scale`, `--ctr-bag-x` in `ctr-hero.css`).
+- `ctr-hero.js` sizes `.ctr-bagframe` as a 16:9 cover box over the media box.
+- Head: `ctr-hero.css` is linked after `suitcase-profile-hero.css`, with preloads for `sky-base.jpg` and `bag-poster.webp`.
 - Scripts: `suitcase-hero-sequence.js` was swapped for `ctr-hero.js`.
 
 ## How playback works
