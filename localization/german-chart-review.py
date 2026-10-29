@@ -48,7 +48,7 @@ for text in ['2026: 77,5 %', '19,7 % würden nicht']:
     span.append(soup.new_tag('i'))
     span.append(text)
     key.append(span)
-for series in soup.select('#solo-detail-1 .ib-full .sb-dot-series'):
+for series in soup.select('#solo-detail-1 .sb-dot-series'):
     label = series.select_one(':scope > div')
     name, value = label.get_text().split(' ', 1)
     label.clear()
@@ -58,6 +58,19 @@ for series in soup.select('#solo-detail-1 .ib-full .sb-dot-series'):
     span.string = value
     label.append(bold)
     label.append(span)
+
+# The default/condensed room preview uses the same strong + country label as
+# English. Its expanded list is deliberately left unchanged.
+preview = soup.select_one('#experiences-room .ib-room-preview')
+preview.clear()
+strong = soup.new_tag('strong')
+strong.append('Ein Großbildschirm')
+strong.append(soup.new_tag('br'))
+strong.append('& Streaming')
+preview.append(strong)
+country = soup.new_tag('span')
+country.string = 'USA / Australien'
+preview.append(country)
 
 # The same chart-structure audit found two other lost text wrappers.
 for selector, phrase, css_class in [
