@@ -22,6 +22,9 @@ for source, target in zip(english.select('#solo-detail-3 .sb-mini-bars'), soup.s
 note = soup.select_one('#solo-detail-2 .sb-chart-note')
 note.string = note.get_text().rstrip('.') + '.'
 
+heading = soup.select_one('#regional-discovery .ib-heading h3')
+heading.string = heading.get_text().rstrip('.')
+
 for paragraph in soup.select('#experiences-nostalgia .sb-insight'):
     copy = paragraph.get_text().replace('Preis-Leistungs-Verhältnis und Lage sind', 'Das Preis-Leistungs-Verhältnis und die Lage sind')
     paragraph.clear()
