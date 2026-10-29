@@ -156,6 +156,7 @@ def build(code,col):
  css=soup.new_tag('link',rel='stylesheet',href='/assets/report-locales.css');soup.head.append(css)
  script=soup.new_tag('script',src='/assets/report-fr-pt-runtime.js',defer=True);soup.body.append(script)
  soup.html['data-report-locale']=code
+ if code=='fr':import_module('french-review').refine(soup)
  out=BASE/code;out.mkdir(exist_ok=True);(out/'index.html').write_text(str(soup),encoding='utf-8')
  # Residual English list is a review aid, not a fuzzy replacement mechanism.
  original=BeautifulSoup((BASE/'index.html').read_text(encoding='utf-8'),'html.parser')

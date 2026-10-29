@@ -8,19 +8,19 @@
     "pt": "Viagens a solo"
   },
   "The scroll is going regional": {
-    "fr": "La découverte via les réseaux sociaux stagne",
+    "fr": "Le scroll prend une dimension régionale",
     "pt": "A descoberta através das redes sociais está a estagnar"
   },
   "The scroll is": {
-    "fr": "La découverte via",
+    "fr": "Le scroll prend",
     "pt": "A descoberta através"
   },
   "going": {
-    "fr": "les réseaux sociaux",
+    "fr": "une dimension",
     "pt": "das redes sociais"
   },
   "regional.": {
-    "fr": "stagne",
+    "fr": "régionale.",
     "pt": "está a estagnar"
   },
   "Canada": {
@@ -370,5 +370,21 @@
   "Close navigation": {
     "fr": "Fermer la navigation",
     "pt": "Fechar navegação"
+  },
+  "Global Signals": {
+    "fr": "Tendances Mondiales",
+    "pt": "Sinais globais"
+  },
+  "AI & Trust": {
+    "fr": "IA & Confiance",
+    "pt": "IA e CONFIANÇA"
+  },
+  "Traveller Profiles": {
+    "fr": "Profils des Voyageurs",
+    "pt": "Perfis de viajantes"
+  },
+  "Return": {
+    "fr": "Retour",
+    "pt": "Regresso"
   }
 }
