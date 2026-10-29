@@ -1,6 +1,7 @@
 # SiteMinder shared design rules
 
 ## CTR selectors
+- All three defining-figure card labels in every market profile and language use `01 · UPPERCASE TITLE`, with one space on each side of the interpunct. Preserve translated wording; Thai has no letter case. Run `node scripts/normalize-figure-labels.mjs` after generating or editing profiles. The build checks all 294 labels.
 - Language options navigate to the selected language's page root, without copying section anchors or scroll position.
 - The Playbook PDF market picker is single-selection in every language on desktop and mobile. Use radio semantics, one active market, singular labels and a singular download action; selecting another market replaces the previous choice.
 
