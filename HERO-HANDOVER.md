@@ -1,6 +1,6 @@
 # Hero handover (Claude, 28 Oct 2026)
 
-The hero media on `/concept-traveller-stories-interactive/` (EN + de/es/fr/it/pt/th) was replaced. Nothing else on the page changed. **This supersedes the NEXT-CHAT.md note about keeping the original "subtle first loop and lazy-loaded extended sequence"**: that old hero (`suitcase-hero-sequence.js`, `hero-morph-*.mp4`, `hero-*-*.mp4`) is no longer referenced. Its files are still in `dist/assets` but unused, so nothing else breaks. Please don't restore it, and don't edit the files listed below while working on translations.
+The hero media on `/concept-traveller-stories-interactive/` (EN + de/es/fr/it/pt/th) was replaced. Nothing else on the page changed. **This supersedes the NEXT-CHAT.md note about keeping the original "subtle first loop and lazy-loaded extended sequence"**: that old hero (`suitcase-hero-sequence.js`, `hero-morph-*.mp4`, `hero-*-*.mp4`) is no longer referenced. The unused legacy files were archived outside the project and removed on 29 October 2026. Please don't restore it, and don't edit the files listed below while working on translations.
 
 ## What it is
 A seamless loop of six bags (silver → backpack → pink → duffle → orange → leather → silver). Each bag hovers, then spins, and the next bag takes over at peak motion blur. The bags are transparent video on top of a separately animated sky.

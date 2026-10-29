@@ -1,0 +1,5 @@
+qa/
+.local-tools/
+source-reference/
+localization/
+.git/

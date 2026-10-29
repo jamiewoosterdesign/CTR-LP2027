@@ -1,10 +1,5 @@
 [
   {
-    "path": "dist/assets/ai-choice.png",
-    "bytes": 1801001,
-    "sha256": "6c18d3bb661d18d4c3955a1fd045ba900398688f9984239718cf8079fa9c1a58"
-  },
-  {
     "path": "dist/assets/ai-choice.webp",
     "bytes": 217652,
     "sha256": "9734a9b243e83cc1cdde49057ffdfb61509cd220d4a60ae5d22bce917fc0f29a"
@@ -16,13 +11,8 @@
   },
   {
     "path": "dist/assets/ai-longform.js",
-    "bytes": 3491,
-    "sha256": "361f63c7977e22d2d04b9ea9d807d17d94bd5e94d5a206b6338b5ac3a2f151cd"
-  },
-  {
-    "path": "dist/assets/ai-research.png",
-    "bytes": 1488551,
-    "sha256": "e3035d3116dbfbd996f6fc3964c3b6f8856a0c59611eaa144abb7686fb20608b"
+    "bytes": 3597,
+    "sha256": "635a7dbb0b09a221afe388ce4d9c691b7c8084bdb14e45d5a7d2af1c376543e7"
   },
   {
     "path": "dist/assets/ai-research.webp",
@@ -30,29 +20,14 @@
     "sha256": "7779152ebe700584dcb5bc8dcd237998a3155c7284fc7a01e0ff2720071a9ad2"
   },
   {
-    "path": "dist/assets/ai-safeguards.png",
-    "bytes": 1813625,
-    "sha256": "271392c4b605a79af34b3171f2f4bca9491f8352d02708a9b17f7c6881ca3644"
-  },
-  {
     "path": "dist/assets/ai-safeguards.webp",
     "bytes": 200416,
     "sha256": "53c3f6484d83735c24900f2bf58bbbbf3f8116add05705c2ef8551e7aa578c65"
   },
   {
-    "path": "dist/assets/ai-trust.png",
-    "bytes": 1726747,
-    "sha256": "1b2cf39ac303b733fa0867bc9d1eb63e953f6df5ce59a7150126e630d74f1d70"
-  },
-  {
     "path": "dist/assets/ai-trust.webp",
     "bytes": 187720,
     "sha256": "1ed001eb071650a8c3fe32d9b6de4e85a2adbf1cefd03d97a992e68760c12ec0"
-  },
-  {
-    "path": "dist/assets/ai-verification.png",
-    "bytes": 1649250,
-    "sha256": "b7e55cd02132fcaae1438379e432f58365d4416a8af0937636c41eba18a73461"
   },
   {
     "path": "dist/assets/ai-verification.webp",
@@ -80,11 +55,6 @@
     "sha256": "7b5c053da03af47ea5b85b3dc1df8f885017251f68c1dd5bb5eb6b42e04b7977"
   },
   {
-    "path": "dist/assets/australia-profile-hero.png",
-    "bytes": 1835435,
-    "sha256": "c71062e9f7cfba7b98e9d2d3c24d64b9c5a0d3ab78401bbfa8abdbba639f1c72"
-  },
-  {
     "path": "dist/assets/australia-profile-hero.webp",
     "bytes": 165780,
     "sha256": "351d1559f59f356b466ca754cbd2116dc5935d8e82754f92fc414ac0ff3e6464"
@@ -96,28 +66,8 @@
   },
   {
     "path": "dist/assets/australia-profile.js",
-    "bytes": 5173,
-    "sha256": "db2a56f64f05d2e183702311d2fc6052da790deba95dbba62cc10c7f15f2ede5"
-  },
-  {
-    "path": "dist/assets/bag-spin-desktop-poster.webp",
-    "bytes": 70786,
-    "sha256": "90863e08caeca798a3952a0a413df5f397da5bec59e1903640652b5a5cf4dbe0"
-  },
-  {
-    "path": "dist/assets/bag-spin-desktop.mp4",
-    "bytes": 3226398,
-    "sha256": "b8806c306989ff64f38e4d9bde7ee51ab176327b88df597d4d9eacc67d599365"
-  },
-  {
-    "path": "dist/assets/bag-spin-mobile-poster.webp",
-    "bytes": 61008,
-    "sha256": "6ec99e956c0c3934c4ec0334d6c73ec1bfe8eeeaf62cd835ac822c9aa6528742"
-  },
-  {
-    "path": "dist/assets/bag-spin-mobile.mp4",
-    "bytes": 2871082,
-    "sha256": "a1d909ad6ce20cb54afeed6e8564c025f31c4613b427a29cd90b457b14da147e"
+    "bytes": 5307,
+    "sha256": "ab743095d0ba03f542255c5b48e8b547e640844513523030374c06edaa3517c3"
   },
   {
     "path": "dist/assets/bento-chevron.svg",
@@ -136,8 +86,13 @@
   },
   {
     "path": "dist/assets/body-copy-wrap.js",
-    "bytes": 976,
-    "sha256": "f04732aaa0ef5a0b2ce613a29ac1ba4780d8468c0b4bd6e31649683d8606cbeb"
+    "bytes": 1026,
+    "sha256": "75845b72465861835311cb33b0f14120336453246d7ca32fbc5f7aa375f6b32f"
+  },
+  {
+    "path": "dist/assets/brand/arrow-right.svg",
+    "bytes": 526,
+    "sha256": "47b656c543b7682ae82673bb11fcd4e6957c4c5cadbe876c37fbc15be3dabc57"
   },
   {
     "path": "dist/assets/chart-detail-refinements.css",
@@ -150,19 +105,9 @@
     "sha256": "50ab75e5fbffaa9c082247b1460d16ecf63aa3d6fcc819c55d9696ced4000998"
   },
   {
-    "path": "dist/assets/country-australia-thumb.webp",
-    "bytes": 5568,
-    "sha256": "076e639431407a24f7f976b7059601557dfdaa4bf922614a413868791f758f9b"
-  },
-  {
     "path": "dist/assets/country-australia.webp",
     "bytes": 78536,
     "sha256": "c9e7cefdc47c75b447eb70470b25c170125651a48000b7565c509547eaeb97aa"
-  },
-  {
-    "path": "dist/assets/country-canada-thumb.webp",
-    "bytes": 7644,
-    "sha256": "cb28b8afb8cd78d1790980042fe4ac5ca6f713fda9468f596b2d2e757f3f22a1"
   },
   {
     "path": "dist/assets/country-canada.webp",
@@ -170,19 +115,9 @@
     "sha256": "80cb976960a1007593eccafaa899d8e6919ac749dca6d53aac75ee1a76393d45"
   },
   {
-    "path": "dist/assets/country-china-thumb.webp",
-    "bytes": 6638,
-    "sha256": "39b4af052e452f6b237f0c21089377f7002fb5b1bb9aac2841222d6e536c2397"
-  },
-  {
     "path": "dist/assets/country-china.webp",
     "bytes": 119448,
     "sha256": "c860619b363a2b0d7041d05a967a736935b0f330352cdf4a5b9b2177564d8fed"
-  },
-  {
-    "path": "dist/assets/country-france-thumb.webp",
-    "bytes": 5956,
-    "sha256": "644429c7c53b2aedb86e6310e569867791207c7424ff6b8aedc00d7945e40c01"
   },
   {
     "path": "dist/assets/country-france.webp",
@@ -190,19 +125,9 @@
     "sha256": "6ac2891f3c9cf014d4283d2d8009d62450a196394b0a4e3a596757fe869a0eb1"
   },
   {
-    "path": "dist/assets/country-germany-thumb.webp",
-    "bytes": 6582,
-    "sha256": "93a3ff7d26614e1ec29dd2d6ca9290298dd97b36604bdc396d712f2405e1a3bf"
-  },
-  {
     "path": "dist/assets/country-germany.webp",
     "bytes": 93234,
     "sha256": "138d04ff5096ec64a7816bf823c6c8b937b4acf850c85f49de35896b5fc49db9"
-  },
-  {
-    "path": "dist/assets/country-india-thumb.webp",
-    "bytes": 6258,
-    "sha256": "3db84781d1a2dacb135025139821b300f78380ba905fcce49e79f2733000e510"
   },
   {
     "path": "dist/assets/country-india.webp",
@@ -210,19 +135,9 @@
     "sha256": "e4e3cf5788107d7ad1a26b3d2a64b11e18814312bab22baccd9bab7d4e2ef717"
   },
   {
-    "path": "dist/assets/country-indonesia-thumb.webp",
-    "bytes": 8442,
-    "sha256": "564920b51604d2c87a7ff713624680519823b623fe31428d965f5ed7605f123c"
-  },
-  {
     "path": "dist/assets/country-indonesia.webp",
     "bytes": 141442,
     "sha256": "2452820579c7a7bdea846be0cc7c6f238cd8c9d033708b7a3bd24d478e58d020"
-  },
-  {
-    "path": "dist/assets/country-italy-thumb.webp",
-    "bytes": 7106,
-    "sha256": "1ecb3a7fb34a375839c619f35061b69bb2ea1fe388a3a49e2afcf82cc9caf1ec"
   },
   {
     "path": "dist/assets/country-italy.webp",
@@ -230,19 +145,9 @@
     "sha256": "eed4c99b285307253a42b303ab333bbde92a12d929e14d62b8beb98a05159bed"
   },
   {
-    "path": "dist/assets/country-mexico-thumb.webp",
-    "bytes": 7322,
-    "sha256": "c5a6da654f8b0a2a647bbf3c7cdc8d5f8a63f190501629c9a467064d93e37617"
-  },
-  {
     "path": "dist/assets/country-mexico.webp",
     "bytes": 106930,
     "sha256": "946f271c99e16a38a62777e3175c01e3739a4f9084f784e569c0a1b03d1c7603"
-  },
-  {
-    "path": "dist/assets/country-singapore-thumb.webp",
-    "bytes": 6562,
-    "sha256": "9ea80f677a00504612c778a112b143341c717d4f56a4134f9ca11a70ea9c82b5"
   },
   {
     "path": "dist/assets/country-singapore.webp",
@@ -250,19 +155,9 @@
     "sha256": "e78dd72bbb36bcb9e0e3bf2926ae3278db87433e80c238f4cb6a6f1f834654c3"
   },
   {
-    "path": "dist/assets/country-spain-thumb.webp",
-    "bytes": 8506,
-    "sha256": "50880bf20e9191791212968cc7609667f0369ad4671fe2f40a6a9f6e3263d621"
-  },
-  {
     "path": "dist/assets/country-spain.webp",
     "bytes": 147926,
     "sha256": "cd4de7235c2214e2b000cbb78b73985b5a102b27cc3cf3aacb6cbcf044a0eb39"
-  },
-  {
-    "path": "dist/assets/country-thailand-thumb.webp",
-    "bytes": 7040,
-    "sha256": "9e7caeb8b414a108306345143a96a3d36b35617b6650faad91405b6dd8e76941"
   },
   {
     "path": "dist/assets/country-thailand.webp",
@@ -270,29 +165,9 @@
     "sha256": "6949a878de557ade67fa7025db947b782d9c749401ff779cf71544368921934a"
   },
   {
-    "path": "dist/assets/country-uk-fixed-thumb.webp",
-    "bytes": 6790,
-    "sha256": "6925f700aa355732203fed18fd3dd646533a51202b0cf579918b9569605ae624"
-  },
-  {
-    "path": "dist/assets/country-uk-fixed.png",
-    "bytes": 2313572,
-    "sha256": "239b448dc75e2841be72410433ba13d41872ee4dc1fa39b0bc43de3c64dc390f"
-  },
-  {
     "path": "dist/assets/country-uk-fixed.webp",
     "bytes": 179482,
     "sha256": "1c48ed07b11bcbfe782d75e78f2e9c4b5a9798184da3f9396ea12a11c789b5ed"
-  },
-  {
-    "path": "dist/assets/country-united-kingdom.webp",
-    "bytes": 0,
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-  },
-  {
-    "path": "dist/assets/country-united-states-thumb.webp",
-    "bytes": 7136,
-    "sha256": "3ab9b868595fb48f4b5af5f208b37610d109b4b32be3628fca7179093f950af8"
   },
   {
     "path": "dist/assets/country-united-states.webp",
@@ -303,6 +178,46 @@
     "path": "dist/assets/ctr-badge-gradient.svg",
     "bytes": 803,
     "sha256": "54d25ff371dc2123c49c071b18ba51910f5f719b5e0d94b31321d3fda42d0835"
+  },
+  {
+    "path": "dist/assets/ctr-hero/bag-poster.webp",
+    "bytes": 47852,
+    "sha256": "bd90b0e4f4294c33774ad218feeade339106e898640414ac267e2462876ed0ba"
+  },
+  {
+    "path": "dist/assets/ctr-hero/clouds-high.webp",
+    "bytes": 522008,
+    "sha256": "ca5a5c175d46cbe199737ff09fa6adc51e927f7c04519fd04f61349a9ac3ddba"
+  },
+  {
+    "path": "dist/assets/ctr-hero/clouds-low.webp",
+    "bytes": 290704,
+    "sha256": "a282f282c9e47181d56d69e27a54ef524739524c562000d76b4357744da1e615"
+  },
+  {
+    "path": "dist/assets/ctr-hero/intro.webm",
+    "bytes": 3958588,
+    "sha256": "2bf9049bb5d93f18c1f3183141393a16efed6897d767602bda76a372e5670c87"
+  },
+  {
+    "path": "dist/assets/ctr-hero/rest.webm",
+    "bytes": 11308320,
+    "sha256": "542879ba80ebdf8a4f088fb226a5a30840643fac92b2f53ef96f29a3b6f31558"
+  },
+  {
+    "path": "dist/assets/ctr-hero/sky-base.jpg",
+    "bytes": 57449,
+    "sha256": "885f2251749bdaa9e8604934787237da37a3b3b61346f04a5471c15f0bf9a028"
+  },
+  {
+    "path": "dist/assets/ctr-hero.css",
+    "bytes": 1733,
+    "sha256": "512610820bb9022b1718142717d3a36b184055bae106bb0d542e21fac440f41d"
+  },
+  {
+    "path": "dist/assets/ctr-hero.js",
+    "bytes": 7135,
+    "sha256": "ac1b83e0120662c136d62a0190a6168aca889d94ecbefa8c3ad6d4bc975fa0b2"
   },
   {
     "path": "dist/assets/download-arrow.svg",
@@ -465,19 +380,9 @@
     "sha256": "881cda76f853d307e6fd3f33f5a5b7e2f68f87b1c61b3c538bdbad250bccf1cb"
   },
   {
-    "path": "dist/assets/generation-baby-boomers.png",
-    "bytes": 2114767,
-    "sha256": "b47c57561db97741220418196e918906e59e5b7b22502ae2114e9c255c7a2eb1"
-  },
-  {
     "path": "dist/assets/generation-baby-boomers.webp",
     "bytes": 220536,
     "sha256": "fe8736c5fd4313125c8b1c229af96b4f1d339d86fc8958f2b439b09bfc156345"
-  },
-  {
-    "path": "dist/assets/generation-gen-x-portrait.png",
-    "bytes": 2115208,
-    "sha256": "c80d9611649c2bbdfa1bc9da2b07832b332d94804591fcd86305d8450ea495d4"
   },
   {
     "path": "dist/assets/generation-gen-x-portrait.webp",
@@ -485,19 +390,9 @@
     "sha256": "381d4937bcff5a1752f668712f4093872f065c1f8075b7b69d0f3f991e097760"
   },
   {
-    "path": "dist/assets/generation-gen-z-portrait.png",
-    "bytes": 2190748,
-    "sha256": "eb9354278f0d6b659022f0e3969916ee2ac867baecdf66f968f45d47d879245f"
-  },
-  {
     "path": "dist/assets/generation-gen-z-portrait.webp",
     "bytes": 170518,
     "sha256": "b22b2c53d68ef16bae9154689b12ef6076b595c55ed98361d3fcaa4c0e8ce3e7"
-  },
-  {
-    "path": "dist/assets/generation-millennials-portrait.png",
-    "bytes": 2149628,
-    "sha256": "bdb390f7030424833246ea4c86265a0fb08ecaaa2cae1ef0a747f3f0448bdbec"
   },
   {
     "path": "dist/assets/generation-millennials-portrait.webp",
@@ -511,8 +406,8 @@
   },
   {
     "path": "dist/assets/generations.js",
-    "bytes": 7375,
-    "sha256": "c0f1aba99c0412c297864a44c46608999c03251e4a29c1563052af588765f792"
+    "bytes": 7472,
+    "sha256": "8309d46f802dd70d06f7eaa51685310a3249701ae5ae9bca1fd086b4c36656a6"
   },
   {
     "path": "dist/assets/globe-hint-bulb.svg",
@@ -525,11 +420,6 @@
     "sha256": "442e9e1ae194f38163e293a41aa197a8271ab3c2e0f94485383ea38caecc40c3"
   },
   {
-    "path": "dist/assets/globe-light-headlines.js",
-    "bytes": 4399,
-    "sha256": "fd6559f5a1af5ba59d1a0a185df16d2eef10c0ac519158b2987ff65a7154ad30"
-  },
-  {
     "path": "dist/assets/globe-light-profile.js",
     "bytes": 29586,
     "sha256": "cbbfecfdf22f286394230e17b7d79b50fd3ce96eca2c9de887b1c901beb7e9e9"
@@ -540,19 +430,9 @@
     "sha256": "0dcb5c24fa9e545e3b0e86034072cf90b3ddd1e59ba7ab2a3d68abbffe9f5e1e"
   },
   {
-    "path": "dist/assets/headline-challengers.png",
-    "bytes": 1522709,
-    "sha256": "38203c9ef8676e7fe935826d7281b9b46abfdce4b1861f039190237f3b8b7d79"
-  },
-  {
     "path": "dist/assets/headline-challengers.webp",
     "bytes": 122364,
     "sha256": "d3159ecb23ed3ca7f7633ab5c2ee25e3497f65219769277f54c46c85291bf208"
-  },
-  {
-    "path": "dist/assets/headline-experiences.png",
-    "bytes": 1564874,
-    "sha256": "e523115239acf14ecdbbf8ccb4ae44f5e669b98ec376407c4ff8356598ab1700"
   },
   {
     "path": "dist/assets/headline-experiences.webp",
@@ -560,24 +440,9 @@
     "sha256": "8e2c4b267a16d656c17621c3f51a9df6bd9542c0ce1f74ee85b9f2d0b3ff0dbf"
   },
   {
-    "path": "dist/assets/headline-explorers.css",
-    "bytes": 3581,
-    "sha256": "9bb4c7084fcaccfb29d1e849290e0e3a7866a115c0cb25f98c5a8b09d22520dd"
-  },
-  {
-    "path": "dist/assets/headline-explorers.js",
-    "bytes": 3479,
-    "sha256": "973cefee6569e005de85ef7b61f14a3bd189cc45a236216c680a6578b67e3c4c"
-  },
-  {
     "path": "dist/assets/headline-images.css",
     "bytes": 2797,
     "sha256": "615fdde8a601aa1b13a99a55af09e379dfe5b03421449fa74942759638235941"
-  },
-  {
-    "path": "dist/assets/headline-scroll.png",
-    "bytes": 1525835,
-    "sha256": "da3c5a874ef7ca2c72763f08ca82db2b6edc44feda7dfe905f483520a55b94ef"
   },
   {
     "path": "dist/assets/headline-scroll.webp",
@@ -585,114 +450,9 @@
     "sha256": "cddbab58501f87aa820290afc2c66b994e4b1ef9aef9d333fc00b54690a979df"
   },
   {
-    "path": "dist/assets/headline-solo.png",
-    "bytes": 1580376,
-    "sha256": "ce9e989d13f5384563ff5eed5230b19be0383a29f110fce314283e22a8530864"
-  },
-  {
     "path": "dist/assets/headline-solo.webp",
     "bytes": 94434,
     "sha256": "0586f296c5ee8d2b4f7b303c77ccd5367c1ef3e37df85f6985017a164a9c86a4"
-  },
-  {
-    "path": "dist/assets/hero-backpack-pink.mp4",
-    "bytes": 3951865,
-    "sha256": "cdd0875962a10efed18ac96f8df28a116e7f5c962dd51ac8a46798601acb8a78"
-  },
-  {
-    "path": "dist/assets/hero-duffel-leather.mp4",
-    "bytes": 4148003,
-    "sha256": "8324346cb41666e070c314599f8053b46e4eb642a6a8d5933c17f46f0b4c664d"
-  },
-  {
-    "path": "dist/assets/hero-fallback-desktop.mp4",
-    "bytes": 3664307,
-    "sha256": "361541a0139d9da1c91e6676e316ec775aa7ffe063aa50e16234877c1ad17063"
-  },
-  {
-    "path": "dist/assets/hero-fallback-mobile.mp4",
-    "bytes": 2968468,
-    "sha256": "08a8eea5f03aa057a9e6a749ea770b18ce0c528cf738b3c5b1bfadf85af70804"
-  },
-  {
-    "path": "dist/assets/hero-leather-backpack.mp4",
-    "bytes": 4008690,
-    "sha256": "5a34fd920682a798c9767e6330d23b0bbe2ffb7b37ee753fdb04e0fca9340c10"
-  },
-  {
-    "path": "dist/assets/hero-leather-silver.mp4",
-    "bytes": 3627915,
-    "sha256": "2ef50b28d688bb9f3627c837c03128a8cff27702b7fa7027bf42a8c10b2198c3"
-  },
-  {
-    "path": "dist/assets/hero-morph-desktop-poster.webp",
-    "bytes": 102906,
-    "sha256": "0a861694fbf41fc14a2e66b403c54e57313d7ffb9e74c6f4bd997074a7a6bf3c"
-  },
-  {
-    "path": "dist/assets/hero-morph-desktop.mp4",
-    "bytes": 5170684,
-    "sha256": "3f31d72c136751835b4e7949ad0731201deb87bd46f221551b2878f8c50cd50f"
-  },
-  {
-    "path": "dist/assets/hero-morph-mobile-poster.webp",
-    "bytes": 94938,
-    "sha256": "f6d364e3b8192ce5b3a885ec1204def38274d12ffa6f69391d43f19cc432eb79"
-  },
-  {
-    "path": "dist/assets/hero-morph-mobile.mp4",
-    "bytes": 4261466,
-    "sha256": "340c87746e75d8fe2c50c7df2768788ebac001d97c4dfa87eb18027ef9d4d127"
-  },
-  {
-    "path": "dist/assets/hero-morph-v2-desktop-poster.webp",
-    "bytes": 117514,
-    "sha256": "5057313071c6e5193e6a6cf61cd4766be89312c8fddcf901dc171842afe29aa1"
-  },
-  {
-    "path": "dist/assets/hero-morph-v2-desktop.mp4",
-    "bytes": 3397399,
-    "sha256": "60c4590c643e3b339de3310ecb8379919509b79023512d71f167d716ae66f1a7"
-  },
-  {
-    "path": "dist/assets/hero-morph-v2-mobile-poster.webp",
-    "bytes": 106782,
-    "sha256": "b4fde1faaec12bb6ae71e7efa140068ed46ebd47003ad96b2b53e12bc0967c9d"
-  },
-  {
-    "path": "dist/assets/hero-morph-v2-mobile.mp4",
-    "bytes": 2687338,
-    "sha256": "b56942715c5a09ea3b7514cab2fd7ce52137c26a16e2efbe99e3b65d9b70c540"
-  },
-  {
-    "path": "dist/assets/hero-morph-v3-desktop.mp4",
-    "bytes": 7470878,
-    "sha256": "1b434da3133b7fdd4fa3dba435e5d1ee20602c6f2cf85a39117acb0002b0d8cd"
-  },
-  {
-    "path": "dist/assets/hero-morph-v4-desktop.mp4",
-    "bytes": 8076141,
-    "sha256": "fc6c4332aeaddada51ab28e98d19cda2b57bf243b2e03927acdbea4376ce7618"
-  },
-  {
-    "path": "dist/assets/hero-orange-duffel.mp4",
-    "bytes": 4513662,
-    "sha256": "5bae57ca600019fb856966f43fbc829b126643156f3dd33c45ccac5547f42974"
-  },
-  {
-    "path": "dist/assets/hero-originals/leather-silver-runway.mp4",
-    "bytes": 4095764,
-    "sha256": "bb007f88c87544cfb14767b3d6a70f007fd9bd920a8d91f0181ff3d28e9ef617"
-  },
-  {
-    "path": "dist/assets/hero-originals/silver-backpack-alternative-runway.mp4",
-    "bytes": 4428344,
-    "sha256": "2e9d4e296c71843f465755c170339e17a7639e09a82976485700486813c8cc7b"
-  },
-  {
-    "path": "dist/assets/hero-pink-orange.mp4",
-    "bytes": 4265532,
-    "sha256": "0eda827da6c276daccdaea2e6d6993d29755910f4bb60237ede732906c9c6aae"
   },
   {
     "path": "dist/assets/interactive-bento.css",
@@ -701,8 +461,8 @@
   },
   {
     "path": "dist/assets/interactive-bento.js",
-    "bytes": 5149,
-    "sha256": "27854b7dccd5d268da9467c1a44c9b1738eb97cad78a75dc5fbfeac475bedd13"
+    "bytes": 5244,
+    "sha256": "7faed05fb8830fa0b3c21d2362f1c6ba8fdf88cac33c65470623d2a0c98305d0"
   },
   {
     "path": "dist/assets/land-110m.json",
@@ -810,26 +570,6 @@
     "sha256": "be5523ae1c376dd9ff2b80af87e095fa6b200eb8a8f08936a41ad7f291338f17"
   },
   {
-    "path": "dist/assets/reference-badge.svg",
-    "bytes": 16552,
-    "sha256": "52ae301aa98bf8d2bd638bfe189ba1f3bec05ab196401778a1caa3dd8db5246d"
-  },
-  {
-    "path": "dist/assets/region-africa-middle-east.png",
-    "bytes": 2467883,
-    "sha256": "8fbffbde600f092f652f5035362cefce0ed63a1a2535662ae69f01d6b34853f5"
-  },
-  {
-    "path": "dist/assets/region-latin-america.png",
-    "bytes": 2528463,
-    "sha256": "1adc466bfdc906c686694256d94e7f904459034160ea1979467fd8ea9a75c647"
-  },
-  {
-    "path": "dist/assets/region-north-america.png",
-    "bytes": 2614786,
-    "sha256": "f008d9dea995a946bd0cf526dcf404cdc5d7582543e6387f00b5518064c4f403"
-  },
-  {
     "path": "dist/assets/remaining-bentos.css",
     "bytes": 20241,
     "sha256": "f0ad76c4fc14ab57e18991706c7cc06b2e2dab5f33902e147c7d114da87dcc92"
@@ -850,6 +590,11 @@
     "sha256": "8859bc96b2e1f61e428de0aeedbca6e58955de4dad47b3820436c4d167a99bec"
   },
   {
+    "path": "dist/assets/report-fr-pt-runtime.js",
+    "bytes": 135324,
+    "sha256": "7d6386ff93a7a3deec23162f100c8c10b9c80e31cd5e866b2bb5eb7c8bfc167c"
+  },
+  {
     "path": "dist/assets/report-language.css",
     "bytes": 6292,
     "sha256": "39ef1d2c3abf08f4afeff5ddb8c197fed6639ee1a4b7f2e8c892a64c101af66c"
@@ -866,13 +611,13 @@
   },
   {
     "path": "dist/assets/report-locale-navigation.js",
-    "bytes": 990,
-    "sha256": "316570be76975663b88d9af5e0975ddebbef379a8d860032b1321c90977f064f"
+    "bytes": 1168,
+    "sha256": "e7293653718b4638fe699f296bf9b0aad711fb7a222be4608e472bc094c7151b"
   },
   {
     "path": "dist/assets/report-locale-runtime.js",
-    "bytes": 21071,
-    "sha256": "eb6ddc3b040ebcec32dc873fe9a7a5f60d391347921b1e7cbbf9bc8f535ca260"
+    "bytes": 22452,
+    "sha256": "294a2feef973bd67b7b24e03bb54a64c21dc3f54d90f65a6210415e77b0c8fd1"
   },
   {
     "path": "dist/assets/report-locales.css",
@@ -887,17 +632,17 @@
   {
     "path": "dist/assets/report-navigation-update.css",
     "bytes": 11458,
-    "sha256": "2b0e2f0c7394c72c4022274db02f8daa64120e081638ef24cfdd479d20ae0825"
+    "sha256": "39473573e00f6dc5760ee90c432454bc43414649be7afef918f66ba7fd253a4f"
   },
   {
     "path": "dist/assets/report-playbook.css",
-    "bytes": 8551,
-    "sha256": "435119120ff56bc6be3a4960d83821befc4e7ad332b598e37ea93ce8136b5679"
+    "bytes": 8562,
+    "sha256": "b5b68269bd2f86fcae154eb18b06faff9282a4f448a9b2b2a6854517d232aad4"
   },
   {
     "path": "dist/assets/report-playbook.js",
-    "bytes": 4581,
-    "sha256": "46c1299053ac428078d145983cad143bf0f2eaad08894ebd2fb03e46cf001763"
+    "bytes": 6013,
+    "sha256": "4621dd931ba09dc6b487ae9414210b40d52bc1543e1926b86f35a882b87bbf12"
   },
   {
     "path": "dist/assets/report-refinements.css",
@@ -905,24 +650,19 @@
     "sha256": "a47ccaa55011843301e7e46fe68404450ad7dec24edb2ac4b049c537352e3665"
   },
   {
+    "path": "dist/assets/report-responsive-qa.css",
+    "bytes": 5530,
+    "sha256": "349ad5bd44126306a2ac2afae985c6c46be12c9f8ac3a4d90b7f96560e923355"
+  },
+  {
     "path": "dist/assets/report-sections.css",
     "bytes": 13040,
     "sha256": "f114690d9e0d2e5ac50edf032f58332ad206f42edf2215b37e17985c6a908c51"
   },
   {
-    "path": "dist/assets/report-sections.js",
-    "bytes": 6942,
-    "sha256": "076290659591ebf56f064d187b8f6352b587bae8fd7ffb371a2c386bae6bbff8"
-  },
-  {
     "path": "dist/assets/sidebar-profile.css",
     "bytes": 27647,
     "sha256": "56172240a81d53d2b7e4bba9b9b02b7a81154aa38e219ac77411935157931b84"
-  },
-  {
-    "path": "dist/assets/sidebar-profile.js",
-    "bytes": 28349,
-    "sha256": "a2d4e8ea91b85ff32ddcd8e1ce8c212961d38989975fba7a415f457c7a465465"
   },
   {
     "path": "dist/assets/siteminder-logo-dark.svg",
@@ -945,26 +685,6 @@
     "sha256": "f65e961010387c97957a253ba6524eb740f4f88a09e51ad0ca5770db23851f52"
   },
   {
-    "path": "dist/assets/siteminder-mark-white.svg",
-    "bytes": 947,
-    "sha256": "8a7cc051f04a884ee9af8fad13329f7423242ea67569a371dfe1e206aa0bd457"
-  },
-  {
-    "path": "dist/assets/static-language-methodology.css",
-    "bytes": 3034,
-    "sha256": "f7d8747913403605ba41a742202af685949ac58d3b3bbfad9ddf6e09021c59d8"
-  },
-  {
-    "path": "dist/assets/static-profile-globe.svg",
-    "bytes": 293898,
-    "sha256": "324764ddbd65dce834a40cdfbb371a8f55d3b6c4c221c1a907b78703eb0a3179"
-  },
-  {
-    "path": "dist/assets/static-report-export.css",
-    "bytes": 6795,
-    "sha256": "757ee42987521fce85751a32b037a317e5838cf53e386a7c5f59432d558783dd"
-  },
-  {
     "path": "dist/assets/story-bento-refinements.css",
     "bytes": 22269,
     "sha256": "e81ea2697119c11fe7a8ff4e425edf257273e3e6b79abcc53f16d78ebd8e9df5"
@@ -980,44 +700,9 @@
     "sha256": "3181686dc7129cfeadad3c9de53fd152bfa30ec8038146cb356ee6be2a503ed3"
   },
   {
-    "path": "dist/assets/story-hero-solo.png",
-    "bytes": 3735767,
-    "sha256": "257287b0a6c8355ca9e11fdb9f6bd0a1a16971b926f4e2242247aa16e152b531"
-  },
-  {
     "path": "dist/assets/story-interactive-refinements.css",
     "bytes": 4355,
     "sha256": "047d4334f355e3ba3bcec11a9826610cffbd5ba0f4763d3455772b3a22cd9da8"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-clean.png",
-    "bytes": 1539014,
-    "sha256": "f2c8bf6e0b6ba1f20d4ebfcd4abf309c80e166090426a1a2af9d5073f6b0acc9"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-sequence.js",
-    "bytes": 4422,
-    "sha256": "0b33565320ea743eed93775bde7f0c946d038df3c6e5c927e3871868a8407d9b"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-temp.png",
-    "bytes": 3457495,
-    "sha256": "860ce4e80242feb857e4ec7d6d1de619d525893c5f6426a33823d4e5fa497d1d"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-upscaled.png",
-    "bytes": 3473290,
-    "sha256": "3f95f07da76c53d4af0d2fe4ff02c5aa6ec63796018dc964477b167615bef133"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-upscaled.webp",
-    "bytes": 225414,
-    "sha256": "ac115113ad2cde4f04df952956812a6445528f7db186a9675019d4f6f53fee9e"
-  },
-  {
-    "path": "dist/assets/suitcase-hero-video.js",
-    "bytes": 1485,
-    "sha256": "0176f9e22a02854eb9650b60b8ff882bf8b73bf4f66ab5cb67cef12d803f7c52"
   },
   {
     "path": "dist/assets/suitcase-profile-hero.css",
@@ -1025,88 +710,8 @@
     "sha256": "26d1d7e537bd633af7a20071e7f3284ffa1cf39a7b0af9fadc52e8d8b071f83f"
   },
   {
-    "path": "dist/assets/traveller-rome.png",
-    "bytes": 2323629,
-    "sha256": "1eca79707f0cad254c6cb5f0d7fc3171f35769ac3e6ca452c1232a5f97b86765"
-  },
-  {
-    "path": "dist/assets/traveller-sydney.png",
-    "bytes": 2161144,
-    "sha256": "df9243b3e7bc8c51da1e729fbec9324fddeff871cd725708852444a1d7d470f0"
-  },
-  {
-    "path": "dist/assets/travellers-kyoto.png",
-    "bytes": 2479792,
-    "sha256": "317b6c6ad42e6a40191582ad67b03b98de3c229477b04fb53cdb8f02e480093b"
-  },
-  {
-    "path": "dist/assets/travellers-paris.png",
-    "bytes": 2142540,
-    "sha256": "8f70e90b94fe134d0b2867df356ac131e1fd4eea03da6619e8c025382633114d"
-  },
-  {
-    "path": "dist/assets/travellers-santorini.png",
-    "bytes": 2189562,
-    "sha256": "8bf3d4d28f4639c4a56b86efc579ba2d0d17c51e047afd893aa9b6ac5fa09adc"
-  },
-  {
-    "path": "dist/assets/travellers-taj-mahal.png",
-    "bytes": 2163273,
-    "sha256": "68771293a13246f4bd079e5effadc5b443e9903b351cb5ac18c3d7874d20fdbc"
-  },
-  {
     "path": "dist/assets/world-signals.css",
     "bytes": 4135,
     "sha256": "ed31519c51bc36a2d85b680fbfbf09e474b440df1d6ad47c6a62be4c723a67c3"
-  },
-  {
-    "path": "dist/assets/world-signals.js",
-    "bytes": 15046,
-    "sha256": "04ea330f7c9aa331986cede42634d6d89bb60afbea1e06ae3600fba7d3243cab"
-  },
-  {
-    "path": "dist/concept-static-export/index.html",
-    "bytes": 422621,
-    "sha256": "4452e0519d174dcacf3cf4e963fbe46cb085f22bb4ab977a00f49661546b7167"
-  },
-  {
-    "path": "dist/concept-traveller-stories-interactive/de/index.html",
-    "bytes": 270672,
-    "sha256": "52d2bb57099bde09d090176b75db2e1486d14ace1614ebc448550ec1146f15fd"
-  },
-  {
-    "path": "dist/concept-traveller-stories-interactive/es/index.html",
-    "bytes": 270411,
-    "sha256": "e97c35e4c22b57534c7aa0c6c660f3a35fe90fa1e3b16336ea8d31e3444c2e87"
-  },
-  {
-    "path": "dist/concept-traveller-stories-interactive/index.html",
-    "bytes": 267820,
-    "sha256": "9926727ce5ab890ac4e37a61ed72f8ba173cbd1dd550b23a5afada97e236b950"
-  },
-  {
-    "path": "dist/concept-traveller-stories-interactive/it/index.html",
-    "bytes": 269767,
-    "sha256": "4cc961d835457c8e8b555d13c4dbae5947de209488903dd3efef693988ed36fa"
-  },
-  {
-    "path": "dist/concept-traveller-stories-interactive/th/index.html",
-    "bytes": 345942,
-    "sha256": "a0fa50ade3e4555886004da989e23969c987799fbd22ab42cf3e6a22ff956509"
-  },
-  {
-    "path": "dist/hero-videos/index.html",
-    "bytes": 4493,
-    "sha256": "d882a97f0ae4b69d6a3ee38eff24b9ec286158d216cc432f006b1689ca1e940c"
-  },
-  {
-    "path": "dist/index.html",
-    "bytes": 18590,
-    "sha256": "05933b39b0674a9ad68a937b5ca586ca052edd7582115f695e88ad77a6048110"
-  },
-  {
-    "path": "dist/translation-review/index.html",
-    "bytes": 2714,
-    "sha256": "dbf0f767a6f08670e0082179653436afe1f53f5f5c8a1b90c4ff1f0d44fb0a3d"
   }
 ]
