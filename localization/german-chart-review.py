@@ -53,7 +53,7 @@ for text in ['2026: 77,5 %', '19,7 % würden nicht']:
     key.append(span)
 for series in soup.select('#solo-detail-1 .sb-dot-series'):
     label = series.select_one(':scope > div')
-    name, value = label.get_text().split(' ', 1)
+    name, value = label.get_text(' ', strip=True).split(' ', 1)
     label.clear()
     bold = soup.new_tag('b')
     bold.string = name
