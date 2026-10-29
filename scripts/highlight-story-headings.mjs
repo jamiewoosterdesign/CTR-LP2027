@@ -1,7 +1,7 @@
 import {readFile, writeFile} from 'node:fs/promises';
 
 // One rule for all report languages, including scripts without word spaces.
-// Only changes emphasis in story-card headings; preserves copy and line breaks.
+// Normalizes story-card punctuation and emphasis while preserving line breaks.
 const supported=['en','th','es','it','de','fr','pt'];
 const selected=process.argv.slice(2);
 for(const locale of selected.length?selected:supported){
@@ -11,7 +11,9 @@ for(const locale of selected.length?selected:supported){
  const segmenter=new Intl.Segmenter(locale,{granularity:'word'});
  const highlights=[];
  const result=source.replace(/(<header\b[^>]*class="[^"]*\bsb-story-hero\b[^"]*"[^>]*>[\s\S]*?<h2\b[^>]*>)([\s\S]*?)(<\/h2>)/g,(_,before,heading,after)=>{
-  const content=heading.replace(/<\/?em\b[^>]*>/g,'');
+  let content=heading.replace(/<\/?em\b[^>]*>/g,'');
+  // Match English's full stop in every translation except Thai.
+  if(locale!=='th'&&!content.trimEnd().endsWith('.'))content=content.trimEnd()+'.'+content.slice(content.trimEnd().length);
   const tokens=[...content.matchAll(/<[^>]*>|[^<]+/g)];
   const text=tokens.filter(t=>!t[0].startsWith('<')).map(t=>t[0]).join('');
   // Heading copy currently has no HTML entities: fail instead of splitting one.

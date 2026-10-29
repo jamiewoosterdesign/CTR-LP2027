@@ -5,6 +5,7 @@
 - The Playbook PDF market picker is single-selection in every language on desktop and mobile. Use radio semantics, one active market, singular labels and a singular download action; selecting another market replaces the previous choice.
 
 ## CTR story-card heading emphasis
+- End all four story-card headings with a full stop in every language except Thai. Include the full stop within the final blue word.
 - All four `.sb-story-hero h2` headings must highlight only their final word, including trailing punctuation, using the shared existing blue `<em>` style in every language.
 - Run `node scripts/highlight-story-headings.mjs` after changing or generating these headings. It preserves copy and line breaks and uses `Intl.Segmenter` for language-aware word boundaries, including Thai without spaces. Never split Thai by whitespace or by character.
 
