@@ -12,7 +12,7 @@ def display(text):
         # Preserve German thousands such as 12.000 and 12.029.
         return match[0] if len(fraction) == 3 and whole != '0' else whole + ',' + fraction
     text = re.sub(r'(?<![\d.])(\d+)\.(\d+)(?!\d)', decimal, text)
-    return re.sub(r'43,3[\s\u00a0\u202f]+% weltweit', '43,3% weltweit', text)
+    return re.sub(r'43,3[\s\u00a0\u202f]*% weltweit', '43,3 % weltweit', text)
 
 path = ROOT / 'dist/concept-traveller-stories-interactive/de/index.html'
 soup = BeautifulSoup(path.read_text(encoding='utf-8'), 'html.parser')
