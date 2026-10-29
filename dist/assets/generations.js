@@ -58,10 +58,10 @@
   const delay=innerWidth>900?index*100:0;
   const stat=visual.querySelector('.gen-stat');
   if(stat&&stat.textContent.includes('%')){
-   const final=stat.dataset.countFinal||stat.textContent,target=parseFloat(final),decimals=(final.match(/\.(\d+)/)?.[1]||'').length,start=performance.now()+delay;
+   const final=stat.dataset.countFinal||stat.textContent,target=parseFloat(final.replace(',','.')),decimals=(final.match(/[.,](\d+)/)?.[1]||'').length,decimal=final.includes(',')?',':'.',start=performance.now()+delay;
    stat.setAttribute('aria-label',final);
-   function step(now){if(reduced.matches){stat.textContent=final;return;}const t=Math.max(0,Math.min(1,(now-start)/750));stat.textContent=(target*(1-Math.pow(1-t,3))).toFixed(decimals)+'%';if(t<1)requestAnimationFrame(step);else stat.textContent=final;}
-   stat.textContent=(0).toFixed(decimals)+'%';requestAnimationFrame(step);
+   function step(now){if(reduced.matches){stat.textContent=final;return;}const t=Math.max(0,Math.min(1,(now-start)/750));stat.textContent=(target*(1-Math.pow(1-t,3))).toFixed(decimals).replace('.',decimal)+'%';if(t<1)requestAnimationFrame(step);else stat.textContent=final;}
+   stat.textContent=(0).toFixed(decimals).replace('.',decimal)+'%';requestAnimationFrame(step);
   }
   visual.querySelectorAll('.gen-bar i').forEach(bar=>animate(bar,[{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:480,delay,easing:'cubic-bezier(.2,.75,.25,1)',fill:'backwards'}));
   visual.querySelectorAll('.gen-gauge-fill').forEach(arc=>{const end=arc.getAttribute('stroke-dasharray');animate(arc,[{strokeDasharray:'0 100'},{strokeDasharray:end}],{duration:480,delay,easing:'cubic-bezier(.2,.75,.25,1)',fill:'backwards'});});

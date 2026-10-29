@@ -29,7 +29,8 @@
   if(stat.dataset.counted)return;stat.dataset.counted='true';
   const el=stat.querySelector('[data-count]');if(!el)return;
   const target=Number(el.dataset.count),decimals=el.dataset.count.includes('.')?1:0,start=performance.now();
-  function run(now){const t=reduced.matches?1:Math.min(1,(now-start)/750);el.textContent=(target*(1-Math.pow(1-t,3))).toFixed(decimals);if(t<1)requestAnimationFrame(run);else el.textContent=el.dataset.count;}
+  const format=value=>document.documentElement.lang==='de'?value.replace('.',','):value;
+  function run(now){const t=reduced.matches?1:Math.min(1,(now-start)/750);el.textContent=format((target*(1-Math.pow(1-t,3))).toFixed(decimals));if(t<1)requestAnimationFrame(run);else el.textContent=format(el.dataset.count);}
   requestAnimationFrame(run);
  }
  function parallax(){frame=0;updateDot();if(reduced.matches||innerWidth<=700)return;active.forEach(row=>{const box=row.getBoundingClientRect();row.style.setProperty('--ai-parallax',Math.max(-10,Math.min(10,(innerHeight/2-box.top-box.height/2)*.025))+'px');});}

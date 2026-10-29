@@ -51,10 +51,10 @@
   const dots=[...preview.querySelectorAll('.sb-dots .on')];dots.forEach((dot,i)=>track(dot,[{opacity:.15},{opacity:1}],{duration:140,delay:i*420/Math.max(1,dots.length)}));
   preview.querySelectorAll('.bubble-x,.bubble-m,.bubble-z,.ib-influence-preview').forEach(el=>track(el,[{opacity:0,scale:'.9'},{opacity:1,scale:'1'}]));
   preview.querySelectorAll('strong').forEach(el=>{
-   const text=el.firstChild;if(!text||text.nodeType!==3||!/^\+?\d+(\.\d+)?%?$/.test(text.textContent.trim()))return;
-   const final=text.textContent,match=final.match(/\d+(?:\.\d+)?/),value=+match[0],digits=(match[0].split('.')[1]||'').length,start=performance.now();let frame;
+   const text=el.firstChild;if(!text||text.nodeType!==3||!/^\+?\d+([.,]\d+)?%?$/.test(text.textContent.trim()))return;
+   const final=text.textContent,match=final.match(/\d+(?:[.,]\d+)?/),value=parseFloat(match[0].replace(',','.')),digits=(match[0].split(/[.,]/)[1]||'').length,decimal=match[0].includes(',')?',':'.',start=performance.now();let frame;
    const finish=()=>{cancelAnimationFrame(frame);text.textContent=final;};
-   function step(now){if(reduced.matches||(innerWidth>900&&card.classList.contains('is-expanded'))){finish();return;}const t=Math.min(1,(now-start)/750);text.textContent=final.replace(match[0],(value*(1-Math.pow(1-t,3))).toFixed(digits));if(t<1)frame=requestAnimationFrame(step);else finish();}frame=requestAnimationFrame(step);
+   function step(now){if(reduced.matches||(innerWidth>900&&card.classList.contains('is-expanded'))){finish();return;}const t=Math.min(1,(now-start)/750);text.textContent=final.replace(match[0],(value*(1-Math.pow(1-t,3))).toFixed(digits).replace('.',decimal));if(t<1)frame=requestAnimationFrame(step);else finish();}frame=requestAnimationFrame(step);
   });
   // Hover must never replay or compete with the entrance.
   const stop=()=>{running.forEach(el=>el.getAnimations().forEach(a=>a.finish()));};
