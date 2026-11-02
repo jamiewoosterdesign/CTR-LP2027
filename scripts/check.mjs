@@ -9,6 +9,15 @@ for (const locale of ['', 'de', 'es', 'fr', 'it', 'pt', 'th']) {
   if (strips.length !== 14 || strips.some(([, strip]) => (strip.match(/class="au-tag-item"/g) || []).length !== 3 || (strip.match(/<i>\u00b7<\/i>/g) || []).length !== 2)) {
     throw new Error(`Profile traits need three labels and two interpuncts in ${locale || 'en'}`);
   }
+  if (locale !== 'th') {
+    const miniBars = [...html.matchAll(/<div class="sb-mini-bars">([\s\S]*?)<\/div><\/div>/g)];
+    if (miniBars.length !== 2 || miniBars.some(([, chart]) => (chart.match(/<i style="width:/g) || []).length !== 2)) {
+      throw new Error(`Solo comparison charts need both bars in ${locale || 'en'}`);
+    }
+  }
+  if (['de', 'es', 'it'].includes(locale) && html.includes('>Will travel solo<')) {
+    throw new Error(`Untranslated solo-travel figure in ${locale}`);
+  }
 }
 console.log('Profile traits: all 98 market profiles have three labels and two separators.');
 console.log('Static site ready: English + 6 translations, runtime and animation assets.');

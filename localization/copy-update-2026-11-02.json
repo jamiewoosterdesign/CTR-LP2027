@@ -1,0 +1,21 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1mSlKlVWmQy-uZRCyRzyKm_xlzxvhp94Bk3zTZA_slqg/edit?gid=0",
+  "reviewed": "2026-11-02",
+  "scope": "Clear non-Thai cell edits and reviewer comments; patch current page text without regenerating translations.",
+  "pending": [
+    {"cells": ["I86"], "issue": "French France to Portuguese França; retain France pending clarification."},
+    {"cells": ["F451"], "issue": "Italian Prenotazione anticipata drops the call/by-phone meaning; retain current trait."},
+    {"cells": ["G350", "G352"], "issue": "German Chinese-profile proposed copy still has grammatical errors; retain entire current paragraph."},
+    {"cells": ["G234", "G248"], "issue": "Literal in-word hyphens; retain normal spelling and current responsive hyphenation."},
+    {"cells": ["German percentage-spacing comments"], "issue": "Requests conflict with prior chart/scale spacing directions; preserve existing spacing."},
+    {"cells": ["B307", "E307", "F307", "G307", "H307", "I307"], "issue": "Old 29.2 global baseline contradicts the stated 11.5-point difference; retain site 29.7."}
+  ],
+  "additional_clear_fixes": [
+    "Italian Australian domestic-travel description corrected to 41.2, matching its headline and source.",
+    "German US comparison label corrected from USA 0,236 to USA 23,6%.",
+    "Remaining English solo-travel labels translated in German, Spanish and Italian.",
+    "Spanish and Italian solo comparison bars restored with the original English chart markup and widths.",
+    "Stray dot removed from Spanish, Italian and French 14% global benchmark labels."
+  ],
+  "preserved": ["English page", "Thai page and revised line-break column", "shared CSS", "hero animation", "approved card structures except restored missing chart wrappers"]
+}
