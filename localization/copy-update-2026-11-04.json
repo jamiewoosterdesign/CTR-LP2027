@@ -8,11 +8,26 @@
     "All seven playbook selectors use the 12 supplied editions and exact PDF destinations, with single selection and native links."
   ],
   "obvious_source_errors_not_applied": [
-    {"cell": "D124", "issue": "Changes challenger destinations to channels gaining popularity."},
-    {"cell": "D203", "issue": "Omits the 13.0% AI trust comparison and the closing AI adoption through platforms sentence; the clear opening revisions in D201-D202 were applied."},
-    {"cell": "D213", "issue": "Changes the closing meaning from low-trust areas where AI could help to AI itself being least trusted."},
-    {"cell": "D219", "issue": "Drops final approval from the safeguards and omits the comparison between safeguards."},
-    {"cell": "D779", "issue": "Changes the 39.2% adventure activities/equipment statistic to general extras."}
+    {
+      "cell": "D124",
+      "issue": "Changes challenger destinations to channels gaining popularity."
+    },
+    {
+      "cell": "D203",
+      "issue": "Omits the 13.0% AI trust comparison and the closing AI adoption through platforms sentence; the clear opening revisions in D201-D202 were applied."
+    },
+    {
+      "cell": "D213",
+      "issue": "Changes the closing meaning from low-trust areas where AI could help to AI itself being least trusted."
+    },
+    {
+      "cell": "D219",
+      "issue": "Drops final approval from the safeguards and omits the comparison between safeguards."
+    },
+    {
+      "cell": "D779",
+      "issue": "Changes the 39.2% adventure activities/equipment statistic to general extras."
+    }
   ],
   "source_repairs": [
     "D117 contains the Southeast Asia paragraph intended for rows 114-115; applied there, preserving the influencer subtitle.",
@@ -20,6 +35,6 @@
     "Combined amenity/market cells retained as separate design elements; untranslated English market names in D85 were not copied over existing correct Thai names."
   ],
   "previous_pending": "The unresolved items in copy-update-2026-11-02.json remain unchanged, except French I86 is now corrected in the spreadsheet and already matches the website.",
-  "pdf_host_status": "All 12 exact supplied URLs returned HTTP 404 during validation on 2026-11-04. Links are wired as supplied; the host must publish the files.",
+  "pdf_host_status": "User confirmed the PDF files are intentionally awaiting publication at the supplied addresses. All playbook and traveller-profile links are configured in advance and open in new tabs.",
   "english": "No editorial English copy changes; only the explicitly requested playbook editions and link behavior changed."
 }

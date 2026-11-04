@@ -12,7 +12,7 @@
   fr:['Sélectionnez votre marché','Sélectionnez un marché','Télécharger le PDF','Les téléchargements PDF ne sont pas encore disponibles.'],
   pt:['Selecione o seu mercado','Selecione um mercado','Descarregar PDF','Os downloads de PDF ainda não estão disponíveis.']
  }[locale]||['Select your market','Select one market','Download PDF',"PDF downloads aren't available yet."];
- menu.querySelector(':scope>p').textContent=copy[1];download.textContent=copy[2];
+ download.textContent=copy[2];
  grid.setAttribute('role','radiogroup');grid.setAttribute('aria-label',copy[1]);
  options.forEach((button,i)=>{button.removeAttribute('aria-pressed');button.setAttribute('role','radio');button.setAttribute('aria-checked','false');button.tabIndex=i===0?0:-1;});
 

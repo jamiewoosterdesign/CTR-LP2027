@@ -2,6 +2,7 @@ import { stat, readFile } from 'node:fs/promises';
 import { normalizeFigureLabels } from './normalize-figure-labels.mjs';
 await normalizeFigureLabels({ check: true });
 const editions=JSON.parse(await readFile(new URL('../dist/assets/playbook-editions.json',import.meta.url),'utf8'));
+const profilePdfs=JSON.parse(await readFile(new URL('../dist/assets/traveller-profile-pdfs.json',import.meta.url),'utf8'));
 if(editions.length!==12||new Set(editions.map(e=>e.id)).size!==12)throw new Error('Expected 12 unique playbook editions');
 const paths=['index.html','concept-traveller-stories-interactive/index.html',...['th','es','it','de','fr','pt'].map(x=>`concept-traveller-stories-interactive/${x}/index.html`),'assets/report-locales.css','assets/report-locale-runtime.js','assets/report-fr-pt-runtime.js','assets/ctr-hero.css','assets/ctr-hero.js',...['bag-poster.webp','sky-base.jpg','clouds-high.webp','clouds-low.webp','intro.webm','rest.webm'].map(x=>`assets/ctr-hero/${x}`),'assets/brand/arrow-right.svg'];
 for(const p of paths){const s=await stat(new URL('../dist/'+p,import.meta.url));if(!s.size)throw new Error('Empty: '+p);}
@@ -20,6 +21,10 @@ for (const locale of ['', 'de', 'es', 'fr', 'it', 'pt', 'th']) {
   const picker=html.match(/<div class="playbook-options-grid">([\s\S]*?)<\/div>/)?.[1]||'';
   const options=[...picker.matchAll(/<button\b[^>]*data-market="([^"]+)"[^>]*data-pdf-url="([^"]+)"/g)];
   if(options.length!==12||options.some((m,i)=>m[1]!==editions[i].id||m[2]!==editions[i].url))throw new Error(`Playbook editions or links differ in ${locale||'en'}`);
+  if(/<img\b/.test(picker)||/<div\b[^>]*class="playbook-options"[^>]*>\s*<p>/.test(html))throw new Error(`Playbook picker must omit flags and visible helper text in ${locale||'en'}`);
+  const profileLinks=[...html.matchAll(/<a\b[^>]*class="au-hero-download"[^>]*>/g)];
+  const expected=Object.values(profilePdfs[locale||'en']);
+  if(profileLinks.length!==14||expected.some(url=>!profileLinks.some(([tag])=>tag.includes(`href="${url}"`)&&tag.includes('target="_blank"')&&tag.includes('rel="noopener noreferrer"')&&!tag.includes('aria-disabled'))))throw new Error(`Profile PDF links incomplete in ${locale||'en'}`);
   if(!/<a\b[^>]*class="playbook-download-selected"/.test(html))throw new Error(`Missing native PDF link in ${locale||'en'}`);
   const recommendations=[...html.matchAll(/<div\b[^>]*class="au-recommend-body"[^>]*>\s*<p>[^<]*<strong>/g)];
   if(recommendations.length!==42)throw new Error(`Each recommendation needs its independent statistic in ${locale||'en'}`);
