@@ -8,6 +8,7 @@ const paths=['index.html','concept-traveller-stories-interactive/index.html',...
 for(const p of paths){const s=await stat(new URL('../dist/'+p,import.meta.url));if(!s.size)throw new Error('Empty: '+p);}
 for (const locale of ['', 'de', 'es', 'fr', 'it', 'pt', 'th']) {
   const html = await readFile(new URL(`../dist/concept-traveller-stories-interactive/${locale ? locale + '/' : ''}index.html`, import.meta.url), 'utf8');
+  if(/https?:\/\/[^\s"<>]*(?:vercel\.app|chatgpt\.site)/.test(html))throw new Error(`Report links must not depend on the preview domain in ${locale||'en'}`);
   const strips = [...html.matchAll(/<div class="au-tags">(.*?)<\/div>/gs)];
   if (strips.length !== 14 || strips.some(([, strip]) => (strip.match(/class="au-tag-item"/g) || []).length !== 3 || (strip.match(/<i>\u00b7<\/i>/g) || []).length !== 2)) {
     throw new Error(`Profile traits need three labels and two interpuncts in ${locale || 'en'}`);
