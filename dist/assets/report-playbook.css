@@ -38,9 +38,10 @@
 .playbook-options [data-market]>svg{border:1px solid #c9d5e3;border-radius:50%;opacity:0;stroke:transparent;padding:2px;box-sizing:content-box;width:12px;height:12px}
 .playbook-options [data-market][aria-checked="true"]>svg{opacity:1;background:#006dff;border-color:#006dff;stroke:#fff}
 .playbook-download-footer{border-top:1px solid #e5ebf2;margin-top:12px;padding-top:12px}
-.playbook-options .playbook-download-selected{width:100%;justify-content:center;background:#006dff;color:white;border:1px solid #006dff;border-radius:8px;min-height:44px;font-size:14px}
-.playbook-options .playbook-download-selected:hover:not(:disabled){background:#005cda;color:#fff}
-.playbook-options .playbook-download-selected:disabled{background:#edf1f6;border-color:#e1e7ef;color:#8693a4;cursor:default}
+.playbook-options .playbook-download-selected{box-sizing:border-box;display:flex;align-items:center;width:100%;justify-content:center;background:#006dff;color:white;border:1px solid #006dff;border-radius:8px;min-height:48px;padding:10px 14px;font:400 16px/24px 'Source Sans 3',sans-serif;text-decoration:none;text-align:center;cursor:pointer}
+.playbook-options .playbook-download-selected:hover:not([aria-disabled="true"]){background:#005cda;color:#fff}
+.playbook-options .playbook-download-selected[aria-disabled="true"]{background:#edf1f6;border-color:#e1e7ef;color:#8693a4;cursor:default}
+.playbook-download-selected:focus-visible{outline:2px solid #006dff;outline-offset:3px}
 .report-playbook .playbook-download-note{font-size:12px!important;color:#64748b;margin-top:8px}
 .playbook-download-note:empty{display:none}
 

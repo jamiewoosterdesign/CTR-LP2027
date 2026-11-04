@@ -35,10 +35,10 @@
  function select(button){
   options.forEach(option=>{const selected=option===button;option.setAttribute('aria-checked',String(selected));option.tabIndex=selected?0:-1;});
   toggle.querySelector('span').textContent=button.querySelector('span').textContent;
-  download.disabled=false;download.textContent=copy[2];note.textContent='';
+  download.href=button.dataset.pdfUrl;download.setAttribute('aria-disabled','false');download.tabIndex=0;download.textContent=copy[2];note.textContent='';
  }
  options.forEach(button=>button.addEventListener('click',()=>select(button)));
- download.addEventListener('click',()=>{note.textContent=copy[3];});
+ download.addEventListener('click',e=>{if(download.getAttribute('aria-disabled')==='true')e.preventDefault();});
  menu.addEventListener('keydown',e=>{if(e.key==='Escape'&&!menu.hidden){e.preventDefault();open(false,true);}const i=options.indexOf(e.target);if(i<0)return;const n=(e.key==='ArrowDown'||e.key==='ArrowRight')?(i+1)%options.length:(e.key==='ArrowUp'||e.key==='ArrowLeft')?(i+options.length-1)%options.length:e.key==='Home'?0:e.key==='End'?options.length-1:-1;if(n>=0){e.preventDefault();select(options[n]);options[n].focus();}});
  document.addEventListener('pointerdown',e=>{if(!dialog.open&&!picker.contains(e.target))open(false);});
  section.addEventListener('focusout',()=>setTimeout(()=>{if(!dialog.open&&!picker.contains(document.activeElement))open(false);},0));

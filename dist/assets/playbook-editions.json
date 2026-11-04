@@ -1,0 +1,74 @@
+[
+  {
+    "id": "uk",
+    "name": "United Kingdom",
+    "flag": "gb",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_en_uk.pdf"
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "flag": "fr",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_fr.pdf"
+  },
+  {
+    "id": "es",
+    "name": "Spain",
+    "flag": "es",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_es_es.pdf"
+  },
+  {
+    "id": "anz",
+    "name": "Australia & New Zealand (ANZ)",
+    "flag": "region",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_en_au.pdf"
+  },
+  {
+    "id": "it",
+    "name": "Italy",
+    "flag": "it",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_it.pdf"
+  },
+  {
+    "id": "pt",
+    "name": "Portugal",
+    "flag": "pt",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_pt.pdf"
+  },
+  {
+    "id": "us",
+    "name": "United States",
+    "flag": "us",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_en_us.pdf"
+  },
+  {
+    "id": "mx",
+    "name": "Mexico",
+    "flag": "mx",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_mx_es.pdf"
+  },
+  {
+    "id": "th",
+    "name": "Thailand",
+    "flag": "th",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_th.pdf"
+  },
+  {
+    "id": "de",
+    "name": "Germany",
+    "flag": "de",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_de.pdf"
+  },
+  {
+    "id": "id",
+    "name": "Indonesia",
+    "flag": "id",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_id.pdf"
+  },
+  {
+    "id": "latam",
+    "name": "Latin America (LATAM)",
+    "flag": "region",
+    "url": "https://downloads.siteminder.com/ctr/siteminders_changing_traveller_report_2027_hoteliers_playbook_customer_latam_es.pdf"
+  }
+]
