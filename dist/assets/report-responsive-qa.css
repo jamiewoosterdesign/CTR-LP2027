@@ -84,3 +84,6 @@ html:not([lang=en]) .au-recommend button>span{min-width:0;max-width:100%;white-s
 
 /* Italian hero prose wraps between words, never inside preferenze or other words. */
 html[lang=it] #report-top .lead{hyphens:none;overflow-wrap:normal;word-break:normal}
+
+/* German hero prose wraps at word boundaries, preserving whole words. */
+html[lang=de] #report-top .lead{hyphens:none;overflow-wrap:normal;word-break:normal}
