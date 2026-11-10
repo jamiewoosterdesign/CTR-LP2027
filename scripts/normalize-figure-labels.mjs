@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
-const locales = ['', 'de', 'es', 'fr', 'it', 'pt', 'th'];
+const locales = ['', 'de', 'es', 'fr', 'it', 'pt', 'th', 'id'];
 export async function normalizeFigureLabels({ check = false } = {}) {
   let changed = 0;
   for (const locale of locales) {
@@ -22,7 +22,7 @@ export async function normalizeFigureLabels({ check = false } = {}) {
     if (check && result !== source) throw new Error(`Run node scripts/normalize-figure-labels.mjs: inconsistent labels in ${locale || 'en'}`);
     if (!check && result !== source) await writeFile(path, result);
   }
-  console.log(`Figure labels: 294 checked across 7 languages; ${changed} ${check ? 'inconsistent' : 'updated'}.`);
+  console.log(`Figure labels: 336 checked across 8 languages; ${changed} ${check ? 'inconsistent' : 'updated'}.`);
 }
 
 if (process.argv[1]?.endsWith('normalize-figure-labels.mjs')) await normalizeFigureLabels({ check: process.argv.includes('--check') });

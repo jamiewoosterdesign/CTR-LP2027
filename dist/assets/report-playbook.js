@@ -4,6 +4,7 @@
  const mobile=matchMedia('(max-width:900px)'),picker=menu.parentElement,grid=menu.querySelector('.playbook-options-grid');
  const locale=(document.documentElement.lang||'en').split('-')[0];
  const copy={
+  id:['Pilih pasar Anda','Pilih satu pasar','Unduh PDF','Unduhan PDF belum tersedia.'],
   en:['Select your market','Select one market','Download PDF',"PDF downloads aren't available yet."],
   th:['เลือกตลาดของคุณ','เลือกหนึ่งตลาด','ดาวน์โหลด PDF','ยังไม่สามารถดาวน์โหลด PDF ได้ในขณะนี้'],
   es:['Selecciona tu mercado','Selecciona un mercado','Descargar PDF','Las descargas de PDF aún no están disponibles.'],

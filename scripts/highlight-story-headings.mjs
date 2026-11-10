@@ -2,7 +2,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 
 // One rule for all report languages, including scripts without word spaces.
 // Normalizes story-card punctuation and emphasis while preserving line breaks.
-const supported=['en','th','es','it','de','fr','pt'];
+const supported=['en','th','es','it','de','fr','pt','id'];
 const selected=process.argv.slice(2);
 for(const locale of selected.length?selected:supported){
  if(!supported.includes(locale))throw new Error('Unsupported locale: '+locale);
