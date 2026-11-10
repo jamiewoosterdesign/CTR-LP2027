@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'.local-tools'))
 from bs4 import BeautifulSoup, Comment
 BASE=ROOT/'dist/concept-traveller-stories-interactive'
-rows=json.loads((ROOT/'localization/indonesian-source-2026-11-10.json').read_text(encoding='utf8'))['rows']
+rows=json.loads((ROOT/'localization/indonesian-source-2026-11-11.json').read_text(encoding='utf8'))['rows']
 def clean(s):return re.sub(r'\s+',' ',s.replace('\u2028',' ')).strip()
 def norm(s):return re.sub(r'[^\w%]+','',unicodedata.normalize('NFKC',html.unescape(clean(s))).lower())
 lookup={}
@@ -91,6 +91,7 @@ for button in soup.select('[data-language]'):button['aria-selected']=str(button[
 toggle=soup.select_one('.report-language-toggle');toggle['aria-label']='Pilih bahasa, Bahasa Indonesia';toggle.select_one('span').string='ID';toggle.select_one('img')['src']='/assets/flag-id.svg'
 for profile in soup.select('.au-profile'):
  title=profile.select_one('.au-hero h2').get_text(' ',strip=True)
+ link=profile.select_one('.au-hero-download');link['href']=link['href'].removesuffix('_en.pdf')+'_id.pdf'
  profile.select_one('.au-hero-download')['aria-label']='Unduh PDF profil '+title.lower()
  for ring,card in zip(profile.select('.au-rings g[aria-label]'),profile.select('.au-recommend')):
   ring['aria-label']=card.select_one('button').get_text(' ',strip=True)+', '+ring.get('data-value','').replace('.',',')+' persen'
